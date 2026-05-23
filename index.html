@@ -18,52 +18,59 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&family=Anton&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bebas+Neue&family=Anton&family=Barlow+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-<div class="grain"></div>
 <div class="scroll-progress"></div>
 
 <!-- Top status bar -->
-<div class="hidden md:block border-b border-[var(--line)] relative z-10">
+<div class="hidden md:block border-b border-[var(--line-2)] relative z-10 bg-black">
   <div class="max-w-[1500px] mx-auto px-8 py-2 flex items-center justify-between mono text-[.64rem] tracking-[.22em] uppercase">
     <div class="flex items-center gap-7 text-[var(--paper-3)]">
-      <span class="flex items-center gap-2"><span class="dot-green"></span><span style="color:var(--green)" data-en="OPEN · BAY 1–4" data-es="ABIERTO · BAY 1–4">OPEN · BAY 1–4</span></span>
-      <span class="hidden lg:inline" data-en="31 MAHAN ST · WEST BABYLON · NY 11704" data-es="31 MAHAN ST · WEST BABYLON · NY 11704">31 MAHAN ST · WEST BABYLON · NY 11704</span>
-      <span class="hidden lg:inline grad-text" style="font-weight:700;" data-en="BILINGÜE · EN/ES" data-es="BILINGÜE · EN/ES">BILINGÜE · EN/ES</span>
+      <span class="flex items-center gap-2"><span class="dot dot-live"></span><span style="color:#22c55e;font-weight:800" data-en="OPEN · BAY 1–4" data-es="ABIERTO · BAY 1–4">OPEN · BAY 1–4</span></span>
+      <span class="hidden lg:inline">31 MAHAN ST · WEST BABYLON · NY 11704</span>
+      <span class="hidden lg:inline text-red" style="font-weight:800;" data-en="★ BILINGÜE · EN/ES ★" data-es="★ BILINGÜE · EN/ES ★">★ BILINGÜE · EN/ES ★</span>
     </div>
     <div class="flex items-center gap-6 text-[var(--paper-3)]">
-      <a href="tel:+15163957424" class="hover:text-[var(--orange)] transition-colors">+1 (516) 395-7424</a>
+      <a href="tel:+15163957424" class="hover:text-red transition-colors font-bold">+1 (516) 395-7424</a>
       <div class="lang-toggle flex items-center gap-1">
-        <button data-lang="en" class="px-2 py-1 hover:text-[var(--orange)] transition-colors">EN</button>
+        <button data-lang="en" class="px-2 py-1 hover:text-red transition-colors">EN</button>
         <span>/</span>
-        <button data-lang="es" class="px-2 py-1 hover:text-[var(--orange)] transition-colors">ES</button>
+        <button data-lang="es" class="px-2 py-1 hover:text-red transition-colors">ES</button>
       </div>
     </div>
   </div>
 </div>
 
 <!-- NAV -->
-<nav class="sticky top-0 z-40 backdrop-blur-xl bg-black/75 border-b border-[var(--line-2)]">
+<nav class="sticky top-0 z-40 backdrop-blur-xl bg-black/85 border-b-2 border-[var(--paper)]">
   <div class="max-w-[1500px] mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-3 group">
-      <!-- Logo mark — gradient ring with mini needle -->
-      <svg viewBox="0 0 48 48" class="w-11 h-11">
-        <defs>
-          <linearGradient id="navG" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#e91e63"/><stop offset="100%" stop-color="#ff5722"/>
-          </linearGradient>
-        </defs>
-        <circle cx="24" cy="24" r="21" fill="#000" stroke="url(#navG)" stroke-width="2.5"/>
-        <line x1="33" y1="24" x2="40" y2="14" stroke="#ff5722" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="33" cy="24" r="2.2" fill="#ff5722"/>
-        <text x="22" y="29" text-anchor="middle" font-family="Anton, sans-serif" font-size="16" fill="#ffffff" letter-spacing="-1">A</text>
+      <!-- Logo: checker + red bar -->
+      <svg viewBox="0 0 56 56" class="w-12 h-12">
+        <rect width="56" height="56" fill="#000"/>
+        <g transform="translate(8 8)">
+          <rect x="0" y="0" width="8" height="8" fill="#fff"/>
+          <rect x="16" y="0" width="8" height="8" fill="#fff"/>
+          <rect x="32" y="0" width="8" height="8" fill="#fff"/>
+          <rect x="8" y="8" width="8" height="8" fill="#fff"/>
+          <rect x="24" y="8" width="8" height="8" fill="#fff"/>
+          <rect x="0" y="16" width="8" height="8" fill="#fff"/>
+          <rect x="16" y="16" width="8" height="8" fill="#fff"/>
+          <rect x="32" y="16" width="8" height="8" fill="#fff"/>
+          <rect x="8" y="24" width="8" height="8" fill="#fff"/>
+          <rect x="24" y="24" width="8" height="8" fill="#fff"/>
+          <rect x="0" y="32" width="8" height="8" fill="#fff"/>
+          <rect x="16" y="32" width="8" height="8" fill="#fff"/>
+          <rect x="32" y="32" width="8" height="8" fill="#fff"/>
+        </g>
+        <rect x="0" y="48" width="56" height="8" fill="#e10600"/>
       </svg>
       <div>
-        <div class="display text-xl md:text-2xl">A-Spec</div>
-        <div class="tech text-[.55rem] tracking-[.32em] uppercase grad-text" style="font-weight:700">AUTO · HQ</div>
+        <div class="display text-2xl md:text-3xl tracking-tight">A-Spec</div>
+        <div class="tech text-[.55rem] tracking-[.32em] uppercase text-red" style="font-weight:800">AUTO · HQ ★ NY</div>
       </div>
     </a>
     <div class="hidden md:flex items-center gap-9">
@@ -74,11 +81,11 @@
       <a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
     </div>
     <div class="flex items-center gap-3">
-      <a href="#" data-open-quote data-magnet class="hidden md:inline-flex btn btn-grad !py-3 !px-5 !text-[.66rem]" data-en="Get Quote" data-es="Cotización">Get Quote</a>
-      <button id="menuBtn" class="md:hidden p-2 text-[var(--paper)]"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+      <a href="#" data-open-quote data-magnet class="hidden md:inline-flex btn btn-red !py-3 !px-5 !text-[.66rem]" data-en="Get Quote" data-es="Cotización">Get Quote</a>
+      <button id="menuBtn" class="md:hidden p-2 text-[var(--paper)]"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
     </div>
   </div>
-  <div id="menuPanel" class="hidden md:hidden border-t border-[var(--line-2)] px-6 py-5 flex flex-col gap-4">
+  <div id="menuPanel" class="hidden md:hidden border-t-2 border-[var(--paper)] px-6 py-5 flex flex-col gap-4">
     <a href="index.html" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
     <a href="services.html" class="nav-link" data-en="Services" data-es="Servicios">Services</a>
     <a href="builds.html" class="nav-link" data-en="Builds" data-es="Builds">Builds</a>
@@ -93,42 +100,48 @@
   </div>
 </nav>
 
-<!-- HERO — racing performance -->
-<section class="relative pt-10 md:pt-14 pb-0 overflow-hidden">
-  <!-- Speed lines background -->
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden">
+  <!-- halftone dots background -->
+  <div class="absolute inset-0 pat-dots pointer-events-none opacity-70"></div>
+  <!-- diagonal racing stripes (right) -->
+  <div class="hidden md:block absolute top-0 right-0 w-1/3 h-full pat-stripes pointer-events-none opacity-60"></div>
+  <!-- speed lines -->
   <div class="speed-lines"><span></span><span></span><span></span></div>
 
-  <div class="relative z-10 max-w-[1500px] mx-auto px-6 md:px-10">
+  <div class="relative z-10 max-w-[1500px] mx-auto px-6 md:px-10 pt-12 md:pt-16 pb-20 md:pb-24">
 
-    <!-- Tag row -->
-    <div class="reveal flex flex-wrap items-center gap-3 mb-7">
-      <span class="callout"><span class="dot-orange"></span> EST · 2018 · WEST BABYLON</span>
-      <span class="callout callout-mag"><span class="dot-mag"></span> 5.0 ★ · 86 REVIEWS</span>
-      <span class="callout">★ BILINGUAL MECHANICS</span>
+    <!-- Top label row -->
+    <div class="reveal flex flex-wrap items-center gap-3 mb-8">
+      <span class="badge">EST · 2018</span>
+      <span class="callout"><span class="dot"></span> 5.0 ★ · 86 BUILDS</span>
+      <span class="callout callout-mag">★ BILINGUAL CREW</span>
     </div>
 
-    <!-- Massive title -->
-    <h1 class="heavy hero-title">
-      <span class="split-line"><span data-en="Built right." data-es="Bien construido.">Built right.</span></span>
-      <span class="split-line"><span data-en="Tuned right." data-es="Bien afinado.">Tuned right.</span></span>
-      <span class="split-line"><span class="grad-anim" data-en="Built fast." data-es="Hecho rápido.">Built fast.</span></span>
-    </h1>
+    <!-- MAIN POSTER GRID -->
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
-    <div class="schem-line my-10 max-w-2xl"></div>
+      <!-- LEFT: type stack -->
+      <div class="lg:col-span-7">
 
-    <!-- Hero spread -->
-    <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-start">
+        <!-- Massive italic title -->
+        <h1 class="hero-title display leading-[.86]">
+          <span class="split-line"><span data-en="BUILT" data-es="HECHO">BUILT</span></span>
+          <span class="split-line"><span class="display-italic" style="color:var(--red)" data-en="FAST." data-es="RÁPIDO.">FAST.</span></span>
+          <span class="split-line"><span data-en="TUNED" data-es="AFINADO">TUNED</span></span>
+          <span class="split-line"><span class="outline-text" data-en="RIGHT." data-es="BIEN.">RIGHT.</span></span>
+        </h1>
 
-      <!-- LEFT: copy + ctas -->
-      <div class="md:col-span-7 reveal-stagger">
-        <p class="max-w-xl text-[var(--paper-2)] text-base md:text-lg leading-relaxed mb-8 font-light"
-           data-en="West Babylon's full-spec mod shop. Coilovers, bodywork, paint, powder coat, rim repair, window tint, detail — every car spec-sheeted from intake to delivery, every step documented on Instagram."
-           data-es="El shop full-spec de modificación en West Babylon. Coilovers, carrocería, pintura, powder coat, rines, polarizado, detallado — cada auto con ficha técnica de entrada a entrega, cada paso documentado en Instagram.">
-          West Babylon's full-spec mod shop. Coilovers, bodywork, paint, powder coat, rim repair, window tint, detail — every car spec-sheeted from intake to delivery, every step documented on Instagram.
+        <div class="tick-strip my-10 max-w-2xl"></div>
+
+        <p class="max-w-xl text-[var(--paper-2)] text-base md:text-lg leading-relaxed mb-9 font-light"
+           data-en="A-Spec Auto Headquarters is West Babylon's full-spec performance shop. Coilovers, bodywork, paint, powder coat, rim repair, window tint, detail — every car spec-sheeted, every step documented."
+           data-es="A-Spec Auto Headquarters es el shop de performance de West Babylon. Coilovers, carrocería, pintura, powder coat, rines, polarizado, detallado — cada auto con ficha técnica, cada paso documentado.">
+          A-Spec Auto Headquarters is West Babylon's full-spec performance shop. Coilovers, bodywork, paint, powder coat, rim repair, window tint, detail — every car spec-sheeted, every step documented.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-3">
-          <a href="#" data-open-quote data-magnet class="btn btn-grad">
+          <a href="#" data-open-quote data-magnet class="btn btn-red">
             <span data-en="Request spec sheet" data-es="Pedir ficha técnica">Request spec sheet</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
@@ -136,184 +149,261 @@
         </div>
       </div>
 
-      <!-- RIGHT: Speedometer SVG animated -->
-      <div class="md:col-span-5 reveal flex items-center justify-center">
-        <div data-speedo="80" class="relative" style="width:min(380px,90%);">
-          <svg viewBox="0 0 300 300" class="w-full h-auto">
-            <defs>
-              <linearGradient id="arcG" x1="0%" y1="100%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#22c55e"/>
-                <stop offset="50%" stop-color="#ff5722"/>
-                <stop offset="100%" stop-color="#e91e63"/>
-              </linearGradient>
-              <radialGradient id="bgRg" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#1a1a1a"/>
-                <stop offset="100%" stop-color="#000"/>
-              </radialGradient>
-              <filter id="glow"><feGaussianBlur stdDeviation="2.5"/></filter>
-            </defs>
+      <!-- RIGHT: Sports car illustration -->
+      <div class="lg:col-span-5 relative">
 
-            <!-- background circle -->
-            <circle cx="150" cy="150" r="130" fill="url(#bgRg)" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
-            <circle cx="150" cy="150" r="118" fill="none" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+        <!-- Halftone dot accent behind car -->
+        <div class="absolute -top-6 -right-4 w-40 h-40 pat-dots-red pointer-events-none opacity-80"></div>
+        <!-- Caution stripe accent -->
+        <div class="hidden md:block absolute -bottom-2 -left-6 w-24 h-24 pointer-events-none opacity-30" style="background:repeating-linear-gradient(135deg,#e10600 0,#e10600 8px,#000 8px,#000 16px);clip-path:circle(50%);"></div>
 
-            <!-- Arc — 240deg sweep, from -210deg to +30deg -->
-            <path d="M 70 240 A 110 110 0 1 1 230 240" stroke="rgba(255,255,255,.06)" stroke-width="14" fill="none" stroke-linecap="round"/>
-            <path d="M 70 240 A 110 110 0 1 1 230 240" stroke="url(#arcG)" stroke-width="14" fill="none" stroke-linecap="round" stroke-dasharray="0 1000"  style="animation:arc-draw 1.6s cubic-bezier(.16,1,.3,1) forwards .2s;"/>
+        <!-- The car illustration -->
+        <svg viewBox="0 0 600 380" class="w-full h-auto relative z-10">
+          <!-- Outer rectangle / poster frame -->
+          <rect x="2" y="2" width="596" height="376" fill="none" stroke="#fff" stroke-width="2"/>
 
-            <!-- Tick marks -->
-            <g stroke="rgba(255,255,255,.45)" stroke-width="1.5">
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(-120 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(-90 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(-60 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(-30 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(0 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(30 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(60 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(90 150 150)"/>
-              <line x1="150" y1="42" x2="150" y2="52" transform="rotate(120 150 150)"/>
+          <!-- Mini ticks frame -->
+          <g stroke="#fff" stroke-width="1.5">
+            <line x1="2" y1="20" x2="14" y2="20"/>
+            <line x1="586" y1="20" x2="598" y2="20"/>
+            <line x1="2" y1="360" x2="14" y2="360"/>
+            <line x1="586" y1="360" x2="598" y2="360"/>
+            <line x1="20" y1="2" x2="20" y2="14"/>
+            <line x1="580" y1="2" x2="580" y2="14"/>
+            <line x1="20" y1="366" x2="20" y2="378"/>
+            <line x1="580" y1="366" x2="580" y2="378"/>
+          </g>
+
+          <!-- Corner labels -->
+          <text x="22" y="32" font-family="JetBrains Mono" font-size="9" fill="#e10600" letter-spacing="2" font-weight="700">A-SPEC / 01</text>
+          <text x="578" y="32" font-family="JetBrains Mono" font-size="9" fill="#e10600" text-anchor="end" letter-spacing="2" font-weight="700">PLATE №087</text>
+          <text x="22" y="370" font-family="JetBrains Mono" font-size="9" fill="#fff" letter-spacing="2" font-weight="700">SCALE 1:1</text>
+          <text x="578" y="370" font-family="JetBrains Mono" font-size="9" fill="#fff" text-anchor="end" letter-spacing="2" font-weight="700">★ NY ★ WB ★</text>
+
+          <!-- Decorative grid in background -->
+          <g stroke="rgba(255,255,255,.06)" stroke-width="1">
+            <line x1="100" y1="40" x2="100" y2="340"/>
+            <line x1="200" y1="40" x2="200" y2="340"/>
+            <line x1="300" y1="40" x2="300" y2="340"/>
+            <line x1="400" y1="40" x2="400" y2="340"/>
+            <line x1="500" y1="40" x2="500" y2="340"/>
+            <line x1="40" y1="100" x2="560" y2="100"/>
+            <line x1="40" y1="200" x2="560" y2="200"/>
+            <line x1="40" y1="280" x2="560" y2="280"/>
+          </g>
+
+          <!-- Red ground stripe -->
+          <rect x="40" y="295" width="520" height="3" fill="#e10600"/>
+          <!-- Dashed ground -->
+          <line x1="40" y1="305" x2="560" y2="305" stroke="#fff" stroke-width="1" stroke-dasharray="8 8" opacity=".4"/>
+
+          <!-- Sports car silhouette (monoline drawn) -->
+          <g fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Body main outline -->
+            <path class="draw-path" d="M 85 290 L 95 275 L 115 270 Q 130 245 165 240 L 215 220 L 280 215 L 360 220 L 420 245 L 470 252 Q 510 258 525 270 L 535 290"/>
+            <!-- Roof -->
+            <path class="draw-path" d="M 195 220 Q 235 175 295 165 Q 360 162 410 175 Q 445 195 440 220"/>
+            <!-- Window line -->
+            <path class="draw-path" d="M 210 225 Q 245 195 290 188 Q 350 188 395 200 Q 420 215 415 225" stroke-width="1.5" opacity=".7"/>
+            <!-- Bottom skirt -->
+            <path class="draw-path" d="M 85 290 L 535 290" stroke-width="2"/>
+            <!-- Hood crease line -->
+            <path class="draw-path" d="M 425 248 L 470 252" stroke-width="1.5" opacity=".7"/>
+            <!-- Front splitter -->
+            <path class="draw-path" d="M 480 285 L 535 290 L 535 295 L 480 295" stroke-width="1.5"/>
+            <!-- Door cut -->
+            <path class="draw-path" d="M 260 220 L 270 290" stroke-width="1.2" opacity=".6"/>
+            <path class="draw-path" d="M 360 220 L 370 290" stroke-width="1.2" opacity=".6"/>
+            <!-- Front headlight -->
+            <path class="draw-path" d="M 495 258 L 525 263" stroke="#e10600" stroke-width="2.5"/>
+            <!-- Side mirror -->
+            <path class="draw-path" d="M 410 200 L 425 195 L 425 207" stroke-width="1.5"/>
+          </g>
+
+          <!-- Wheels — front (right) -->
+          <g transform="translate(465 295)">
+            <!-- Tire -->
+            <circle r="36" fill="#000" stroke="#fff" stroke-width="2.5"/>
+            <!-- Rim -->
+            <g class="wheel-spin">
+              <circle r="26" fill="none" stroke="#fff" stroke-width="1.5" opacity=".5"/>
+              <circle r="6" fill="#e10600"/>
+              <!-- 6 spokes -->
+              <g stroke="#fff" stroke-width="2" stroke-linecap="round">
+                <line x1="0" y1="-26" x2="0" y2="-8"/>
+                <line x1="22.5" y1="-13" x2="6.9" y2="-4"/>
+                <line x1="22.5" y1="13" x2="6.9" y2="4"/>
+                <line x1="0" y1="26" x2="0" y2="8"/>
+                <line x1="-22.5" y1="13" x2="-6.9" y2="4"/>
+                <line x1="-22.5" y1="-13" x2="-6.9" y2="-4"/>
+              </g>
             </g>
+          </g>
 
-            <!-- Tick labels -->
-            <g font-family="JetBrains Mono" font-size="11" fill="rgba(255,255,255,.55)" font-weight="600" text-anchor="middle">
-              <text x="55" y="208">0</text>
-              <text x="48" y="125">2</text>
-              <text x="100" y="58">4</text>
-              <text x="200" y="58">6</text>
-              <text x="252" y="125">8</text>
-              <text x="245" y="208" fill="#ff5722">10</text>
+          <!-- Wheels — rear (left) -->
+          <g transform="translate(145 295)">
+            <circle r="36" fill="#000" stroke="#fff" stroke-width="2.5"/>
+            <g class="wheel-spin">
+              <circle r="26" fill="none" stroke="#fff" stroke-width="1.5" opacity=".5"/>
+              <circle r="6" fill="#e10600"/>
+              <g stroke="#fff" stroke-width="2" stroke-linecap="round">
+                <line x1="0" y1="-26" x2="0" y2="-8"/>
+                <line x1="22.5" y1="-13" x2="6.9" y2="-4"/>
+                <line x1="22.5" y1="13" x2="6.9" y2="4"/>
+                <line x1="0" y1="26" x2="0" y2="8"/>
+                <line x1="-22.5" y1="13" x2="-6.9" y2="4"/>
+                <line x1="-22.5" y1="-13" x2="-6.9" y2="-4"/>
+              </g>
             </g>
+          </g>
 
-            <!-- Needle -->
-            <g class="speedo-needle" style="transform:rotate(-120deg);transform-origin:50% 50%;filter:drop-shadow(0 0 8px rgba(255,87,34,.6))">
-              <path d="M 150 150 L 148 50 L 152 50 Z" fill="#ff5722"/>
-              <circle cx="150" cy="150" r="12" fill="#000" stroke="#ff5722" stroke-width="2"/>
-              <circle cx="150" cy="150" r="4" fill="#ff5722"/>
-            </g>
+          <!-- Dimension callouts -->
+          <!-- top: length -->
+          <g stroke="#e10600" stroke-width="1" fill="none">
+            <line x1="85" y1="135" x2="85" y2="155"/>
+            <line x1="535" y1="135" x2="535" y2="155"/>
+            <line x1="85" y1="145" x2="280" y2="145" stroke-dasharray="3 4"/>
+            <line x1="320" y1="145" x2="535" y2="145" stroke-dasharray="3 4"/>
+          </g>
+          <rect x="280" y="138" width="40" height="14" fill="#e10600"/>
+          <text x="300" y="148" font-family="JetBrains Mono" font-size="9" fill="#fff" font-weight="700" text-anchor="middle">LWB</text>
 
-            <!-- Center readout -->
-            <text x="150" y="195" text-anchor="middle" font-family="Anton, sans-serif" font-size="46" fill="#fff" letter-spacing="-1"><tspan data-count="86">0</tspan></text>
-            <text x="150" y="225" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="rgba(255,255,255,.55)" letter-spacing="3">BUILDS</text>
-            <text x="150" y="248" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#e91e63" letter-spacing="3">★ DOCUMENTED ★</text>
-          </svg>
-          <style>@keyframes arc-draw{from{stroke-dasharray:0 1000}to{stroke-dasharray:520 1000}}</style>
-        </div>
+          <!-- Lower-left dim -->
+          <g stroke="#fff" stroke-width="1" fill="none" opacity=".6">
+            <line x1="45" y1="340" x2="60" y2="340"/>
+            <line x1="50" y1="100" x2="50" y2="200"/>
+            <line x1="42" y1="100" x2="58" y2="100"/>
+            <line x1="42" y1="200" x2="58" y2="200"/>
+          </g>
+          <text x="50" y="155" font-family="JetBrains Mono" font-size="8" fill="#fff" text-anchor="middle" font-weight="600" transform="rotate(-90 50 155)">H ▸ STANCE</text>
+
+          <!-- Build N° banner -->
+          <g transform="translate(300 50)">
+            <rect x="-80" y="-15" width="160" height="30" fill="#e10600"/>
+            <text x="0" y="6" font-family="Anton" font-size="22" fill="#fff" text-anchor="middle" letter-spacing="2">PLATE №087</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- KPI dash row -->
+    <div class="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 reveal-stagger border-y-2 border-[var(--paper)]">
+      <div class="px-4 py-5 border-r-2 border-[var(--paper)]">
+        <div class="label">★ TOTAL BUILDS</div>
+        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="86">0</span><span class="text-red">+</span></div>
+      </div>
+      <div class="px-4 py-5 md:border-r-2 border-[var(--paper)]">
+        <div class="label">★ SERVICES</div>
+        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="14">0</span></div>
+      </div>
+      <div class="px-4 py-5 border-r-2 border-[var(--paper)] border-t-2 md:border-t-0">
+        <div class="label">★ YEARS</div>
+        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="7">0</span><span class="text-red">y</span></div>
+      </div>
+      <div class="px-4 py-5 border-t-2 md:border-t-0">
+        <div class="label">★ RATING</div>
+        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="5" data-decimals="1">0</span><span class="text-red">★</span></div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Data dash strip (sticky-ish data) -->
-  <div class="data-dash reveal-stagger mt-16 md:mt-24 max-w-[1500px] mx-auto">
-    <div>
-      <div class="label" data-en="Total builds" data-es="Total builds">Total builds</div>
-      <div class="dyno text-4xl md:text-5xl mt-1"><span data-count="86">0</span><span class="grad-text">+</span></div>
-    </div>
-    <div>
-      <div class="label" data-en="Services" data-es="Servicios">Services</div>
-      <div class="dyno text-4xl md:text-5xl mt-1"><span data-count="14">0</span></div>
-    </div>
-    <div>
-      <div class="label" data-en="Years on Mahan" data-es="Años en Mahan">Years on Mahan</div>
-      <div class="dyno text-4xl md:text-5xl mt-1"><span data-count="7">0</span><span class="grad-text">y</span></div>
-    </div>
-    <div>
-      <div class="label" data-en="Rating" data-es="Rating">Rating</div>
-      <div class="dyno text-4xl md:text-5xl mt-1"><span data-count="5" data-decimals="1">0</span><span class="text-orange">★</span></div>
-    </div>
+<!-- ============ CHECKER FLAG STRIP ============ -->
+<div class="flag-strip"></div>
+
+<!-- ============ MARQUEE ============ -->
+<section class="py-5 overflow-hidden border-b-2 border-[var(--paper)] bg-black relative z-10">
+  <div class="marquee gap-10 mono text-[.78rem] tracking-[.28em] uppercase whitespace-nowrap font-extrabold">
+    <span class="text-red">▸ COILOVERS</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ SUSPENSION</span><span class="text-red">★</span>
+    <span class="text-red">▸ BODYWORK</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ POWDER COAT</span><span class="text-red">★</span>
+    <span class="text-red">▸ RIM REPAIR</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ WINDOW TINT</span><span class="text-red">★</span>
+    <span class="text-red">▸ DETAIL · CERAMIC</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ MECHANICAL</span><span class="text-red">★</span>
+    <span class="text-red">▸ CUSTOM BUILDS</span><span class="text-paper">★</span>
+    <span class="text-red">▸ COILOVERS</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ SUSPENSION</span><span class="text-red">★</span>
+    <span class="text-red">▸ BODYWORK</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ POWDER COAT</span><span class="text-red">★</span>
+    <span class="text-red">▸ RIM REPAIR</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ WINDOW TINT</span><span class="text-red">★</span>
+    <span class="text-red">▸ DETAIL · CERAMIC</span><span class="text-paper">★</span>
+    <span class="text-paper">▸ MECHANICAL</span><span class="text-red">★</span>
+    <span class="text-red">▸ CUSTOM BUILDS</span><span class="text-paper">★</span>
   </div>
 </section>
 
-<!-- Marquee -->
-<section class="py-5 overflow-hidden border-y border-[var(--line-2)] bg-[var(--bg-1)] relative z-10">
-  <div class="marquee gap-10 mono text-[.74rem] tracking-[.28em] uppercase whitespace-nowrap font-bold">
-    <span class="text-orange">▸ COILOVERS</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ SUSPENSION</span><span class="text-magenta">▸</span>
-    <span class="text-orange">▸ BODYWORK</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ POWDER COAT</span><span class="text-magenta">▸</span>
-    <span class="text-orange">▸ RIM REPAIR</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ WINDOW TINT</span><span class="text-magenta">▸</span>
-    <span class="text-orange">▸ DETAIL · CERAMIC</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ MECHANICAL</span><span class="text-magenta">▸</span>
-    <span class="grad-text">▸ CUSTOM BUILDS</span><span class="text-magenta">▸</span>
-    <span class="text-orange">▸ COILOVERS</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ SUSPENSION</span><span class="text-magenta">▸</span>
-    <span class="text-orange">▸ BODYWORK</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ POWDER COAT</span><span class="text-magenta">▸</span>
-    <span class="text-orange">▸ RIM REPAIR</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ WINDOW TINT</span><span class="text-magenta">▸</span>
-    <span class="text-orange">▸ DETAIL · CERAMIC</span><span class="text-magenta">▸</span>
-    <span class="text-[var(--paper)]">▸ MECHANICAL</span><span class="text-magenta">▸</span>
-    <span class="grad-text">▸ CUSTOM BUILDS</span><span class="text-magenta">▸</span>
-  </div>
-</section>
-
-<!-- SERVICES editorial -->
+<!-- ============ SERVICES ============ -->
 <section class="py-20 md:py-28 relative z-10">
   <div class="max-w-[1500px] mx-auto px-6 md:px-10">
     <div class="section-head reveal">
       <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow grad">DRAWING N° 02 · SERVICES</span></div>
-        <h2 class="heavy text-5xl md:text-7xl mt-4 leading-[.9]" data-en-html="Every spec.<br><span class='grad-text'>Documented.</span>" data-es-html="Cada spec.<br><span class='grad-text'>Documentado.</span>">
-          Every spec.<br><span class="grad-text">Documented.</span>
+        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №02 · SERVICES</span></div>
+        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
+          <span data-en="EVERY" data-es="CADA">EVERY</span>
+          <span class="display-italic text-red" data-en="SPEC." data-es="SPEC.">SPEC.</span><br>
+          <span class="outline-text" data-en="DOCUMENTED." data-es="DOCUMENTADO.">DOCUMENTED.</span>
         </h2>
       </div>
-      <a href="services.html" class="hidden md:inline-flex tech text-[.7rem] uppercase tracking-[.22em] u-anim" style="color:var(--paper)">View full catalog ▸</a>
+      <a href="services.html" class="hidden md:inline-flex tech text-[.7rem] uppercase tracking-[.22em] u-anim font-bold">View full catalog ▸</a>
     </div>
 
     <div class="reveal-stagger">
       <a href="services.html#mechanical" class="svc-row">
         <div class="num">01.MECH</div>
         <div>
-          <div class="display text-2xl md:text-3xl">Mechanical · General Repair</div>
-          <p class="tech text-xs mt-1 text-[var(--paper-3)]" data-en="Brakes, suspension, alignment, diagnostics. OEM-grade parts." data-es="Frenos, suspensión, alineación, diagnóstico. Partes OEM.">Brakes, suspension, alignment, diagnostics. OEM-grade parts.</p>
+          <div class="display text-3xl md:text-4xl">Mechanical · General Repair</div>
+          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Brakes, suspension, alignment, diagnostics. OEM-grade parts." data-es="Frenos, suspensión, alineación, diagnóstico. Partes OEM.">Brakes, suspension, alignment, diagnostics. OEM-grade parts.</p>
         </div>
         <div class="arrow">▸ READ</div>
       </a>
       <a href="services.html#suspension" class="svc-row">
         <div class="num">02.SUSP</div>
         <div>
-          <div class="display text-2xl md:text-3xl">Suspension · Coilover Install</div>
-          <p class="tech text-xs mt-1 text-[var(--paper-3)]" data-en="BC, KW, Bilstein, Tein. Corner-weight balancing, ride-height set." data-es="BC, KW, Bilstein, Tein. Balanceo por esquina, altura de manejo.">BC, KW, Bilstein, Tein. Corner-weight balancing, ride-height set.</p>
+          <div class="display text-3xl md:text-4xl">Suspension · Coilover Install</div>
+          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="BC, KW, Bilstein, Tein. Corner-weight balancing, ride-height set." data-es="BC, KW, Bilstein, Tein. Balanceo por esquina, altura de manejo.">BC, KW, Bilstein, Tein. Corner-weight balancing, ride-height set.</p>
         </div>
         <div class="arrow">▸ READ</div>
       </a>
       <a href="services.html#bodywork" class="svc-row">
         <div class="num">03.BODY</div>
         <div>
-          <div class="display text-2xl md:text-3xl">Bodywork · Paint</div>
-          <p class="tech text-xs mt-1 text-[var(--paper-3)]" data-en="Panel beating, dent removal, blending, full repaints, ceramic seal." data-es="Reparación de paneles, abolladuras, mezclado, repintado, sello cerámico.">Panel beating, dent removal, blending, full repaints, ceramic seal.</p>
+          <div class="display text-3xl md:text-4xl">Bodywork · Paint</div>
+          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Panel beating, dent removal, blending, full repaints, ceramic seal." data-es="Reparación de paneles, abolladuras, mezclado, repintado, sello cerámico.">Panel beating, dent removal, blending, full repaints, ceramic seal.</p>
         </div>
         <div class="arrow">▸ READ</div>
       </a>
       <a href="services.html#powder" class="svc-row">
         <div class="num">04.POWD</div>
         <div>
-          <div class="display text-2xl md:text-3xl">Powder Coating</div>
-          <p class="tech text-xs mt-1 text-[var(--paper-3)]" data-en="Wheels, brake calipers, suspension components. 200+ color options." data-es="Rines, calipers, componentes de suspensión. 200+ colores.">Wheels, brake calipers, suspension components. 200+ color options.</p>
+          <div class="display text-3xl md:text-4xl">Powder Coating</div>
+          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Wheels, brake calipers, suspension components. 200+ color options." data-es="Rines, calipers, componentes de suspensión. 200+ colores.">Wheels, brake calipers, suspension components. 200+ color options.</p>
         </div>
         <div class="arrow">▸ READ</div>
       </a>
       <a href="services.html#rim" class="svc-row">
         <div class="num">05.RIM</div>
         <div>
-          <div class="display text-2xl md:text-3xl">Rim Repair · Refinish</div>
-          <p class="tech text-xs mt-1 text-[var(--paper-3)]" data-en="Curb rash, structural, color change. CNC re-machining available." data-es="Raspaduras, estructural, cambio de color. Re-mecanizado CNC disponible.">Curb rash, structural, color change. CNC re-machining available.</p>
+          <div class="display text-3xl md:text-4xl">Rim Repair · Refinish</div>
+          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Curb rash, structural, color change. CNC re-machining available." data-es="Raspaduras, estructural, cambio de color. Re-mecanizado CNC disponible.">Curb rash, structural, color change. CNC re-machining available.</p>
         </div>
         <div class="arrow">▸ READ</div>
       </a>
       <a href="services.html#tint" class="svc-row">
         <div class="num">06.TINT</div>
         <div>
-          <div class="display text-2xl md:text-3xl">Window Tint</div>
-          <p class="tech text-xs mt-1 text-[var(--paper-3)]" data-en="Ceramic 3M & Suntek. NY-legal VLT options. Lifetime warranty." data-es="Cerámico 3M y Suntek. Tonos legales en NY. Garantía de por vida.">Ceramic 3M & Suntek. NY-legal VLT options. Lifetime warranty.</p>
+          <div class="display text-3xl md:text-4xl">Window Tint</div>
+          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Ceramic 3M & Suntek. NY-legal VLT options. Lifetime warranty." data-es="Cerámico 3M y Suntek. Tonos legales en NY. Garantía de por vida.">Ceramic 3M & Suntek. NY-legal VLT options. Lifetime warranty.</p>
         </div>
         <div class="arrow">▸ READ</div>
       </a>
       <a href="services.html#detail" class="svc-row">
         <div class="num">07.DTAL</div>
         <div>
-          <div class="display text-2xl md:text-3xl">Detailing · Paint Correction</div>
-          <p class="tech text-xs mt-1 text-[var(--paper-3)]" data-en="Multi-stage correction, ceramic coating, leather restoration." data-es="Corrección multi-etapa, cerámico, restauración de cuero.">Multi-stage correction, ceramic coating, leather restoration.</p>
+          <div class="display text-3xl md:text-4xl">Detailing · Paint Correction</div>
+          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Multi-stage correction, ceramic coating, leather restoration." data-es="Corrección multi-etapa, cerámico, restauración de cuero.">Multi-stage correction, ceramic coating, leather restoration.</p>
         </div>
         <div class="arrow">▸ READ</div>
       </a>
@@ -321,251 +411,330 @@
   </div>
 </section>
 
-<!-- FEATURED BUILD — case study with photo -->
-<section class="py-20 md:py-28 bg-[var(--bg-1)] relative z-10 border-y border-[var(--line-2)]">
+<!-- ============ FEATURED BUILD ============ -->
+<section class="py-20 md:py-28 relative z-10 bg-[#0a0a0a] border-y-2 border-[var(--paper)]">
   <div class="max-w-[1500px] mx-auto px-6 md:px-10">
     <div class="section-head reveal">
       <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow grad">DRAWING N° 03 · FEATURED BUILD</span></div>
-        <h2 class="heavy text-5xl md:text-7xl mt-4 leading-[.9]" data-en-html="Build N° <span class='grad-text'>087</span>.<br>Tacoma · TRD Lift." data-es-html="Build N° <span class='grad-text'>087</span>.<br>Tacoma · TRD Lift.">
-          Build N° <span class="grad-text">087</span>.<br>Tacoma · TRD Lift.
+        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №03 · FEATURED BUILD</span></div>
+        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
+          <span class="outline-text">PLATE</span> <span class="text-red">№087</span><br>
+          <span data-en="TACOMA" data-es="TACOMA">TACOMA</span> <span class="display-italic" data-en="· TRD LIFT." data-es="· TRD LIFT.">· TRD LIFT.</span>
         </h2>
       </div>
-      <a href="builds.html" class="hidden md:inline-flex tech text-[.7rem] uppercase tracking-[.22em] u-anim" style="color:var(--paper)">All builds ▸</a>
+      <a href="builds.html" class="hidden md:inline-flex tech text-[.7rem] uppercase tracking-[.22em] u-anim font-bold">All builds ▸</a>
     </div>
 
     <div class="grid md:grid-cols-12 gap-8 md:gap-12 reveal">
-      <div class="md:col-span-7 relative overflow-hidden">
+      <div class="md:col-span-7 relative overflow-hidden border-2 border-[var(--paper)]">
         <div class="clip-reveal">
-          <img src="https://images.unsplash.com/photo-1547038577-da80abbc4f19?auto=format&fit=crop&w=1600&q=85" alt="Lifted Toyota Tacoma TRD" class="w-full aspect-[4/3] object-cover" style="filter:contrast(1.1) saturate(.95);"/>
+          <img src="https://images.unsplash.com/photo-1547038577-da80abbc4f19?auto=format&fit=crop&w=1600&q=85" alt="Lifted Toyota Tacoma TRD" class="w-full aspect-[4/3] object-cover" style="filter:contrast(1.15) saturate(.85) brightness(.85) grayscale(.2);"/>
         </div>
-        <div class="absolute -top-3 -right-3 callout"><span class="dot-orange"></span> BUILD N° 087</div>
-        <div class="absolute -bottom-3 left-4 callout callout-mag"><span class="dot-mag"></span> REV.A · COMPLETE</div>
+        <div class="absolute top-3 right-3 badge">★ PLATE №087</div>
+        <div class="absolute bottom-3 left-3 stamp stamp-solid">REV.A · COMPLETE</div>
       </div>
+
       <div class="md:col-span-5 space-y-5">
-        <div class="card p-6">
-          <div class="eyebrow grad mb-4">SPEC · MODIFICATIONS</div>
+        <div class="card-poster p-7 relative">
+          <!-- corner stripe -->
+          <div class="absolute top-0 right-0 w-12 h-12 pat-caution"></div>
+          <div class="eyebrow mb-5">★ SPEC · MODIFICATIONS</div>
           <div class="space-y-3">
-            <div class="spec"><span class="k">Lift</span><span class="v ml-auto">3" Bilstein 5100</span></div>
-            <div class="spec"><span class="k">Wheels</span><span class="v ml-auto">17×9 Method MR701</span></div>
-            <div class="spec"><span class="k">Tires</span><span class="v ml-auto">285/70R17 BFG K02</span></div>
-            <div class="spec"><span class="k">Bumper</span><span class="v ml-auto">Custom steel front</span></div>
-            <div class="spec"><span class="k">Lights</span><span class="v ml-auto">LED bar + ditch pods</span></div>
-            <div class="spec"><span class="k">Coat</span><span class="v ml-auto">Powder · matte black</span></div>
+            <div class="spec"><span class="k">LIFT</span><span class="v ml-auto">3" Bilstein 5100</span></div>
+            <div class="spec"><span class="k">WHEELS</span><span class="v ml-auto">17×9 Method MR701</span></div>
+            <div class="spec"><span class="k">TIRES</span><span class="v ml-auto">285/70R17 BFG K02</span></div>
+            <div class="spec"><span class="k">BUMPER</span><span class="v ml-auto">Custom steel front</span></div>
+            <div class="spec"><span class="k">LIGHTS</span><span class="v ml-auto">LED bar + ditch pods</span></div>
+            <div class="spec"><span class="k">COAT</span><span class="v ml-auto">Powder · matte black</span></div>
           </div>
-          <div class="schem-line my-5"></div>
+          <div class="schem-line-red my-5"></div>
           <div class="grid grid-cols-2 gap-3">
             <div>
-              <div class="dyno dyno-orange text-4xl"><span data-count="11">0</span>d</div>
-              <div class="label mt-1" data-en="Build time" data-es="Tiempo">Build time</div>
+              <div class="label">★ BUILD TIME</div>
+              <div class="dyno dyno-red text-5xl mt-1"><span data-count="11">0</span>d</div>
             </div>
             <div>
-              <div class="dyno dyno-mag text-4xl">$<span data-count="7.4" data-decimals="1">0</span>k</div>
-              <div class="label mt-1" data-en="Investment" data-es="Inversión">Investment</div>
+              <div class="label">★ INVESTMENT</div>
+              <div class="dyno text-5xl mt-1">$<span data-count="7.4" data-decimals="1">0</span>k</div>
             </div>
           </div>
         </div>
 
         <a href="builds.html" data-magnet class="btn btn-line w-full">
           <span data-en="Open build log" data-es="Ver bitácora">Open build log</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS — 4 step -->
-<section class="py-20 md:py-28 relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+<!-- ============ PROCESS — illustrated 4 steps ============ -->
+<section class="py-20 md:py-28 relative z-10 overflow-hidden">
+  <!-- background pattern -->
+  <div class="absolute inset-0 pat-grid pointer-events-none opacity-60"></div>
+
+  <div class="relative max-w-[1500px] mx-auto px-6 md:px-10">
     <div class="section-head reveal">
       <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow grad">DRAWING N° 04 · METHODOLOGY</span></div>
-        <h2 class="heavy text-5xl md:text-7xl mt-4 leading-[.9]" data-en-html="From intake to <span class='grad-text'>delivery.</span>" data-es-html="De entrada a <span class='grad-text'>entrega.</span>">
-          From intake to <span class="grad-text">delivery.</span>
+        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №04 · METHODOLOGY</span></div>
+        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
+          <span data-en="FROM INTAKE" data-es="DE ENTRADA">FROM INTAKE</span><br>
+          <span class="display-italic text-red" data-en="TO DELIVERY." data-es="A ENTREGA.">TO DELIVERY.</span>
         </h2>
       </div>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 reveal-stagger">
-      <div class="card p-6">
-        <div class="flex items-baseline justify-between mb-5">
-          <div class="dyno dyno-grad text-6xl">01</div>
-          <div class="tech text-[.62rem] tracking-[.22em] uppercase text-magenta">DIAG</div>
+
+      <!-- 01 — diagnose -->
+      <div class="card-poster p-6 relative">
+        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-7xl text-red">01</div>
+          <span class="label">DIAG</span>
         </div>
-        <h3 class="display text-xl mb-3" data-en="Intake & Diagnosis" data-es="Entrada y Diagnóstico">Intake & Diagnosis</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="OBD scan, road test, lift inspection. Spec sheet drafted before any work starts." data-es="Escaneo OBD, prueba en ruta, inspección en elevador. Ficha técnica antes de empezar.">OBD scan, road test, lift inspection. Spec sheet drafted before any work starts.</p>
+        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round">
+          <circle cx="30" cy="30" r="22"/>
+          <path d="M30 30 L30 12" stroke="#e10600" stroke-width="2.2"/>
+          <circle cx="30" cy="30" r="2.5" fill="#e10600" stroke="none"/>
+          <text x="14" y="50" font-family="JetBrains Mono" font-size="6" fill="#fff">0</text>
+          <text x="42" y="50" font-family="JetBrains Mono" font-size="6" fill="#e10600">10</text>
+        </svg>
+        <h3 class="display text-2xl mb-2" data-en="Intake · Diagnosis" data-es="Entrada · Diagnóstico">Intake · Diagnosis</h3>
+        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="OBD scan, road test, lift inspection. Spec sheet drafted before any work starts." data-es="Escaneo OBD, prueba en ruta, inspección. Ficha técnica antes de empezar.">OBD scan, road test, lift inspection. Spec sheet drafted before any work starts.</p>
       </div>
-      <div class="card p-6">
-        <div class="flex items-baseline justify-between mb-5">
-          <div class="dyno dyno-grad text-6xl">02</div>
-          <div class="tech text-[.62rem] tracking-[.22em] uppercase text-magenta">QUOTE</div>
+
+      <!-- 02 — quote -->
+      <div class="card-poster p-6 relative">
+        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-7xl text-red">02</div>
+          <span class="label">QUOTE</span>
         </div>
-        <h3 class="display text-xl mb-3" data-en="Quote · Approval" data-es="Cotización · Aprobación">Quote · Approval</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="Itemized estimate, parts sourced from your tier (OEM/aftermarket/race). You approve before we cut a hose." data-es="Cotización por línea, partes según nivel (OEM/aftermarket/race). Tú apruebas antes de cortar una manguera.">Itemized estimate, parts sourced from your tier (OEM/aftermarket/race). You approve before we cut a hose.</p>
+        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round">
+          <rect x="14" y="10" width="32" height="44" stroke="#fff"/>
+          <line x1="20" y1="22" x2="40" y2="22"/>
+          <line x1="20" y1="30" x2="40" y2="30"/>
+          <line x1="20" y1="38" x2="32" y2="38"/>
+          <line x1="20" y1="46" x2="36" y2="46" stroke="#e10600" stroke-width="2.2"/>
+        </svg>
+        <h3 class="display text-2xl mb-2" data-en="Quote · Approval" data-es="Cotización · Aprobación">Quote · Approval</h3>
+        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="Itemized estimate, parts sourced from your tier. You approve before we cut a hose." data-es="Cotización por línea, partes según nivel. Apruebas antes de cortar una manguera.">Itemized estimate, parts sourced from your tier. You approve before we cut a hose.</p>
       </div>
-      <div class="card p-6">
-        <div class="flex items-baseline justify-between mb-5">
-          <div class="dyno dyno-grad text-6xl">03</div>
-          <div class="tech text-[.62rem] tracking-[.22em] uppercase text-magenta">BUILD</div>
+
+      <!-- 03 — build (wheel) -->
+      <div class="card-poster p-6 relative">
+        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-7xl text-red">03</div>
+          <span class="label">BUILD</span>
         </div>
-        <h3 class="display text-xl mb-3" data-en="Build · Document" data-es="Build · Documentación">Build · Document</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="Daily photos on Instagram, torque specs noted, surprises called in. No silent supplements." data-es="Fotos diarias en Instagram, torques anotados, sorpresas se llaman. Sin suplementos en silencio.">Daily photos on Instagram, torque specs noted, surprises called in. No silent supplements.</p>
+        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3">
+          <circle cx="30" cy="30" r="22" fill="none" stroke="#fff" stroke-width="1.8"/>
+          <g class="wheel-spin" style="transform-origin:30px 30px">
+            <circle cx="30" cy="30" r="16" fill="none" stroke="#fff" stroke-width="1.2" opacity=".6"/>
+            <circle cx="30" cy="30" r="4" fill="#e10600"/>
+            <g stroke="#fff" stroke-width="1.6" stroke-linecap="round">
+              <line x1="30" y1="14" x2="30" y2="22"/>
+              <line x1="44" y1="22" x2="36.5" y2="26.5"/>
+              <line x1="44" y1="38" x2="36.5" y2="33.5"/>
+              <line x1="30" y1="46" x2="30" y2="38"/>
+              <line x1="16" y1="38" x2="23.5" y2="33.5"/>
+              <line x1="16" y1="22" x2="23.5" y2="26.5"/>
+            </g>
+          </g>
+        </svg>
+        <h3 class="display text-2xl mb-2" data-en="Build · Document" data-es="Build · Documentación">Build · Document</h3>
+        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="Daily photos on Instagram, torque specs noted. No silent supplements." data-es="Fotos diarias en Instagram, torques anotados. Sin suplementos en silencio.">Daily photos on Instagram, torque specs noted. No silent supplements.</p>
       </div>
-      <div class="card p-6">
-        <div class="flex items-baseline justify-between mb-5">
-          <div class="dyno dyno-grad text-6xl">04</div>
-          <div class="tech text-[.62rem] tracking-[.22em] uppercase text-magenta">TEST</div>
+
+      <!-- 04 — test (flag) -->
+      <div class="card-poster p-6 relative">
+        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-7xl text-red">04</div>
+          <span class="label">TEST</span>
         </div>
-        <h3 class="display text-xl mb-3" data-en="Test · Deliver" data-es="Prueba · Entrega">Test · Deliver</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="50 mi shakedown drive. Alignment double-check. Detail before pickup. Spec sheet emailed to you." data-es="50 millas de prueba. Alineación verificada. Detallado antes de la entrega. Ficha técnica al email.">50 mi shakedown drive. Alignment double-check. Detail before pickup. Spec sheet emailed to you.</p>
+        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3" fill="none" stroke="#fff" stroke-width="1.8">
+          <line x1="14" y1="8" x2="14" y2="52" stroke-width="2.5"/>
+          <g fill="#fff">
+            <rect x="16" y="10" width="6" height="6"/>
+            <rect x="28" y="10" width="6" height="6"/>
+            <rect x="40" y="10" width="6" height="6"/>
+            <rect x="22" y="16" width="6" height="6"/>
+            <rect x="34" y="16" width="6" height="6"/>
+            <rect x="16" y="22" width="6" height="6"/>
+            <rect x="28" y="22" width="6" height="6"/>
+            <rect x="40" y="22" width="6" height="6"/>
+            <rect x="22" y="28" width="6" height="6"/>
+            <rect x="34" y="28" width="6" height="6"/>
+          </g>
+        </svg>
+        <h3 class="display text-2xl mb-2" data-en="Test · Deliver" data-es="Prueba · Entrega">Test · Deliver</h3>
+        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="50 mi shakedown drive. Alignment double-check. Detail before pickup." data-es="50 millas de prueba. Alineación verificada. Detallado antes de la entrega.">50 mi shakedown drive. Alignment double-check. Detail before pickup.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- REVIEWS -->
-<section class="py-20 md:py-28 bg-[var(--bg-1)] relative z-10 border-t border-[var(--line-2)]">
+<!-- ============ REVIEWS ============ -->
+<section class="py-20 md:py-28 relative z-10 bg-[#0a0a0a] border-y-2 border-[var(--paper)]">
   <div class="max-w-[1500px] mx-auto px-6 md:px-10">
     <div class="section-head reveal">
       <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow grad">DRAWING N° 05 · OUTPUT LOG</span></div>
-        <h2 class="heavy text-5xl md:text-7xl mt-4 leading-[.9]" data-en-html="Customer log.<br><span class='grad-text'>5.0 ★ verified.</span>" data-es-html="Clientes.<br><span class='grad-text'>5.0 ★ verificado.</span>">
-          Customer log.<br><span class="grad-text">5.0 ★ verified.</span>
+        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №05 · CUSTOMER LOG</span></div>
+        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
+          <span data-en="THE CHAIR" data-es="EL CLIENTE">CUSTOMER</span><br>
+          <span class="display-italic text-red" data-en="LOG." data-es="LOG.">LOG.</span> <span class="outline-text" data-en="5.0 ★" data-es="5.0 ★">5.0 ★</span>
         </h2>
       </div>
     </div>
 
     <div class="grid md:grid-cols-3 gap-5 reveal-stagger">
-      <div class="card p-6">
-        <div class="flex items-baseline justify-between mb-4">
-          <div class="tech text-[.62rem] tracking-[.22em] uppercase text-magenta">LOG.142 · 5.0 ★</div>
-          <div class="tech text-[.62rem] text-[var(--paper-3)]">RAFAEL G.</div>
-        </div>
-        <p class="text-sm md:text-base text-[var(--paper)] leading-relaxed italic"
+      <div class="card-poster p-6 relative">
+        <div class="absolute top-3 right-3 stamp-solid-red stamp">5.0 ★</div>
+        <div class="tech text-[.62rem] tracking-[.22em] uppercase text-red font-bold mb-4">LOG.142 · RAFAEL G.</div>
+        <p class="text-base text-[var(--paper)] leading-relaxed italic"
            data-en='"Brought my WRX in for coilovers, ended up with a full corner-balance and alignment for less than the dealer quoted me on just shocks. They text photo updates daily."'
            data-es='"Llevé mi WRX para coilovers, terminé con corner-balance completo y alineación por menos de lo que el dealer me cotizó solo de amortiguadores. Mandan fotos diarias por SMS."'>
           "Brought my WRX in for coilovers, ended up with a full corner-balance and alignment for less than the dealer quoted me on just shocks. They text photo updates daily."
         </p>
-        <div class="schem-line my-4"></div>
+        <div class="schem-line my-5"></div>
         <div class="spec"><span class="k">JOB</span><span class="v ml-auto">BC BR coils + align</span></div>
       </div>
-      <div class="card p-6">
-        <div class="flex items-baseline justify-between mb-4">
-          <div class="tech text-[.62rem] tracking-[.22em] uppercase text-magenta">LOG.143 · 5.0 ★</div>
-          <div class="tech text-[.62rem] text-[var(--paper-3)]">DANNY P.</div>
-        </div>
-        <p class="text-sm md:text-base text-[var(--paper)] leading-relaxed italic"
-           data-en='"Powder coated my brake calipers Lambo orange. Showed me the cure-oven temp logs. They actually care about doing it right, not just fast."'
-           data-es='"Me hicieron powder coat de los calipers en naranja Lambo. Me mostraron los logs de temperatura del horno. De verdad les importa hacerlo bien, no rápido."'>
-          "Powder coated my brake calipers Lambo orange. Showed me the cure-oven temp logs. They actually care about doing it right, not just fast."
+      <div class="card-poster p-6 relative">
+        <div class="absolute top-3 right-3 stamp-solid-red stamp">5.0 ★</div>
+        <div class="tech text-[.62rem] tracking-[.22em] uppercase text-red font-bold mb-4">LOG.143 · DANNY P.</div>
+        <p class="text-base text-[var(--paper)] leading-relaxed italic"
+           data-en='"Powder coated my brake calipers Ferrari red. Showed me the cure-oven temp logs. They actually care about doing it right, not just fast."'
+           data-es='"Me hicieron powder coat de los calipers en rojo Ferrari. Me mostraron los logs del horno. De verdad les importa hacerlo bien, no rápido."'>
+          "Powder coated my brake calipers Ferrari red. Showed me the cure-oven temp logs. They actually care about doing it right, not just fast."
         </p>
-        <div class="schem-line my-4"></div>
+        <div class="schem-line my-5"></div>
         <div class="spec"><span class="k">JOB</span><span class="v ml-auto">Caliper powder · 4-pc</span></div>
       </div>
-      <div class="card p-6">
-        <div class="flex items-baseline justify-between mb-4">
-          <div class="tech text-[.62rem] tracking-[.22em] uppercase text-magenta">LOG.144 · 5.0 ★</div>
-          <div class="tech text-[.62rem] text-[var(--paper-3)]">CARLOS M.</div>
-        </div>
-        <p class="text-sm md:text-base text-[var(--paper)] leading-relaxed italic"
+      <div class="card-poster p-6 relative">
+        <div class="absolute top-3 right-3 stamp-solid-red stamp">5.0 ★</div>
+        <div class="tech text-[.62rem] tracking-[.22em] uppercase text-red font-bold mb-4">LOG.144 · CARLOS M.</div>
+        <p class="text-base text-[var(--paper)] leading-relaxed italic"
            data-en='"Best part is they explain everything in Spanish if I want. My uncle drove from Brentwood just to use them. That tells you everything."'
            data-es='"Lo mejor es que explican todo en español si quiero. Mi tío maneja desde Brentwood solo para usarlos. Eso te dice todo."'>
           "Best part is they explain everything in Spanish if I want. My uncle drove from Brentwood just to use them. That tells you everything."
         </p>
-        <div class="schem-line my-4"></div>
+        <div class="schem-line my-5"></div>
         <div class="spec"><span class="k">JOB</span><span class="v ml-auto">Window tint · ceramic 20%</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="py-24 md:py-32 relative z-10 overflow-hidden">
+<!-- ============ CTA — poster ============ -->
+<section class="py-24 md:py-36 relative z-10 overflow-hidden">
+  <!-- Big outline numerals decor -->
+  <div class="pointer-events-none absolute -left-12 -top-10 outline-text-thick" style="font-family:Anton;font-size:38vw;line-height:.78;color:transparent;-webkit-text-stroke:1.5px rgba(225,6,0,.18);">087</div>
   <div class="speed-lines"><span></span><span></span><span></span></div>
-  <div class="max-w-[1200px] mx-auto px-6 md:px-10 text-center reveal">
-    <div class="eyebrow grad mb-4" data-en="Got a project?" data-es="¿Tienes un proyecto?">Got a project?</div>
-    <h2 class="heavy text-6xl md:text-9xl leading-[.85]" data-en-html="Send the spec.<br><span class='grad-anim'>We'll build it.</span>" data-es-html="Manda el spec.<br><span class='grad-anim'>Lo construimos.</span>">
-      Send the spec.<br><span class="grad-anim">We'll build it.</span>
+
+  <div class="relative max-w-[1200px] mx-auto px-6 md:px-10 text-center reveal">
+    <div class="eyebrow mb-4" data-en="★ GOT A PROJECT? ★" data-es="★ ¿TIENES UN PROYECTO? ★">★ GOT A PROJECT? ★</div>
+    <h2 class="heavy text-6xl md:text-[10rem] leading-[.85]">
+      <span class="block" data-en="SEND THE" data-es="MANDA EL">SEND THE</span>
+      <span class="block display-italic text-red" data-en="SPEC." data-es="SPEC.">SPEC.</span>
+      <span class="block" data-en="WE'LL BUILD IT." data-es="LO CONSTRUIMOS.">WE'LL BUILD IT.</span>
     </h2>
-    <div class="schem-line my-10 max-w-md mx-auto"></div>
-    <p class="text-[var(--paper-2)] text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light" data-en="Drop a photo of your car and what you want done. We'll write the build sheet, price every line, and walk you through it before you commit." data-es="Manda foto de tu auto y lo que quieres. Hacemos la build sheet, cotizamos cada línea y te explicamos todo antes de comprometerte.">Drop a photo of your car and what you want done. We'll write the build sheet, price every line, and walk you through it before you commit.</p>
+    <div class="schem-line-red my-10 max-w-md mx-auto"></div>
+    <p class="text-[var(--paper-2)] text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light" data-en="Drop a photo of your car and what you want done. We'll write the build sheet, price every line, walk you through it before you commit." data-es="Manda foto de tu auto y lo que quieres. Hacemos la build sheet, cotizamos cada línea y te explicamos todo antes de comprometerte.">Drop a photo of your car and what you want done. We'll write the build sheet, price every line, walk you through it before you commit.</p>
     <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="#" data-open-quote data-magnet class="btn btn-grad" data-en="Request build sheet" data-es="Pedir build sheet">Request build sheet</a>
+      <a href="#" data-open-quote data-magnet class="btn btn-red" data-en="Request build sheet" data-es="Pedir build sheet">Request build sheet</a>
       <a href="tel:+15163957424" class="btn btn-line">+1 (516) 395-7424</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="py-14 md:py-20 border-t border-[var(--line-2)] bg-[var(--bg-1)] relative z-10">
+<!-- ============ CHECKER STRIP ============ -->
+<div class="flag-strip"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="py-14 md:py-20 bg-black border-t-2 border-[var(--paper)] relative z-10">
   <div class="max-w-[1500px] mx-auto px-6 md:px-10">
     <div class="grid md:grid-cols-12 gap-10">
       <div class="md:col-span-5">
         <div class="flex items-center gap-3">
-          <svg viewBox="0 0 48 48" class="w-12 h-12">
-            <defs><linearGradient id="footG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e91e63"/><stop offset="100%" stop-color="#ff5722"/></linearGradient></defs>
-            <circle cx="24" cy="24" r="21" fill="#000" stroke="url(#footG)" stroke-width="2.5"/>
-            <line x1="33" y1="24" x2="40" y2="14" stroke="#ff5722" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="33" cy="24" r="2.2" fill="#ff5722"/>
-            <text x="22" y="29" text-anchor="middle" font-family="Anton" font-size="16" fill="#ffffff" letter-spacing="-1">A</text>
+          <svg viewBox="0 0 56 56" class="w-12 h-12">
+            <rect width="56" height="56" fill="#000"/>
+            <g transform="translate(8 8)">
+              <rect x="0" y="0" width="8" height="8" fill="#fff"/>
+              <rect x="16" y="0" width="8" height="8" fill="#fff"/>
+              <rect x="32" y="0" width="8" height="8" fill="#fff"/>
+              <rect x="8" y="8" width="8" height="8" fill="#fff"/>
+              <rect x="24" y="8" width="8" height="8" fill="#fff"/>
+              <rect x="0" y="16" width="8" height="8" fill="#fff"/>
+              <rect x="16" y="16" width="8" height="8" fill="#fff"/>
+              <rect x="32" y="16" width="8" height="8" fill="#fff"/>
+              <rect x="8" y="24" width="8" height="8" fill="#fff"/>
+              <rect x="24" y="24" width="8" height="8" fill="#fff"/>
+            </g>
+            <rect x="0" y="48" width="56" height="8" fill="#e10600"/>
           </svg>
           <div>
             <div class="display text-2xl">A-Spec</div>
-            <div class="tech text-[.55rem] tracking-[.32em] uppercase grad-text" style="font-weight:700">AUTO · HEADQUARTERS</div>
+            <div class="tech text-[.55rem] tracking-[.32em] uppercase text-red" style="font-weight:800">AUTO · HEADQUARTERS</div>
           </div>
         </div>
         <p class="text-[var(--paper-3)] text-sm max-w-sm mt-6 leading-relaxed"
-           data-en="West Babylon's full-spec mod shop. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail."
-           data-es="El shop full-spec de modificación en West Babylon. Builds custom, mecánica, suspensión, carrocería, powder coat, rines, polarizado, detallado.">
-          West Babylon's full-spec mod shop. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail.
+           data-en="West Babylon's full-spec performance shop. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail."
+           data-es="El shop full-spec de performance en West Babylon. Builds custom, mecánica, suspensión, carrocería, powder coat, rines, polarizado, detallado.">
+          West Babylon's full-spec performance shop. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail.
         </p>
       </div>
       <div class="md:col-span-2">
-        <div class="eyebrow grad mb-3" data-en="Sections" data-es="Secciones">Sections</div>
-        <div class="flex flex-col gap-2 text-sm tech text-[var(--paper-2)]">
-          <a href="index.html" class="hover:text-[var(--orange)] transition-colors" data-en="Home" data-es="Inicio">Home</a>
-          <a href="services.html" class="hover:text-[var(--orange)] transition-colors" data-en="Services" data-es="Servicios">Services</a>
-          <a href="builds.html" class="hover:text-[var(--orange)] transition-colors" data-en="Builds" data-es="Builds">Builds</a>
-          <a href="about.html" class="hover:text-[var(--orange)] transition-colors" data-en="The Shop" data-es="El Shop">The Shop</a>
-          <a href="contact.html" class="hover:text-[var(--orange)] transition-colors" data-en="Contact" data-es="Contacto">Contact</a>
+        <div class="eyebrow mb-3" data-en="Sections" data-es="Secciones">Sections</div>
+        <div class="flex flex-col gap-2 text-sm tech text-[var(--paper-2)] font-bold">
+          <a href="index.html" class="hover:text-red transition-colors" data-en="Home" data-es="Inicio">Home</a>
+          <a href="services.html" class="hover:text-red transition-colors" data-en="Services" data-es="Servicios">Services</a>
+          <a href="builds.html" class="hover:text-red transition-colors" data-en="Builds" data-es="Builds">Builds</a>
+          <a href="about.html" class="hover:text-red transition-colors" data-en="The Shop" data-es="El Shop">The Shop</a>
+          <a href="contact.html" class="hover:text-red transition-colors" data-en="Contact" data-es="Contacto">Contact</a>
         </div>
       </div>
       <div class="md:col-span-2">
-        <div class="eyebrow grad mb-3" data-en="Address" data-es="Dirección">Address</div>
-        <div class="text-sm tech text-[var(--paper-2)] leading-relaxed">31 Mahan St<br>West Babylon, NY 11704</div>
-        <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="text-[.66rem] tech tracking-[.18em] uppercase mt-3 inline-block u-anim" style="color:var(--orange)">Map ▸</a>
+        <div class="eyebrow mb-3" data-en="Address" data-es="Dirección">Address</div>
+        <div class="text-sm tech text-[var(--paper-2)] leading-relaxed font-bold">31 Mahan St<br>West Babylon, NY 11704</div>
+        <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="text-[.66rem] tech tracking-[.18em] uppercase mt-3 inline-block u-anim text-red font-bold">Map ▸</a>
       </div>
       <div class="md:col-span-3">
-        <div class="eyebrow grad mb-3" data-en="Comms" data-es="Comunicación">Comms</div>
+        <div class="eyebrow mb-3" data-en="Comms" data-es="Comunicación">Comms</div>
         <div class="flex flex-col gap-2 text-sm">
-          <a href="tel:+15163957424" class="display text-2xl grad-text">+1 (516) 395-7424</a>
-          <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank" class="text-[var(--paper-2)] hover:text-[var(--orange)] tech text-sm transition-colors">@a_spec_auto_hq</a>
-          <div class="tech text-[.66rem] tracking-[.22em] uppercase pt-2 text-magenta" data-en="Mon–Sat · 09:00–20:00" data-es="Lun–Sáb · 09:00–20:00">Mon–Sat · 09:00–20:00</div>
+          <a href="tel:+15163957424" class="display text-2xl text-red">+1 (516) 395-7424</a>
+          <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank" class="text-[var(--paper-2)] hover:text-red tech text-sm transition-colors font-bold">@a_spec_auto_hq</a>
+          <div class="tech text-[.66rem] tracking-[.22em] uppercase pt-2 text-paper font-bold" data-en="Mon–Sat · 09:00–20:00" data-es="Lun–Sáb · 09:00–20:00">Mon–Sat · 09:00–20:00</div>
         </div>
       </div>
     </div>
-    <div class="schem-line mt-12 mb-6"></div>
-    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 tech text-[.66rem] tracking-[.22em] uppercase text-[var(--paper-3)]">
+    <div class="tick-strip mt-12 mb-6"></div>
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 tech text-[.66rem] tracking-[.22em] uppercase text-[var(--paper-3)] font-bold">
       <div>© <span data-year></span> A-Spec Auto Headquarters · NY DMV registered</div>
-      <div data-en="DRAWING REV. 11.2026" data-es="DOC REV. 11.2026">DRAWING REV. 11.2026</div>
+      <div data-en="★ PLATE REV. 11.2026 ★" data-es="★ PLATE REV. 11.2026 ★">★ PLATE REV. 11.2026 ★</div>
     </div>
   </div>
 </footer>
 
 <!-- Mobile sticky CTA -->
 <div class="mobile-cta">
-  <a href="tel:+15163957424" class="btn-line">Call</a>
-  <a href="#" data-open-quote class="btn-grad text-white" data-en="Spec sheet" data-es="Spec sheet">Spec sheet</a>
+  <a href="tel:+15163957424" class="btn-line text-paper">Call</a>
+  <a href="#" data-open-quote class="btn-red text-white" data-en="Spec sheet" data-es="Spec sheet">Spec sheet</a>
 </div>
 
 <!-- Quote modal -->
 <div id="quoteModal" class="modal-bg">
   <div class="modal-card">
     <button class="modal-close" data-close-quote aria-label="Close">×</button>
-    <div class="eyebrow grad" data-en="Build sheet request" data-es="Solicitud build sheet">Build sheet request</div>
-    <h3 class="heavy text-4xl mt-3 mb-2 leading-[.9]" data-en-html="Spec your <span class='grad-text'>build.</span>" data-es-html="Especifica tu <span class='grad-text'>build.</span>">Spec your <span class="grad-text">build.</span></h3>
-    <p class="text-sm text-[var(--paper-3)] tech mb-7" data-en="> we draft. you approve. we build." data-es="> nosotros diseñamos. tú apruebas. construimos.">&gt; we draft. you approve. we build.</p>
+    <div class="eyebrow" data-en="★ BUILD SHEET REQUEST ★" data-es="★ SOLICITUD DE BUILD SHEET ★">★ BUILD SHEET REQUEST ★</div>
+    <h3 class="heavy text-4xl mt-3 mb-2 leading-[.9]">
+      <span data-en="SPEC YOUR" data-es="ESPECIFICA TU">SPEC YOUR</span>
+      <span class="display-italic text-red" data-en="BUILD." data-es="BUILD.">BUILD.</span>
+    </h3>
+    <p class="text-sm text-[var(--paper-3)] tech mb-7" data-en="> we draft. you approve. we build." data-es="> diseñamos. apruebas. construimos.">&gt; we draft. you approve. we build.</p>
     <form data-fake class="space-y-5">
       <div>
         <span class="field-label" data-en="Name" data-es="Nombre">Name</span>
@@ -585,8 +754,8 @@
         <span class="field-label" data-en="Build description" data-es="Descripción del build">Build description</span>
         <textarea class="input" rows="4" data-en-placeholder="What needs done? Photos? Reference build?" data-es-placeholder="¿Qué se necesita? ¿Fotos? ¿Build de referencia?"></textarea>
       </div>
-      <button class="btn btn-grad w-full"><span data-en="Send · get spec sheet" data-es="Enviar · obtener build sheet">Send · get spec sheet</span></button>
-      <div data-form-result class="hidden tech text-sm pt-2 grad-text"></div>
+      <button class="btn btn-red w-full"><span data-en="Send · get spec sheet" data-es="Enviar · obtener build sheet">Send · get spec sheet</span></button>
+      <div data-form-result class="hidden tech text-sm pt-2 text-red font-bold"></div>
     </form>
   </div>
 </div>

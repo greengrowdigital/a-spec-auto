@@ -1,4 +1,4 @@
-// A-Spec Auto HQ — interactions (no loader)
+// A-Spec Auto HQ — interactions
 
 const scrollBar = document.querySelector('.scroll-progress');
 if (scrollBar) {
@@ -14,7 +14,15 @@ const io = new IntersectionObserver((entries) => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   });
 }, { threshold: 0.14, rootMargin: '0px 0px -60px 0px' });
-document.querySelectorAll('.reveal,.reveal-stagger,.clip-reveal,.split-line').forEach(el => io.observe(el));
+document.querySelectorAll('.reveal,.reveal-stagger,.clip-reveal,.split-line,.draw-path').forEach(el => io.observe(el));
+
+// SVG path lengths — set --len for any path with class draw-path
+document.querySelectorAll('.draw-path').forEach(p => {
+  try {
+    const len = p.getTotalLength ? p.getTotalLength() : 1000;
+    p.style.setProperty('--len', len);
+  } catch (_) {}
+});
 
 const menuBtn = document.getElementById('menuBtn');
 const menuPanel = document.getElementById('menuPanel');
@@ -64,8 +72,8 @@ document.querySelectorAll('form[data-fake]').forEach(form => {
     if (out) {
       const lang = document.documentElement.lang;
       out.textContent = lang === 'es'
-        ? '> recibido · spec sheet enviado a tu email'
-        : '> received · spec sheet sent to your email';
+        ? '> recibido · spec sheet enviado'
+        : '> received · spec sheet sent';
       out.classList.remove('hidden');
     }
     form.reset();
@@ -74,7 +82,7 @@ document.querySelectorAll('form[data-fake]').forEach(form => {
 
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 
-// Animated counter for dyno numbers
+// Animated counter
 const counters = document.querySelectorAll('[data-count]');
 const counterIO = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -83,7 +91,7 @@ const counterIO = new IntersectionObserver((entries) => {
     const el = e.target;
     const target = parseFloat(el.getAttribute('data-count'));
     const decimals = (el.getAttribute('data-decimals') || '0') | 0;
-    const dur = 1600;
+    const dur = 1700;
     const t0 = performance.now();
     const step = (t) => {
       const k = Math.min((t - t0) / dur, 1);
@@ -97,48 +105,47 @@ const counterIO = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 counters.forEach(c => counterIO.observe(c));
 
-// Speedometer needle — sweep to target on view
-const speedos = document.querySelectorAll('[data-speedo]');
-const speedoIO = new IntersectionObserver((entries) => {
+// Tachometer needle — sweep to target degrees on view
+const tachos = document.querySelectorAll('[data-tacho]');
+const tachoIO = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (!e.isIntersecting) return;
-    speedoIO.unobserve(e.target);
+    tachoIO.unobserve(e.target);
     const wrap = e.target;
-    const needle = wrap.querySelector('.speedo-needle');
+    const needle = wrap.querySelector('.tacho-needle');
     if (!needle) return;
-    const targetDeg = parseFloat(wrap.getAttribute('data-speedo'));
-    // Idle position
-    needle.style.transform = 'rotate(-120deg)';
+    const target = parseFloat(wrap.getAttribute('data-tacho'));
+    needle.style.transform = 'rotate(-130deg)';
     requestAnimationFrame(() => {
       setTimeout(() => {
-        needle.style.transform = `rotate(${targetDeg}deg)`;
-      }, 150);
+        needle.style.transition = 'transform 2s cubic-bezier(.34,1.56,.64,1)';
+        needle.style.transform = `rotate(${target}deg)`;
+      }, 200);
     });
   });
-}, { threshold: 0.4 });
-speedos.forEach(s => speedoIO.observe(s));
+}, { threshold: 0.35 });
+tachos.forEach(t => tachoIO.observe(t));
 
-// Hero parallax on hero image
-const hero = document.querySelector('[data-parallax]');
-if (hero) {
+// Parallax (subtle) on tagged elements
+const parallaxEls = document.querySelectorAll('[data-parallax]');
+if (parallaxEls.length) {
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    if (y < window.innerHeight) {
-      hero.style.transform = `translate3d(0, ${y * 0.35}px, 0) scale(${1 + y * 0.0004})`;
-    }
+    parallaxEls.forEach(el => {
+      const speed = parseFloat(el.getAttribute('data-parallax')) || 0.3;
+      el.style.transform = `translate3d(0, ${y * speed}px, 0)`;
+    });
   }, { passive: true });
 }
 
-// Magnetic-button (small attraction to cursor)
+// Magnetic buttons
 document.querySelectorAll('[data-magnet]').forEach(el => {
-  const strength = 18;
+  const strength = 16;
   el.addEventListener('mousemove', (e) => {
     const r = el.getBoundingClientRect();
     const x = e.clientX - (r.left + r.width / 2);
     const y = e.clientY - (r.top + r.height / 2);
     el.style.transform = `translate(${x / strength}px, ${y / strength}px)`;
   });
-  el.addEventListener('mouseleave', () => {
-    el.style.transform = '';
-  });
+  el.addEventListener('mouseleave', () => { el.style.transform = ''; });
 });
