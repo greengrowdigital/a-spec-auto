@@ -4,11 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>A-Spec Auto HQ · Performance Garage · West Babylon, NY</title>
-<meta name="description" content="A-Spec Auto Headquarters — custom auto work, mechanical, coilovers, bodywork, powder coating, rim repair, window tint, detail. 31 Mahan St, West Babylon NY. (516) 395-7424." />
+<meta name="description" content="A-Spec Auto Headquarters — performance garage in West Babylon, NY. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, window tint, detail. (516) 395-7424." />
 <link rel="canonical" href="https://aspecautohq.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="A-Spec Auto Headquarters · West Babylon, NY">
-<meta property="og:description" content="Built right. Tuned right. Documented.">
+<meta property="og:description" content="Performance. Precision. Built right.">
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
 
 <script type="application/ld+json">
@@ -18,711 +18,669 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bebas+Neue&family=Anton&family=Barlow+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Anton&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
 <div class="scroll-progress"></div>
 
-<!-- Top status bar -->
-<div class="hidden md:block border-b border-[var(--line-2)] relative z-10 bg-black">
-  <div class="max-w-[1500px] mx-auto px-8 py-2 flex items-center justify-between mono text-[.64rem] tracking-[.22em] uppercase">
-    <div class="flex items-center gap-7 text-[var(--paper-3)]">
-      <span class="flex items-center gap-2"><span class="dot dot-live"></span><span style="color:#22c55e;font-weight:800" data-en="OPEN · BAY 1–4" data-es="ABIERTO · BAY 1–4">OPEN · BAY 1–4</span></span>
-      <span class="hidden lg:inline">31 MAHAN ST · WEST BABYLON · NY 11704</span>
-      <span class="hidden lg:inline text-red" style="font-weight:800;" data-en="★ BILINGÜE · EN/ES ★" data-es="★ BILINGÜE · EN/ES ★">★ BILINGÜE · EN/ES ★</span>
-    </div>
-    <div class="flex items-center gap-6 text-[var(--paper-3)]">
-      <a href="tel:+15163957424" class="hover:text-red transition-colors font-bold">+1 (516) 395-7424</a>
-      <div class="lang-toggle flex items-center gap-1">
-        <button data-lang="en" class="px-2 py-1 hover:text-red transition-colors">EN</button>
-        <span>/</span>
-        <button data-lang="es" class="px-2 py-1 hover:text-red transition-colors">ES</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- NAV -->
-<nav class="sticky top-0 z-40 backdrop-blur-xl bg-black/85 border-b-2 border-[var(--paper)]">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3 group">
-      <!-- Logo: checker + red bar -->
-      <svg viewBox="0 0 56 56" class="w-12 h-12">
-        <rect width="56" height="56" fill="#000"/>
-        <g transform="translate(8 8)">
-          <rect x="0" y="0" width="8" height="8" fill="#fff"/>
-          <rect x="16" y="0" width="8" height="8" fill="#fff"/>
-          <rect x="32" y="0" width="8" height="8" fill="#fff"/>
-          <rect x="8" y="8" width="8" height="8" fill="#fff"/>
-          <rect x="24" y="8" width="8" height="8" fill="#fff"/>
-          <rect x="0" y="16" width="8" height="8" fill="#fff"/>
-          <rect x="16" y="16" width="8" height="8" fill="#fff"/>
-          <rect x="32" y="16" width="8" height="8" fill="#fff"/>
-          <rect x="8" y="24" width="8" height="8" fill="#fff"/>
-          <rect x="24" y="24" width="8" height="8" fill="#fff"/>
-          <rect x="0" y="32" width="8" height="8" fill="#fff"/>
-          <rect x="16" y="32" width="8" height="8" fill="#fff"/>
-          <rect x="32" y="32" width="8" height="8" fill="#fff"/>
-        </g>
-        <rect x="0" y="48" width="56" height="8" fill="#e10600"/>
-      </svg>
-      <div>
-        <div class="display text-2xl md:text-3xl tracking-tight">A-Spec</div>
-        <div class="tech text-[.55rem] tracking-[.32em] uppercase text-red" style="font-weight:800">AUTO · HQ ★ NY</div>
-      </div>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><span>A</span></span>
+      <span class="logo-text">
+        <span class="l1">A-Spec</span>
+        <span class="l2">AUTO · HQ</span>
+      </span>
     </a>
-    <div class="hidden md:flex items-center gap-9">
-      <a href="index.html" class="nav-link active" data-en="Home" data-es="Inicio">Home</a>
-      <a href="services.html" class="nav-link" data-en="Services" data-es="Servicios">Services</a>
-      <a href="builds.html" class="nav-link" data-en="Builds" data-es="Builds">Builds</a>
-      <a href="about.html" class="nav-link" data-en="The Shop" data-es="El Shop">The Shop</a>
-      <a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
-    </div>
-    <div class="flex items-center gap-3">
-      <a href="#" data-open-quote data-magnet class="hidden md:inline-flex btn btn-red !py-3 !px-5 !text-[.66rem]" data-en="Get Quote" data-es="Cotización">Get Quote</a>
-      <button id="menuBtn" class="md:hidden p-2 text-[var(--paper)]"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
-    </div>
-  </div>
-  <div id="menuPanel" class="hidden md:hidden border-t-2 border-[var(--paper)] px-6 py-5 flex flex-col gap-4">
-    <a href="index.html" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
-    <a href="services.html" class="nav-link" data-en="Services" data-es="Servicios">Services</a>
-    <a href="builds.html" class="nav-link" data-en="Builds" data-es="Builds">Builds</a>
-    <a href="about.html" class="nav-link" data-en="The Shop" data-es="El Shop">The Shop</a>
-    <a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
-    <div class="flex items-center gap-3 pt-3 border-t border-[var(--line-2)]">
-      <span class="mono text-[.6rem] tracking-[.22em] uppercase text-[var(--paper-3)]">Lang</span>
-      <div class="lang-toggle flex items-center gap-2 mono text-[.7rem] tracking-[.18em] uppercase">
-        <button data-lang="en">EN</button><span class="text-[var(--paper-3)]">/</span><button data-lang="es">ES</button>
+
+    <nav class="nav-center" aria-label="Primary">
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="builds.html" class="nav-link">Builds</a>
+      <a href="builds.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">The Shop</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="lang-toggle hidden md:flex items-center gap-1">
+        <button data-lang="en" class="active">EN</button>
+        <span class="text-faint">/</span>
+        <button data-lang="es">ES</button>
       </div>
+      <a href="#" data-open-quote class="btn btn-red btn-sm hidden md:inline-flex">Get Quote</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
   </div>
-</nav>
+  <div id="menuPanel" class="menu-panel">
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="builds.html" class="nav-link">Builds</a>
+    <a href="builds.html" class="nav-link">Gallery</a>
+    <a href="about.html" class="nav-link">The Shop</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="#" data-open-quote class="btn btn-red btn-sm" style="align-self:flex-start">Get Quote</a>
+  </div>
+</header>
 
 <!-- ============ HERO ============ -->
-<section class="relative overflow-hidden">
-  <!-- halftone dots background -->
-  <div class="absolute inset-0 pat-dots pointer-events-none opacity-70"></div>
-  <!-- diagonal racing stripes (right) -->
-  <div class="hidden md:block absolute top-0 right-0 w-1/3 h-full pat-stripes pointer-events-none opacity-60"></div>
-  <!-- speed lines -->
-  <div class="speed-lines"><span></span><span></span><span></span></div>
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?auto=format&fit=crop&w=2200&q=85" alt="Performance car in workshop" />
+  </div>
+  <div class="hero-overlay"></div>
 
-  <div class="relative z-10 max-w-[1500px] mx-auto px-6 md:px-10 pt-12 md:pt-16 pb-20 md:pb-24">
-
-    <!-- Top label row -->
-    <div class="reveal flex flex-wrap items-center gap-3 mb-8">
-      <span class="badge">EST · 2018</span>
-      <span class="callout"><span class="dot"></span> 5.0 ★ · 86 BUILDS</span>
-      <span class="callout callout-mag">★ BILINGUAL CREW</span>
-    </div>
-
-    <!-- MAIN POSTER GRID -->
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-
-      <!-- LEFT: type stack -->
-      <div class="lg:col-span-7">
-
-        <!-- Massive italic title -->
-        <h1 class="hero-title display leading-[.86]">
-          <span class="split-line"><span data-en="BUILT" data-es="HECHO">BUILT</span></span>
-          <span class="split-line"><span class="display-italic" style="color:var(--red)" data-en="FAST." data-es="RÁPIDO.">FAST.</span></span>
-          <span class="split-line"><span data-en="TUNED" data-es="AFINADO">TUNED</span></span>
-          <span class="split-line"><span class="outline-text" data-en="RIGHT." data-es="BIEN.">RIGHT.</span></span>
-        </h1>
-
-        <div class="tick-strip my-10 max-w-2xl"></div>
-
-        <p class="max-w-xl text-[var(--paper-2)] text-base md:text-lg leading-relaxed mb-9 font-light"
-           data-en="A-Spec Auto Headquarters is West Babylon's full-spec performance shop. Coilovers, bodywork, paint, powder coat, rim repair, window tint, detail — every car spec-sheeted, every step documented."
-           data-es="A-Spec Auto Headquarters es el shop de performance de West Babylon. Coilovers, carrocería, pintura, powder coat, rines, polarizado, detallado — cada auto con ficha técnica, cada paso documentado.">
-          A-Spec Auto Headquarters is West Babylon's full-spec performance shop. Coilovers, bodywork, paint, powder coat, rim repair, window tint, detail — every car spec-sheeted, every step documented.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-3">
-          <a href="#" data-open-quote data-magnet class="btn btn-red">
-            <span data-en="Request spec sheet" data-es="Pedir ficha técnica">Request spec sheet</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </a>
-          <a href="tel:+15163957424" class="btn btn-line">+1 (516) 395-7424</a>
-        </div>
-      </div>
-
-      <!-- RIGHT: Sports car illustration -->
-      <div class="lg:col-span-5 relative">
-
-        <!-- Halftone dot accent behind car -->
-        <div class="absolute -top-6 -right-4 w-40 h-40 pat-dots-red pointer-events-none opacity-80"></div>
-        <!-- Caution stripe accent -->
-        <div class="hidden md:block absolute -bottom-2 -left-6 w-24 h-24 pointer-events-none opacity-30" style="background:repeating-linear-gradient(135deg,#e10600 0,#e10600 8px,#000 8px,#000 16px);clip-path:circle(50%);"></div>
-
-        <!-- The car illustration -->
-        <svg viewBox="0 0 600 380" class="w-full h-auto relative z-10">
-          <!-- Outer rectangle / poster frame -->
-          <rect x="2" y="2" width="596" height="376" fill="none" stroke="#fff" stroke-width="2"/>
-
-          <!-- Mini ticks frame -->
-          <g stroke="#fff" stroke-width="1.5">
-            <line x1="2" y1="20" x2="14" y2="20"/>
-            <line x1="586" y1="20" x2="598" y2="20"/>
-            <line x1="2" y1="360" x2="14" y2="360"/>
-            <line x1="586" y1="360" x2="598" y2="360"/>
-            <line x1="20" y1="2" x2="20" y2="14"/>
-            <line x1="580" y1="2" x2="580" y2="14"/>
-            <line x1="20" y1="366" x2="20" y2="378"/>
-            <line x1="580" y1="366" x2="580" y2="378"/>
-          </g>
-
-          <!-- Corner labels -->
-          <text x="22" y="32" font-family="JetBrains Mono" font-size="9" fill="#e10600" letter-spacing="2" font-weight="700">A-SPEC / 01</text>
-          <text x="578" y="32" font-family="JetBrains Mono" font-size="9" fill="#e10600" text-anchor="end" letter-spacing="2" font-weight="700">PLATE №087</text>
-          <text x="22" y="370" font-family="JetBrains Mono" font-size="9" fill="#fff" letter-spacing="2" font-weight="700">SCALE 1:1</text>
-          <text x="578" y="370" font-family="JetBrains Mono" font-size="9" fill="#fff" text-anchor="end" letter-spacing="2" font-weight="700">★ NY ★ WB ★</text>
-
-          <!-- Decorative grid in background -->
-          <g stroke="rgba(255,255,255,.06)" stroke-width="1">
-            <line x1="100" y1="40" x2="100" y2="340"/>
-            <line x1="200" y1="40" x2="200" y2="340"/>
-            <line x1="300" y1="40" x2="300" y2="340"/>
-            <line x1="400" y1="40" x2="400" y2="340"/>
-            <line x1="500" y1="40" x2="500" y2="340"/>
-            <line x1="40" y1="100" x2="560" y2="100"/>
-            <line x1="40" y1="200" x2="560" y2="200"/>
-            <line x1="40" y1="280" x2="560" y2="280"/>
-          </g>
-
-          <!-- Red ground stripe -->
-          <rect x="40" y="295" width="520" height="3" fill="#e10600"/>
-          <!-- Dashed ground -->
-          <line x1="40" y1="305" x2="560" y2="305" stroke="#fff" stroke-width="1" stroke-dasharray="8 8" opacity=".4"/>
-
-          <!-- Sports car silhouette (monoline drawn) -->
-          <g fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <!-- Body main outline -->
-            <path class="draw-path" d="M 85 290 L 95 275 L 115 270 Q 130 245 165 240 L 215 220 L 280 215 L 360 220 L 420 245 L 470 252 Q 510 258 525 270 L 535 290"/>
-            <!-- Roof -->
-            <path class="draw-path" d="M 195 220 Q 235 175 295 165 Q 360 162 410 175 Q 445 195 440 220"/>
-            <!-- Window line -->
-            <path class="draw-path" d="M 210 225 Q 245 195 290 188 Q 350 188 395 200 Q 420 215 415 225" stroke-width="1.5" opacity=".7"/>
-            <!-- Bottom skirt -->
-            <path class="draw-path" d="M 85 290 L 535 290" stroke-width="2"/>
-            <!-- Hood crease line -->
-            <path class="draw-path" d="M 425 248 L 470 252" stroke-width="1.5" opacity=".7"/>
-            <!-- Front splitter -->
-            <path class="draw-path" d="M 480 285 L 535 290 L 535 295 L 480 295" stroke-width="1.5"/>
-            <!-- Door cut -->
-            <path class="draw-path" d="M 260 220 L 270 290" stroke-width="1.2" opacity=".6"/>
-            <path class="draw-path" d="M 360 220 L 370 290" stroke-width="1.2" opacity=".6"/>
-            <!-- Front headlight -->
-            <path class="draw-path" d="M 495 258 L 525 263" stroke="#e10600" stroke-width="2.5"/>
-            <!-- Side mirror -->
-            <path class="draw-path" d="M 410 200 L 425 195 L 425 207" stroke-width="1.5"/>
-          </g>
-
-          <!-- Wheels — front (right) -->
-          <g transform="translate(465 295)">
-            <!-- Tire -->
-            <circle r="36" fill="#000" stroke="#fff" stroke-width="2.5"/>
-            <!-- Rim -->
-            <g class="wheel-spin">
-              <circle r="26" fill="none" stroke="#fff" stroke-width="1.5" opacity=".5"/>
-              <circle r="6" fill="#e10600"/>
-              <!-- 6 spokes -->
-              <g stroke="#fff" stroke-width="2" stroke-linecap="round">
-                <line x1="0" y1="-26" x2="0" y2="-8"/>
-                <line x1="22.5" y1="-13" x2="6.9" y2="-4"/>
-                <line x1="22.5" y1="13" x2="6.9" y2="4"/>
-                <line x1="0" y1="26" x2="0" y2="8"/>
-                <line x1="-22.5" y1="13" x2="-6.9" y2="4"/>
-                <line x1="-22.5" y1="-13" x2="-6.9" y2="-4"/>
-              </g>
-            </g>
-          </g>
-
-          <!-- Wheels — rear (left) -->
-          <g transform="translate(145 295)">
-            <circle r="36" fill="#000" stroke="#fff" stroke-width="2.5"/>
-            <g class="wheel-spin">
-              <circle r="26" fill="none" stroke="#fff" stroke-width="1.5" opacity=".5"/>
-              <circle r="6" fill="#e10600"/>
-              <g stroke="#fff" stroke-width="2" stroke-linecap="round">
-                <line x1="0" y1="-26" x2="0" y2="-8"/>
-                <line x1="22.5" y1="-13" x2="6.9" y2="-4"/>
-                <line x1="22.5" y1="13" x2="6.9" y2="4"/>
-                <line x1="0" y1="26" x2="0" y2="8"/>
-                <line x1="-22.5" y1="13" x2="-6.9" y2="4"/>
-                <line x1="-22.5" y1="-13" x2="-6.9" y2="-4"/>
-              </g>
-            </g>
-          </g>
-
-          <!-- Dimension callouts -->
-          <!-- top: length -->
-          <g stroke="#e10600" stroke-width="1" fill="none">
-            <line x1="85" y1="135" x2="85" y2="155"/>
-            <line x1="535" y1="135" x2="535" y2="155"/>
-            <line x1="85" y1="145" x2="280" y2="145" stroke-dasharray="3 4"/>
-            <line x1="320" y1="145" x2="535" y2="145" stroke-dasharray="3 4"/>
-          </g>
-          <rect x="280" y="138" width="40" height="14" fill="#e10600"/>
-          <text x="300" y="148" font-family="JetBrains Mono" font-size="9" fill="#fff" font-weight="700" text-anchor="middle">LWB</text>
-
-          <!-- Lower-left dim -->
-          <g stroke="#fff" stroke-width="1" fill="none" opacity=".6">
-            <line x1="45" y1="340" x2="60" y2="340"/>
-            <line x1="50" y1="100" x2="50" y2="200"/>
-            <line x1="42" y1="100" x2="58" y2="100"/>
-            <line x1="42" y1="200" x2="58" y2="200"/>
-          </g>
-          <text x="50" y="155" font-family="JetBrains Mono" font-size="8" fill="#fff" text-anchor="middle" font-weight="600" transform="rotate(-90 50 155)">H ▸ STANCE</text>
-
-          <!-- Build N° banner -->
-          <g transform="translate(300 50)">
-            <rect x="-80" y="-15" width="160" height="30" fill="#e10600"/>
-            <text x="0" y="6" font-family="Anton" font-size="22" fill="#fff" text-anchor="middle" letter-spacing="2">PLATE №087</text>
-          </g>
-        </svg>
+  <div class="hero-content">
+    <div class="hero-bar reveal-stagger">
+      <div class="hero-tag" data-en="A-SPEC AUTO WORKS · EST. 2018" data-es="A-SPEC AUTO WORKS · EST. 2018">A-SPEC AUTO WORKS · EST. 2018</div>
+      <h1 class="hero-title">
+        <span class="split-line"><span data-en="Performance." data-es="Performance.">Performance.</span></span>
+        <span class="split-line"><span data-en="Precision." data-es="Precisión.">Precision.</span></span>
+        <span class="split-line"><span style="color:var(--red)" data-en="Built right." data-es="Bien hecho.">Built right.</span></span>
+      </h1>
+      <p class="hero-sub"
+         data-en="Custom builds, suspension, paint, powder coat, tint, detailing and performance services — documented from quote to delivery."
+         data-es="Custom builds, suspensión, pintura, powder coat, polarizado, detallado y servicios de performance — documentado de cotización a entrega.">
+        Custom builds, suspension, paint, powder coat, tint, detailing and performance services — documented from quote to delivery.
+      </p>
+      <div class="hero-cta">
+        <a href="#" data-open-quote class="btn btn-red" data-en="Get a Quote" data-es="Pedir Cotización">Get a Quote</a>
+        <a href="#services" class="btn btn-line" data-en="View Services" data-es="Ver Servicios">View Services</a>
       </div>
     </div>
 
-    <!-- KPI dash row -->
-    <div class="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 reveal-stagger border-y-2 border-[var(--paper)]">
-      <div class="px-4 py-5 border-r-2 border-[var(--paper)]">
-        <div class="label">★ TOTAL BUILDS</div>
-        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="86">0</span><span class="text-red">+</span></div>
-      </div>
-      <div class="px-4 py-5 md:border-r-2 border-[var(--paper)]">
-        <div class="label">★ SERVICES</div>
-        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="14">0</span></div>
-      </div>
-      <div class="px-4 py-5 border-r-2 border-[var(--paper)] border-t-2 md:border-t-0">
-        <div class="label">★ YEARS</div>
-        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="7">0</span><span class="text-red">y</span></div>
-      </div>
-      <div class="px-4 py-5 border-t-2 md:border-t-0">
-        <div class="label">★ RATING</div>
-        <div class="dyno text-5xl md:text-6xl mt-2"><span data-count="5" data-decimals="1">0</span><span class="text-red">★</span></div>
-      </div>
+    <aside class="hero-side reveal">
+      <div class="hero-spec"><span class="k">Rating</span><span class="v">5.0 ★ · 86 Reviews</span></div>
+      <div class="hero-spec"><span class="k">Builds Documented</span><span class="v">86 ★ and counting</span></div>
+      <div class="hero-spec"><span class="k">Open</span><span class="v">Mon–Sat · 09:00–20:00</span></div>
+      <div class="hero-spec"><span class="k">Location</span><span class="v">31 Mahan St · West Babylon</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust-bar">
+  <div class="row reveal-stagger">
+    <div class="trust-item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2L3 7v6c0 5 4 9 9 10 5-1 9-5 9-10V7l-9-5z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div><div class="t" data-en="ASE Certified" data-es="Certificado ASE">ASE Certified</div><div class="d">Master Techs</div></div>
+    </div>
+    <div class="trust-item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+      <div><div class="t" data-en="OEM Parts" data-es="Partes OEM">OEM Parts</div><div class="d" data-en="Sourced direct" data-es="Directo de fábrica">Sourced direct</div></div>
+    </div>
+    <div class="trust-item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-8h6v8"/></svg>
+      <div><div class="t" data-en="In-House Builds" data-es="Builds in-house">In-House Builds</div><div class="d" data-en="4 bays · 2 lifts" data-es="4 bahías · 2 elevadores">4 bays · 2 lifts</div></div>
+    </div>
+    <div class="trust-item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><div class="t" data-en="Warranty" data-es="Garantía">Warranty</div><div class="d" data-en="12-month workmanship" data-es="12 meses de mano de obra">12-month workmanship</div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ CHECKER FLAG STRIP ============ -->
-<div class="flag-strip"></div>
-
-<!-- ============ MARQUEE ============ -->
-<section class="py-5 overflow-hidden border-b-2 border-[var(--paper)] bg-black relative z-10">
-  <div class="marquee gap-10 mono text-[.78rem] tracking-[.28em] uppercase whitespace-nowrap font-extrabold">
-    <span class="text-red">▸ COILOVERS</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ SUSPENSION</span><span class="text-red">★</span>
-    <span class="text-red">▸ BODYWORK</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ POWDER COAT</span><span class="text-red">★</span>
-    <span class="text-red">▸ RIM REPAIR</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ WINDOW TINT</span><span class="text-red">★</span>
-    <span class="text-red">▸ DETAIL · CERAMIC</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ MECHANICAL</span><span class="text-red">★</span>
-    <span class="text-red">▸ CUSTOM BUILDS</span><span class="text-paper">★</span>
-    <span class="text-red">▸ COILOVERS</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ SUSPENSION</span><span class="text-red">★</span>
-    <span class="text-red">▸ BODYWORK</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ POWDER COAT</span><span class="text-red">★</span>
-    <span class="text-red">▸ RIM REPAIR</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ WINDOW TINT</span><span class="text-red">★</span>
-    <span class="text-red">▸ DETAIL · CERAMIC</span><span class="text-paper">★</span>
-    <span class="text-paper">▸ MECHANICAL</span><span class="text-red">★</span>
-    <span class="text-red">▸ CUSTOM BUILDS</span><span class="text-paper">★</span>
-  </div>
-</section>
-
-<!-- ============ SERVICES ============ -->
-<section class="py-20 md:py-28 relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+<!-- ============ SERVICES OVERVIEW ============ -->
+<section id="services" class="section">
+  <div class="section-bgnum">01</div>
+  <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №02 · SERVICES</span></div>
-        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
-          <span data-en="EVERY" data-es="CADA">EVERY</span>
-          <span class="display-italic text-red" data-en="SPEC." data-es="SPEC.">SPEC.</span><br>
-          <span class="outline-text" data-en="DOCUMENTED." data-es="DOCUMENTADO.">DOCUMENTED.</span>
+        <div class="section-num">01 / SERVICES</div>
+        <span class="red-bar mt-3"></span>
+        <h2 class="section-title">
+          <span data-en="Everything your build" data-es="Todo lo que tu build">Everything your build</span><br>
+          <span data-en="needs, under one roof." data-es="necesita, bajo un techo.">needs, <span class="text-red" data-en="under one roof." data-es="bajo un techo.">under one roof.</span></span>
         </h2>
       </div>
-      <a href="services.html" class="hidden md:inline-flex tech text-[.7rem] uppercase tracking-[.22em] u-anim font-bold">View full catalog ▸</a>
+      <p class="section-sub" data-en="Seven service categories. One spec sheet. Every step documented." data-es="Siete categorías de servicio. Una ficha técnica. Cada paso documentado.">Seven service categories. One spec sheet. Every step documented.</p>
+    </div>
+
+    <div class="svc-grid reveal-stagger">
+      <a href="services.html#mechanical" class="svc-card">
+        <span class="num">01</span>
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-7 7 2 2 7-7a4 4 0 0 0 5.4-5.4l-2.5 2.5-1.6-1.6 2.5-2.5z"/><circle cx="17" cy="17" r="2"/></svg>
+        </div>
+        <h3 data-en="Mechanical" data-es="Mecánica">Mechanical</h3>
+        <p data-en="OEM-grade parts, diagnostics and service for daily drivers and performance builds. Brakes, diagnostics, alignment, oil & filter, belts." data-es="Partes OEM, diagnóstico y servicio para autos diarios y builds de performance. Frenos, diagnóstico, alineación, aceite, correas.">OEM-grade parts, diagnostics and service for daily drivers and performance builds. Brakes, diagnostics, alignment, oil & filter, belts.</p>
+        <div class="meta">
+          <div class="price"><span>FROM</span>$80</div>
+          <div class="view" data-en="View Details" data-es="Ver Detalles">View Details</div>
+        </div>
+      </a>
+
+      <a href="services.html#suspension" class="svc-card">
+        <span class="num">02</span>
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v3M12 19v3"/><path d="M7 5h10M7 19h10"/><path d="M9 5l-1 3 7 0-1 3 -7 0 1 3 7 0-1 3"/></svg>
+        </div>
+        <h3 data-en="Suspension & Coilovers" data-es="Suspensión y Coilovers">Suspension & Coilovers</h3>
+        <p data-en="Coilover install, corner balance, lowering springs, sway bars. BC, KW, Bilstein, Tein, Ohlins. Every install corner-weighted." data-es="Instalación de coilover, corner balance, springs, barras estabilizadoras. BC, KW, Bilstein, Tein, Ohlins. Cada instalación con balanceo.">Coilover install, corner balance, lowering springs, sway bars. BC, KW, Bilstein, Tein, Ohlins. Every install corner-weighted.</p>
+        <div class="meta">
+          <div class="price"><span>FROM</span>$450</div>
+          <div class="view" data-en="View Details" data-es="Ver Detalles">View Details</div>
+        </div>
+      </a>
+
+      <a href="services.html#bodywork" class="svc-card">
+        <span class="num">03</span>
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h6l1-2h6l1 2h2"/><rect x="3" y="13" width="18" height="6" rx="1"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+        </div>
+        <h3 data-en="Bodywork & Paint" data-es="Carrocería y Pintura">Bodywork & Paint</h3>
+        <p data-en="Paint match, dent removal, body kit install, bumper repair. Downdraft booth, computerized color match, OEM blending." data-es="Color match, abolladuras, body kit, bumper. Cabina downdraft, color computarizado, mezcla OEM.">Paint match, dent removal, body kit install, bumper repair. Downdraft booth, computerized color match, OEM blending.</p>
+        <div class="meta">
+          <div class="price"><span>FROM</span>$480</div>
+          <div class="view" data-en="View Details" data-es="Ver Detalles">View Details</div>
+        </div>
+      </a>
+
+      <a href="services.html#powder" class="svc-card">
+        <span class="num">04</span>
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6v4l3 3v8a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4v-8l3-3z"/><path d="M9 7h6M10 14h4"/></svg>
+        </div>
+        <h3 data-en="Powder Coat" data-es="Powder Coat">Powder Coat</h3>
+        <p data-en="Wheels, brake calipers, suspension components, engine bay parts. 200+ colors. Cure-oven calibrated weekly, temp-logged." data-es="Rines, calipers, componentes de suspensión, partes del motor. 200+ colores. Horno calibrado semanalmente, temp loggeada.">Wheels, brake calipers, suspension components, engine bay parts. 200+ colors. Cure-oven calibrated weekly, temp-logged.</p>
+        <div class="meta">
+          <div class="price"><span>FROM</span>$180</div>
+          <div class="view" data-en="View Details" data-es="Ver Detalles">View Details</div>
+        </div>
+      </a>
+
+      <a href="services.html#rim" class="svc-card">
+        <span class="num">05</span>
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="3" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="3" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="21" y2="12"/></svg>
+        </div>
+        <h3 data-en="Rim Repair" data-es="Reparación de Rines">Rim Repair</h3>
+        <p data-en="Curb rash, bent rim, welding, color change, CNC diamond cut. Structural repair available. Refinish your daily." data-es="Raspaduras, rines doblados, soldadura, cambio de color, CNC diamond cut. Reparación estructural. Refresca tu daily.">Curb rash, bent rim, welding, color change, CNC diamond cut. Structural repair available. Refinish your daily.</p>
+        <div class="meta">
+          <div class="price"><span>FROM</span>$95</div>
+          <div class="view" data-en="View Details" data-es="Ver Detalles">View Details</div>
+        </div>
+      </a>
+
+      <a href="services.html#tint" class="svc-card">
+        <span class="num">06</span>
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 4l9 7 9-7"/></svg>
+        </div>
+        <h3 data-en="Window Tint" data-es="Polarizado">Window Tint</h3>
+        <p data-en="2-door, 4-door, SUV/truck, windshield ceramic tint. 3M & Suntek ceramic IR. NY-legal VLT. Lifetime warranty." data-es="2 puertas, 4 puertas, SUV/troca, parabrisas cerámico. 3M y Suntek cerámico IR. VLT legal en NY. Garantía de por vida.">2-door, 4-door, SUV/truck, windshield ceramic tint. 3M & Suntek ceramic IR. NY-legal VLT. Lifetime warranty.</p>
+        <div class="meta">
+          <div class="price"><span>FROM</span>$320</div>
+          <div class="view" data-en="View Details" data-es="Ver Detalles">View Details</div>
+        </div>
+      </a>
+
+      <a href="services.html#detail" class="svc-card">
+        <span class="num">07</span>
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12a7 7 0 1 1 14 0v3a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4v-3z"/><path d="M9 15h6"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></svg>
+        </div>
+        <h3 data-en="Detail" data-es="Detallado">Detail</h3>
+        <p data-en="Express detail, full interior/exterior, paint correction, ceramic coating. Hand wash, two-bucket, finish like new." data-es="Express detail, full interior/exterior, corrección de pintura, cerámico. Lavado a mano, dos cubetas, acabado de showroom.">Express detail, full interior/exterior, paint correction, ceramic coating. Hand wash, two-bucket, finish like new.</p>
+        <div class="meta">
+          <div class="price"><span>FROM</span>$149</div>
+          <div class="view" data-en="View Details" data-es="Ver Detalles">View Details</div>
+        </div>
+      </a>
+
+      <a href="#" data-open-quote class="svc-card" style="background:var(--red);border-color:var(--red);">
+        <span class="num" style="color:rgba(255,255,255,.55)">08</span>
+        <div class="icon" style="color:#fff">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.5 3.5L21 10l-6.5 6.5L12 14l-2.5 2.5L7 14l-2.5 2.5L2 14l2.5-2.5L7 14l2.5-2.5L12 14l2.5-2.5z"/></svg>
+        </div>
+        <h3 style="color:#fff" data-en="Custom Build" data-es="Build Custom">Custom Build</h3>
+        <p style="color:rgba(255,255,255,.85)" data-en="Got a vision? Bring the photo, we'll bring the spec sheet. Multi-service builds with documented timelines and bundle pricing." data-es="¿Tienes una visión? Trae la foto, hacemos la build sheet. Builds multi-servicio con timeline documentado y precios bundle.">Got a vision? Bring the photo, we'll bring the spec sheet. Multi-service builds with documented timelines and bundle pricing.</p>
+        <div class="meta" style="border-top-color:rgba(255,255,255,.25)">
+          <div class="price" style="color:#fff"><span style="color:rgba(255,255,255,.6)">SAVE UP TO</span>20%</div>
+          <div class="view" style="color:#fff" data-en="Start a Build" data-es="Empezar Build">Start a Build</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED SERVICE — Suspension ============ -->
+<section class="section feature" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-bgnum">02</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">02 / FEATURED</div>
+        <span class="red-bar mt-3"></span>
+        <h2 class="section-title">
+          <span data-en="Suspension." data-es="Suspensión.">Suspension.</span> <span class="text-red" data-en="Dialed in." data-es="Calibrada.">Dialed in.</span>
+        </h2>
+      </div>
+      <p class="section-sub" data-en="Corner-balanced coilovers. Ride-height set. Alignment included. The way it should be." data-es="Coilovers con corner balance. Altura ajustada. Alineación incluida. Como debe ser.">Corner-balanced coilovers. Ride-height set. Alignment included. The way it should be.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-img reveal clip-reveal">
+        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1600&q=85" alt="Performance suspension build" />
+        <div class="badge-pos">FEATURED · 02</div>
+        <div class="num-pos">02</div>
+      </div>
+
+      <div class="reveal">
+        <div class="eyebrow">★ INSTALL · TUNE · ALIGN</div>
+        <h3 class="display mt-3" style="font-size:48px;line-height:.92">
+          <span data-en="Track-ready" data-es="Track-ready">Track-ready</span><br>
+          <span class="text-red" data-en="without the harshness." data-es="sin la dureza.">without the harshness.</span>
+        </h3>
+        <p style="font-size:16px;color:var(--paper-2);margin-top:18px;line-height:1.65"
+           data-en="We install BC Racing, KW, Bilstein, Tein and Ohlins. Every coilover install includes corner-weight balancing, ride-height set to your preference, and a 4-wheel alignment using our Hunter Hawkeye Elite rig."
+           data-es="Instalamos BC Racing, KW, Bilstein, Tein y Ohlins. Cada coilover incluye corner-weight balancing, altura a tu preferencia y alineación 4 ruedas en el Hunter Hawkeye Elite.">
+          We install BC Racing, KW, Bilstein, Tein and Ohlins. Every coilover install includes corner-weight balancing, ride-height set to your preference, and a 4-wheel alignment using our Hunter Hawkeye Elite rig.
+        </p>
+
+        <ul class="feature-list">
+          <li data-en="Coilover install + ride-height set" data-es="Instalación coilover + altura ajustada">Coilover install + ride-height set</li>
+          <li data-en="4-wheel alignment included" data-es="Alineación 4 ruedas incluida">4-wheel alignment included</li>
+          <li data-en="Corner-balance available (track-prep)" data-es="Corner-balance disponible (track-prep)">Corner-balance available (track-prep)</li>
+          <li data-en="Lowering springs, sway bars, end links" data-es="Springs, barras stabilizadoras, end links">Lowering springs, sway bars, end links</li>
+          <li data-en="Test drive + customer sign-off" data-es="Prueba en carretera + firma del cliente">Test drive + customer sign-off</li>
+        </ul>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px">
+          <a href="#" data-open-quote class="btn btn-red" data-en="Get Quote" data-es="Cotizar">Get Quote</a>
+          <a href="services.html#suspension" class="btn btn-line" data-en="See full menu" data-es="Ver menú">See full menu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICE LIST ============ -->
+<section class="section">
+  <div class="section-bgnum">03</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">03 / PRICE LIST</div>
+        <span class="red-bar mt-3"></span>
+        <h2 class="section-title">
+          <span data-en="Straight pricing." data-es="Precios directos.">Straight pricing.</span><br>
+          <span class="text-red" data-en="No upsells." data-es="Sin upsells.">No upsells.</span>
+        </h2>
+      </div>
+      <p class="section-sub" data-en="Quoted line-by-line. If we find something mid-job, you hear from us first." data-es="Cotizado por línea. Si encontramos algo en el camino, te llamamos primero.">Quoted line-by-line. If we find something mid-job, you hear from us first.</p>
     </div>
 
     <div class="reveal-stagger">
-      <a href="services.html#mechanical" class="svc-row">
-        <div class="num">01.MECH</div>
-        <div>
-          <div class="display text-3xl md:text-4xl">Mechanical · General Repair</div>
-          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Brakes, suspension, alignment, diagnostics. OEM-grade parts." data-es="Frenos, suspensión, alineación, diagnóstico. Partes OEM.">Brakes, suspension, alignment, diagnostics. OEM-grade parts.</p>
+
+      <div class="pricegroup">
+        <div class="pricegroup-head">
+          <h3 data-en="Mechanical" data-es="Mecánica">Mechanical</h3>
+          <span class="grp-tag">01 / MECH</span>
         </div>
-        <div class="arrow">▸ READ</div>
-      </a>
-      <a href="services.html#suspension" class="svc-row">
-        <div class="num">02.SUSP</div>
-        <div>
-          <div class="display text-3xl md:text-4xl">Suspension · Coilover Install</div>
-          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="BC, KW, Bilstein, Tein. Corner-weight balancing, ride-height set." data-es="BC, KW, Bilstein, Tein. Balanceo por esquina, altura de manejo.">BC, KW, Bilstein, Tein. Corner-weight balancing, ride-height set.</p>
+        <div class="price-row">
+          <span class="pnum">M.01</span>
+          <div class="ptitle"><span class="pt">Brake service</span><span class="pd" data-en="Pads, rotors, calipers, lines, fluid flush" data-es="Pads, rotores, calipers, líneas, fluido">Pads, rotors, calipers, lines, fluid flush</span></div>
+          <div class="pprice"><span>FROM</span>$180</div>
         </div>
-        <div class="arrow">▸ READ</div>
-      </a>
-      <a href="services.html#bodywork" class="svc-row">
-        <div class="num">03.BODY</div>
-        <div>
-          <div class="display text-3xl md:text-4xl">Bodywork · Paint</div>
-          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Panel beating, dent removal, blending, full repaints, ceramic seal." data-es="Reparación de paneles, abolladuras, mezclado, repintado, sello cerámico.">Panel beating, dent removal, blending, full repaints, ceramic seal.</p>
+        <div class="price-row">
+          <span class="pnum">M.02</span>
+          <div class="ptitle"><span class="pt">Diagnostic Scan</span><span class="pd" data-en="OBD-II + manufacturer tool + road test" data-es="OBD-II + herramienta del fabricante + road test">OBD-II + manufacturer tool + road test</span></div>
+          <div class="pprice">$75</div>
         </div>
-        <div class="arrow">▸ READ</div>
-      </a>
-      <a href="services.html#powder" class="svc-row">
-        <div class="num">04.POWD</div>
-        <div>
-          <div class="display text-3xl md:text-4xl">Powder Coating</div>
-          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Wheels, brake calipers, suspension components. 200+ color options." data-es="Rines, calipers, componentes de suspensión. 200+ colores.">Wheels, brake calipers, suspension components. 200+ color options.</p>
+        <div class="price-row">
+          <span class="pnum">M.03</span>
+          <div class="ptitle"><span class="pt">Alignment · 4-wheel</span><span class="pd" data-en="Hunter Hawkeye Elite. Print-out included." data-es="Hunter Hawkeye Elite. Reporte impreso.">Hunter Hawkeye Elite. Print-out included.</span></div>
+          <div class="pprice">$120</div>
         </div>
-        <div class="arrow">▸ READ</div>
-      </a>
-      <a href="services.html#rim" class="svc-row">
-        <div class="num">05.RIM</div>
-        <div>
-          <div class="display text-3xl md:text-4xl">Rim Repair · Refinish</div>
-          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Curb rash, structural, color change. CNC re-machining available." data-es="Raspaduras, estructural, cambio de color. Re-mecanizado CNC disponible.">Curb rash, structural, color change. CNC re-machining available.</p>
+        <div class="price-row">
+          <span class="pnum">M.04</span>
+          <div class="ptitle"><span class="pt">Oil & Filter</span><span class="pd" data-en="Liqui Moly, Castrol Edge, Mobil 1" data-es="Liqui Moly, Castrol Edge, Mobil 1">Liqui Moly, Castrol Edge, Mobil 1</span></div>
+          <div class="pprice"><span>FROM</span>$89</div>
         </div>
-        <div class="arrow">▸ READ</div>
-      </a>
-      <a href="services.html#tint" class="svc-row">
-        <div class="num">06.TINT</div>
-        <div>
-          <div class="display text-3xl md:text-4xl">Window Tint</div>
-          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Ceramic 3M & Suntek. NY-legal VLT options. Lifetime warranty." data-es="Cerámico 3M y Suntek. Tonos legales en NY. Garantía de por vida.">Ceramic 3M & Suntek. NY-legal VLT options. Lifetime warranty.</p>
+      </div>
+
+      <div class="pricegroup">
+        <div class="pricegroup-head">
+          <h3 data-en="Suspension & Coilovers" data-es="Suspensión y Coilovers">Suspension & Coilovers</h3>
+          <span class="grp-tag">02 / SUSP</span>
         </div>
-        <div class="arrow">▸ READ</div>
-      </a>
-      <a href="services.html#detail" class="svc-row">
-        <div class="num">07.DTAL</div>
-        <div>
-          <div class="display text-3xl md:text-4xl">Detailing · Paint Correction</div>
-          <p class="tech text-xs mt-2 text-[var(--paper-3)]" data-en="Multi-stage correction, ceramic coating, leather restoration." data-es="Corrección multi-etapa, cerámico, restauración de cuero.">Multi-stage correction, ceramic coating, leather restoration.</p>
+        <div class="price-row">
+          <span class="pnum">S.01</span>
+          <div class="ptitle"><span class="pt">Coilover install · standard</span><span class="pd" data-en="Bolt-on, ride-height set, road test" data-es="Bolt-on, altura ajustada, road test">Bolt-on, ride-height set, road test</span></div>
+          <div class="pprice"><span>FROM</span>$450</div>
         </div>
-        <div class="arrow">▸ READ</div>
-      </a>
+        <div class="price-row">
+          <span class="pnum">S.02</span>
+          <div class="ptitle"><span class="pt">Coilover + Corner Balance</span><span class="pd" data-en="Track-tuned, fluid weights, alignment incl." data-es="Track-tuned, fluid weights, alineación incluida.">Track-tuned, fluid weights, alignment incl.</span></div>
+          <div class="pprice">$895</div>
+        </div>
+        <div class="price-row">
+          <span class="pnum">S.03</span>
+          <div class="ptitle"><span class="pt">Lift Kit · Truck/SUV</span><span class="pd" data-en="2–6&quot; Bilstein, ICON, Old Man Emu" data-es="2–6&quot; Bilstein, ICON, Old Man Emu">2–6" Bilstein, ICON, Old Man Emu</span></div>
+          <div class="pprice"><span>FROM</span>$750</div>
+        </div>
+        <div class="price-row">
+          <span class="pnum">S.04</span>
+          <div class="ptitle"><span class="pt">Lowering Springs</span><span class="pd" data-en="Eibach, H&R, Tein. Install + align." data-es="Eibach, H&R, Tein. Instalación + alineación.">Eibach, H&R, Tein. Install + align.</span></div>
+          <div class="pprice"><span>FROM</span>$385</div>
+        </div>
+      </div>
+
+      <div class="pricegroup">
+        <div class="pricegroup-head">
+          <h3 data-en="Detail & Coating" data-es="Detallado y Cerámico">Detail & Coating</h3>
+          <span class="grp-tag">07 / DTAL</span>
+        </div>
+        <div class="price-row">
+          <span class="pnum">D.01</span>
+          <div class="ptitle"><span class="pt">Express Detail</span><span class="pd" data-en="Wash, clay, interior vacuum, dressing" data-es="Lavado, clay, aspirado interior, dressing">Wash, clay, interior vacuum, dressing</span></div>
+          <div class="pprice">$149</div>
+        </div>
+        <div class="price-row">
+          <span class="pnum">D.02</span>
+          <div class="ptitle"><span class="pt">Full Interior + Exterior</span><span class="pd" data-en="Steam, extraction, leather, polish, sealant" data-es="Vapor, extracción, cuero, pulido, sealant">Steam, extraction, leather, polish, sealant</span></div>
+          <div class="pprice">$349</div>
+        </div>
+        <div class="price-row">
+          <span class="pnum">D.03</span>
+          <div class="ptitle"><span class="pt">Paint Correction · 2-stage</span><span class="pd" data-en="Compound + polish + finishing" data-es="Compound + pulido + finishing">Compound + polish + finishing</span></div>
+          <div class="pprice"><span>FROM</span>$550</div>
+        </div>
+        <div class="price-row">
+          <span class="pnum">D.04</span>
+          <div class="ptitle"><span class="pt">Ceramic Coating · 3-year</span><span class="pd" data-en="Multi-stage prep + Gtechniq / IGL" data-es="Prep multi-etapa + Gtechniq / IGL">Multi-stage prep + Gtechniq / IGL</span></div>
+          <div class="pprice">$895</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:24px">
+        <a href="services.html" class="btn btn-line" data-en="View Full Price List" data-es="Ver Lista Completa">View Full Price List</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FEATURED BUILD ============ -->
-<section class="py-20 md:py-28 relative z-10 bg-[#0a0a0a] border-y-2 border-[var(--paper)]">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+<!-- ============ RECENT BUILDS ============ -->
+<section class="section" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-bgnum">04</div>
+  <div class="wrap">
     <div class="section-head reveal">
       <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №03 · FEATURED BUILD</span></div>
-        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
-          <span class="outline-text">PLATE</span> <span class="text-red">№087</span><br>
-          <span data-en="TACOMA" data-es="TACOMA">TACOMA</span> <span class="display-italic" data-en="· TRD LIFT." data-es="· TRD LIFT.">· TRD LIFT.</span>
+        <div class="section-num">04 / RECENT BUILDS</div>
+        <span class="red-bar mt-3"></span>
+        <h2 class="section-title">
+          <span data-en="Built in-house." data-es="Construido in-house.">Built in-house.</span><br>
+          <span class="text-red" data-en="Documented start to finish." data-es="Documentado de inicio a fin.">Documented start to finish.</span>
         </h2>
       </div>
-      <a href="builds.html" class="hidden md:inline-flex tech text-[.7rem] uppercase tracking-[.22em] u-anim font-bold">All builds ▸</a>
+      <a href="builds.html" class="btn btn-line" data-en="View All Builds" data-es="Ver Todos los Builds">View All Builds</a>
     </div>
 
-    <div class="grid md:grid-cols-12 gap-8 md:gap-12 reveal">
-      <div class="md:col-span-7 relative overflow-hidden border-2 border-[var(--paper)]">
-        <div class="clip-reveal">
-          <img src="https://images.unsplash.com/photo-1547038577-da80abbc4f19?auto=format&fit=crop&w=1600&q=85" alt="Lifted Toyota Tacoma TRD" class="w-full aspect-[4/3] object-cover" style="filter:contrast(1.15) saturate(.85) brightness(.85) grayscale(.2);"/>
+    <div class="builds-grid reveal-stagger">
+      <a href="builds.html" class="build">
+        <div class="build-photo">
+          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1100&q=85" alt="BMW M4 build"/>
+          <span class="b-tag">BUILD №086</span>
         </div>
-        <div class="absolute top-3 right-3 badge">★ PLATE №087</div>
-        <div class="absolute bottom-3 left-3 stamp stamp-solid">REV.A · COMPLETE</div>
-      </div>
-
-      <div class="md:col-span-5 space-y-5">
-        <div class="card-poster p-7 relative">
-          <!-- corner stripe -->
-          <div class="absolute top-0 right-0 w-12 h-12 pat-caution"></div>
-          <div class="eyebrow mb-5">★ SPEC · MODIFICATIONS</div>
-          <div class="space-y-3">
-            <div class="spec"><span class="k">LIFT</span><span class="v ml-auto">3" Bilstein 5100</span></div>
-            <div class="spec"><span class="k">WHEELS</span><span class="v ml-auto">17×9 Method MR701</span></div>
-            <div class="spec"><span class="k">TIRES</span><span class="v ml-auto">285/70R17 BFG K02</span></div>
-            <div class="spec"><span class="k">BUMPER</span><span class="v ml-auto">Custom steel front</span></div>
-            <div class="spec"><span class="k">LIGHTS</span><span class="v ml-auto">LED bar + ditch pods</span></div>
-            <div class="spec"><span class="k">COAT</span><span class="v ml-auto">Powder · matte black</span></div>
-          </div>
-          <div class="schem-line-red my-5"></div>
-          <div class="grid grid-cols-2 gap-3">
-            <div>
-              <div class="label">★ BUILD TIME</div>
-              <div class="dyno dyno-red text-5xl mt-1"><span data-count="11">0</span>d</div>
-            </div>
-            <div>
-              <div class="label">★ INVESTMENT</div>
-              <div class="dyno text-5xl mt-1">$<span data-count="7.4" data-decimals="1">0</span>k</div>
-            </div>
-          </div>
+        <div class="build-info">
+          <div class="vehicle">BMW M4</div>
+          <div class="work"><strong data-en="COILOVERS" data-es="COILOVERS">COILOVERS</strong> <span data-en="· ALIGNMENT" data-es="· ALINEACIÓN">· ALIGNMENT</span></div>
         </div>
+      </a>
 
-        <a href="builds.html" data-magnet class="btn btn-line w-full">
-          <span data-en="Open build log" data-es="Ver bitácora">Open build log</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
-      </div>
+      <a href="builds.html" class="build">
+        <div class="build-photo">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1100&q=85" alt="Mustang GT build"/>
+          <span class="b-tag">BUILD №085</span>
+        </div>
+        <div class="build-info">
+          <div class="vehicle">Mustang GT</div>
+          <div class="work"><strong data-en="TINT" data-es="POLARIZADO">TINT</strong> <span data-en="· DETAIL" data-es="· DETALLADO">· DETAIL</span></div>
+        </div>
+      </a>
+
+      <a href="builds.html" class="build">
+        <div class="build-photo">
+          <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1100&q=85" alt="Mercedes C63 build"/>
+          <span class="b-tag">BUILD №084</span>
+        </div>
+        <div class="build-info">
+          <div class="vehicle">Mercedes C63</div>
+          <div class="work"><strong data-en="WHEELS" data-es="RINES">WHEELS</strong> <span data-en="· CERAMIC COATING" data-es="· CERÁMICO">· CERAMIC COATING</span></div>
+        </div>
+      </a>
+
+      <a href="builds.html" class="build">
+        <div class="build-photo">
+          <img src="https://images.unsplash.com/photo-1547038577-da80abbc4f19?auto=format&fit=crop&w=1100&q=85" alt="Tacoma TRD build"/>
+          <span class="b-tag">BUILD №087</span>
+        </div>
+        <div class="build-info">
+          <div class="vehicle">Toyota Tacoma · TRD</div>
+          <div class="work"><strong data-en="LIFT KIT" data-es="LIFT KIT">LIFT KIT</strong> <span data-en="· WHEELS · POWDER" data-es="· RINES · POWDER">· WHEELS · POWDER</span></div>
+        </div>
+      </a>
+
+      <a href="builds.html" class="build">
+        <div class="build-photo">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1100&q=85" alt="Porsche Panamera build"/>
+          <span class="b-tag">BUILD №083</span>
+        </div>
+        <div class="build-info">
+          <div class="vehicle">Porsche Panamera</div>
+          <div class="work"><strong data-en="KW V3 COILOVERS" data-es="KW V3 COILOVERS">KW V3 COILOVERS</strong></div>
+        </div>
+      </a>
+
+      <a href="builds.html" class="build">
+        <div class="build-photo">
+          <img src="https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?auto=format&fit=crop&w=1100&q=85" alt="Lamborghini detail"/>
+          <span class="b-tag">BUILD №082</span>
+        </div>
+        <div class="build-info">
+          <div class="vehicle">Lamborghini Murciélago</div>
+          <div class="work"><strong data-en="CALIPER POWDER" data-es="CALIPER POWDER">CALIPER POWDER</strong> <span data-en="· DETAIL" data-es="· DETALLADO">· DETAIL</span></div>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============ PROCESS — illustrated 4 steps ============ -->
-<section class="py-20 md:py-28 relative z-10 overflow-hidden">
-  <!-- background pattern -->
-  <div class="absolute inset-0 pat-grid pointer-events-none opacity-60"></div>
-
-  <div class="relative max-w-[1500px] mx-auto px-6 md:px-10">
-    <div class="section-head reveal">
-      <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №04 · METHODOLOGY</span></div>
-        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
-          <span data-en="FROM INTAKE" data-es="DE ENTRADA">FROM INTAKE</span><br>
-          <span class="display-italic text-red" data-en="TO DELIVERY." data-es="A ENTREGA.">TO DELIVERY.</span>
-        </h2>
-      </div>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 reveal-stagger">
-
-      <!-- 01 — diagnose -->
-      <div class="card-poster p-6 relative">
-        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
-        <div class="flex items-baseline justify-between mb-4">
-          <div class="dyno text-7xl text-red">01</div>
-          <span class="label">DIAG</span>
-        </div>
-        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round">
-          <circle cx="30" cy="30" r="22"/>
-          <path d="M30 30 L30 12" stroke="#e10600" stroke-width="2.2"/>
-          <circle cx="30" cy="30" r="2.5" fill="#e10600" stroke="none"/>
-          <text x="14" y="50" font-family="JetBrains Mono" font-size="6" fill="#fff">0</text>
-          <text x="42" y="50" font-family="JetBrains Mono" font-size="6" fill="#e10600">10</text>
-        </svg>
-        <h3 class="display text-2xl mb-2" data-en="Intake · Diagnosis" data-es="Entrada · Diagnóstico">Intake · Diagnosis</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="OBD scan, road test, lift inspection. Spec sheet drafted before any work starts." data-es="Escaneo OBD, prueba en ruta, inspección. Ficha técnica antes de empezar.">OBD scan, road test, lift inspection. Spec sheet drafted before any work starts.</p>
-      </div>
-
-      <!-- 02 — quote -->
-      <div class="card-poster p-6 relative">
-        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
-        <div class="flex items-baseline justify-between mb-4">
-          <div class="dyno text-7xl text-red">02</div>
-          <span class="label">QUOTE</span>
-        </div>
-        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round">
-          <rect x="14" y="10" width="32" height="44" stroke="#fff"/>
-          <line x1="20" y1="22" x2="40" y2="22"/>
-          <line x1="20" y1="30" x2="40" y2="30"/>
-          <line x1="20" y1="38" x2="32" y2="38"/>
-          <line x1="20" y1="46" x2="36" y2="46" stroke="#e10600" stroke-width="2.2"/>
-        </svg>
-        <h3 class="display text-2xl mb-2" data-en="Quote · Approval" data-es="Cotización · Aprobación">Quote · Approval</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="Itemized estimate, parts sourced from your tier. You approve before we cut a hose." data-es="Cotización por línea, partes según nivel. Apruebas antes de cortar una manguera.">Itemized estimate, parts sourced from your tier. You approve before we cut a hose.</p>
-      </div>
-
-      <!-- 03 — build (wheel) -->
-      <div class="card-poster p-6 relative">
-        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
-        <div class="flex items-baseline justify-between mb-4">
-          <div class="dyno text-7xl text-red">03</div>
-          <span class="label">BUILD</span>
-        </div>
-        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3">
-          <circle cx="30" cy="30" r="22" fill="none" stroke="#fff" stroke-width="1.8"/>
-          <g class="wheel-spin" style="transform-origin:30px 30px">
-            <circle cx="30" cy="30" r="16" fill="none" stroke="#fff" stroke-width="1.2" opacity=".6"/>
-            <circle cx="30" cy="30" r="4" fill="#e10600"/>
-            <g stroke="#fff" stroke-width="1.6" stroke-linecap="round">
-              <line x1="30" y1="14" x2="30" y2="22"/>
-              <line x1="44" y1="22" x2="36.5" y2="26.5"/>
-              <line x1="44" y1="38" x2="36.5" y2="33.5"/>
-              <line x1="30" y1="46" x2="30" y2="38"/>
-              <line x1="16" y1="38" x2="23.5" y2="33.5"/>
-              <line x1="16" y1="22" x2="23.5" y2="26.5"/>
-            </g>
-          </g>
-        </svg>
-        <h3 class="display text-2xl mb-2" data-en="Build · Document" data-es="Build · Documentación">Build · Document</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="Daily photos on Instagram, torque specs noted. No silent supplements." data-es="Fotos diarias en Instagram, torques anotados. Sin suplementos en silencio.">Daily photos on Instagram, torque specs noted. No silent supplements.</p>
-      </div>
-
-      <!-- 04 — test (flag) -->
-      <div class="card-poster p-6 relative">
-        <div class="absolute top-0 left-0 w-16 h-2 bg-red"></div>
-        <div class="flex items-baseline justify-between mb-4">
-          <div class="dyno text-7xl text-red">04</div>
-          <span class="label">TEST</span>
-        </div>
-        <svg viewBox="0 0 60 60" class="w-14 h-14 mb-3" fill="none" stroke="#fff" stroke-width="1.8">
-          <line x1="14" y1="8" x2="14" y2="52" stroke-width="2.5"/>
-          <g fill="#fff">
-            <rect x="16" y="10" width="6" height="6"/>
-            <rect x="28" y="10" width="6" height="6"/>
-            <rect x="40" y="10" width="6" height="6"/>
-            <rect x="22" y="16" width="6" height="6"/>
-            <rect x="34" y="16" width="6" height="6"/>
-            <rect x="16" y="22" width="6" height="6"/>
-            <rect x="28" y="22" width="6" height="6"/>
-            <rect x="40" y="22" width="6" height="6"/>
-            <rect x="22" y="28" width="6" height="6"/>
-            <rect x="34" y="28" width="6" height="6"/>
-          </g>
-        </svg>
-        <h3 class="display text-2xl mb-2" data-en="Test · Deliver" data-es="Prueba · Entrega">Test · Deliver</h3>
-        <p class="text-sm text-[var(--paper-2)] leading-relaxed" data-en="50 mi shakedown drive. Alignment double-check. Detail before pickup." data-es="50 millas de prueba. Alineación verificada. Detallado antes de la entrega.">50 mi shakedown drive. Alignment double-check. Detail before pickup.</p>
-      </div>
-    </div>
+<!-- ============ BUNDLE CTA ============ -->
+<section class="bundle">
+  <div class="bundle-bg">
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2200&q=85" alt="Performance cars in shop"/>
   </div>
-</section>
-
-<!-- ============ REVIEWS ============ -->
-<section class="py-20 md:py-28 relative z-10 bg-[#0a0a0a] border-y-2 border-[var(--paper)]">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
-    <div class="section-head reveal">
-      <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow">PLATE №05 · CUSTOMER LOG</span></div>
-        <h2 class="heavy text-6xl md:text-8xl mt-4 leading-[.88]">
-          <span data-en="THE CHAIR" data-es="EL CLIENTE">CUSTOMER</span><br>
-          <span class="display-italic text-red" data-en="LOG." data-es="LOG.">LOG.</span> <span class="outline-text" data-en="5.0 ★" data-es="5.0 ★">5.0 ★</span>
-        </h2>
-      </div>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-5 reveal-stagger">
-      <div class="card-poster p-6 relative">
-        <div class="absolute top-3 right-3 stamp-solid-red stamp">5.0 ★</div>
-        <div class="tech text-[.62rem] tracking-[.22em] uppercase text-red font-bold mb-4">LOG.142 · RAFAEL G.</div>
-        <p class="text-base text-[var(--paper)] leading-relaxed italic"
-           data-en='"Brought my WRX in for coilovers, ended up with a full corner-balance and alignment for less than the dealer quoted me on just shocks. They text photo updates daily."'
-           data-es='"Llevé mi WRX para coilovers, terminé con corner-balance completo y alineación por menos de lo que el dealer me cotizó solo de amortiguadores. Mandan fotos diarias por SMS."'>
-          "Brought my WRX in for coilovers, ended up with a full corner-balance and alignment for less than the dealer quoted me on just shocks. They text photo updates daily."
-        </p>
-        <div class="schem-line my-5"></div>
-        <div class="spec"><span class="k">JOB</span><span class="v ml-auto">BC BR coils + align</span></div>
-      </div>
-      <div class="card-poster p-6 relative">
-        <div class="absolute top-3 right-3 stamp-solid-red stamp">5.0 ★</div>
-        <div class="tech text-[.62rem] tracking-[.22em] uppercase text-red font-bold mb-4">LOG.143 · DANNY P.</div>
-        <p class="text-base text-[var(--paper)] leading-relaxed italic"
-           data-en='"Powder coated my brake calipers Ferrari red. Showed me the cure-oven temp logs. They actually care about doing it right, not just fast."'
-           data-es='"Me hicieron powder coat de los calipers en rojo Ferrari. Me mostraron los logs del horno. De verdad les importa hacerlo bien, no rápido."'>
-          "Powder coated my brake calipers Ferrari red. Showed me the cure-oven temp logs. They actually care about doing it right, not just fast."
-        </p>
-        <div class="schem-line my-5"></div>
-        <div class="spec"><span class="k">JOB</span><span class="v ml-auto">Caliper powder · 4-pc</span></div>
-      </div>
-      <div class="card-poster p-6 relative">
-        <div class="absolute top-3 right-3 stamp-solid-red stamp">5.0 ★</div>
-        <div class="tech text-[.62rem] tracking-[.22em] uppercase text-red font-bold mb-4">LOG.144 · CARLOS M.</div>
-        <p class="text-base text-[var(--paper)] leading-relaxed italic"
-           data-en='"Best part is they explain everything in Spanish if I want. My uncle drove from Brentwood just to use them. That tells you everything."'
-           data-es='"Lo mejor es que explican todo en español si quiero. Mi tío maneja desde Brentwood solo para usarlos. Eso te dice todo."'>
-          "Best part is they explain everything in Spanish if I want. My uncle drove from Brentwood just to use them. That tells you everything."
-        </p>
-        <div class="schem-line my-5"></div>
-        <div class="spec"><span class="k">JOB</span><span class="v ml-auto">Window tint · ceramic 20%</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA — poster ============ -->
-<section class="py-24 md:py-36 relative z-10 overflow-hidden">
-  <!-- Big outline numerals decor -->
-  <div class="pointer-events-none absolute -left-12 -top-10 outline-text-thick" style="font-family:Anton;font-size:38vw;line-height:.78;color:transparent;-webkit-text-stroke:1.5px rgba(225,6,0,.18);">087</div>
-  <div class="speed-lines"><span></span><span></span><span></span></div>
-
-  <div class="relative max-w-[1200px] mx-auto px-6 md:px-10 text-center reveal">
-    <div class="eyebrow mb-4" data-en="★ GOT A PROJECT? ★" data-es="★ ¿TIENES UN PROYECTO? ★">★ GOT A PROJECT? ★</div>
-    <h2 class="heavy text-6xl md:text-[10rem] leading-[.85]">
-      <span class="block" data-en="SEND THE" data-es="MANDA EL">SEND THE</span>
-      <span class="block display-italic text-red" data-en="SPEC." data-es="SPEC.">SPEC.</span>
-      <span class="block" data-en="WE'LL BUILD IT." data-es="LO CONSTRUIMOS.">WE'LL BUILD IT.</span>
+  <div class="bundle-content reveal">
+    <div class="section-num">★ BUILD PACKAGES AVAILABLE</div>
+    <span class="red-bar mt-3"></span>
+    <h2>
+      <span data-en="SAVE UP TO" data-es="AHORRA HASTA">SAVE UP TO</span>
+      <span class="pct">20%</span><br>
+      <span data-en="ON MULTI-SERVICE BUILDS." data-es="EN BUILDS MULTI-SERVICIO.">ON MULTI-SERVICE BUILDS.</span>
     </h2>
-    <div class="schem-line-red my-10 max-w-md mx-auto"></div>
-    <p class="text-[var(--paper-2)] text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light" data-en="Drop a photo of your car and what you want done. We'll write the build sheet, price every line, walk you through it before you commit." data-es="Manda foto de tu auto y lo que quieres. Hacemos la build sheet, cotizamos cada línea y te explicamos todo antes de comprometerte.">Drop a photo of your car and what you want done. We'll write the build sheet, price every line, walk you through it before you commit.</p>
-    <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="#" data-open-quote data-magnet class="btn btn-red" data-en="Request build sheet" data-es="Pedir build sheet">Request build sheet</a>
-      <a href="tel:+15163957424" class="btn btn-line">+1 (516) 395-7424</a>
+    <p data-en="Bundle coilovers, tint, detail, powder coat and alignment for a complete transformation. Price-locked for 30 days once we deliver your quote." data-es="Combina coilovers, polarizado, detallado, powder coat y alineación para una transformación completa. Precio lockeado 30 días una vez entregada la cotización.">
+      Bundle coilovers, tint, detail, powder coat and alignment for a complete transformation. Price-locked for 30 days once we deliver your quote.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px">
+      <a href="#" data-open-quote class="btn btn-red" data-en="Request Build Quote" data-es="Pedir Cotización Build">Request Build Quote</a>
+      <a href="services.html" class="btn btn-line" data-en="See Full Catalog" data-es="Ver Catálogo">See Full Catalog</a>
     </div>
   </div>
 </section>
 
-<!-- ============ CHECKER STRIP ============ -->
-<div class="flag-strip"></div>
+<!-- ============ CONTACT / FORM ============ -->
+<section class="section contact">
+  <div class="section-bgnum">05</div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">05 / CONTACT</div>
+        <span class="red-bar mt-3"></span>
+        <h2 class="section-title">
+          <span data-en="Send the spec." data-es="Manda el spec.">Send the spec.</span><br>
+          <span class="text-red" data-en="We'll build it." data-es="Lo construimos.">We'll build it.</span>
+        </h2>
+      </div>
+      <p class="section-sub" data-en="Drop your vehicle info and what you want done. Typical response under 4 hours, Mon–Sat." data-es="Manda info del vehículo y lo que quieres. Respuesta típica menos de 4 horas, Lun–Sáb.">Drop your vehicle info and what you want done. Typical response under 4 hours, Mon–Sat.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="ck" data-en="Visit the shop" data-es="Visita el shop">Visit the shop</div>
+            <div class="cv">31 Mahan St<br>West Babylon, NY 11704</div>
+            <div class="cd" data-en="Off Sunrise Hwy · Free parking" data-es="Cerca de Sunrise Hwy · Estacionamiento gratis">Off Sunrise Hwy · Free parking</div>
+          </div>
+        </a>
+
+        <a href="tel:+15163957424" class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="ck" data-en="Call · Mon–Sat" data-es="Llama · Lun–Sáb">Call · Mon–Sat</div>
+            <div class="cv big">+1 (516) 395-7424</div>
+            <div class="cd" data-en="Bilingual · EN/ES" data-es="Bilingüe · EN/ES">Bilingual · EN/ES</div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank" class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+          <div>
+            <div class="ck">Instagram</div>
+            <div class="cv">@a_spec_auto_hq</div>
+            <div class="cd" data-en="Daily build photos · DM for quote" data-es="Fotos diarias · DM para cotización">Daily build photos · DM for quote</div>
+          </div>
+        </a>
+
+        <div class="contact-card" style="cursor:default;">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg></div>
+          <div>
+            <div class="ck" data-en="Hours" data-es="Horarios">Hours</div>
+            <div class="cv">Mon–Sat · 09–20</div>
+            <div class="cd" data-en="Closed Sundays" data-es="Cerrado los domingos">Closed Sundays</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <div class="eyebrow" data-en="★ BUILD SHEET REQUEST ★" data-es="★ SOLICITUD DE BUILD SHEET ★">★ BUILD SHEET REQUEST ★</div>
+        <h3 class="display mt-3 mb-6" style="font-size:36px;line-height:.95">
+          <span data-en="Spec your" data-es="Especifica tu">Spec your</span> <span class="text-red" data-en="build." data-es="build.">build.</span>
+        </h3>
+
+        <form data-fake>
+          <div class="form-row cols-2">
+            <div>
+              <label class="field-label" data-en="Name" data-es="Nombre">Name <span class="req">*</span></label>
+              <input class="input" required data-en-placeholder="Full name" data-es-placeholder="Nombre completo" />
+            </div>
+            <div>
+              <label class="field-label" data-en="Phone" data-es="Teléfono">Phone <span class="req">*</span></label>
+              <input class="input" type="tel" required placeholder="(516) ..." />
+            </div>
+          </div>
+          <div class="form-row cols-2">
+            <div>
+              <label class="field-label">Email</label>
+              <input class="input" type="email" data-en-placeholder="you@email.com" data-es-placeholder="tu@email.com" />
+            </div>
+            <div>
+              <label class="field-label" data-en="Vehicle" data-es="Vehículo">Vehicle <span class="req">*</span></label>
+              <input class="input" required data-en-placeholder="Year · Make · Model" data-es-placeholder="Año · Marca · Modelo" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label class="field-label" data-en="Service needed" data-es="Servicio">Service needed</label>
+              <select class="input">
+                <option style="background:var(--bg)" value="">Select…</option>
+                <option style="background:var(--bg)">01 · Mechanical</option>
+                <option style="background:var(--bg)">02 · Suspension & Coilovers</option>
+                <option style="background:var(--bg)">03 · Bodywork & Paint</option>
+                <option style="background:var(--bg)">04 · Powder Coat</option>
+                <option style="background:var(--bg)">05 · Rim Repair</option>
+                <option style="background:var(--bg)">06 · Window Tint</option>
+                <option style="background:var(--bg)">07 · Detail & Ceramic</option>
+                <option style="background:var(--bg)">★ Multi-service Build (save 20%)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label class="field-label" data-en="Build description / message" data-es="Descripción del build / mensaje">Build description / message</label>
+              <textarea class="input" rows="5" data-en-placeholder="Tell us what you want done. Photos? Reference build? Timeline?" data-es-placeholder="Cuéntanos qué quieres. ¿Fotos? ¿Build de referencia? ¿Tiempo?"></textarea>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:8px">
+            <button type="submit" class="btn btn-red"><span data-en="Send Build Sheet" data-es="Enviar Build Sheet">Send Build Sheet</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+            <span class="label" data-en="Response in under 4 hours · Mon–Sat" data-es="Respuesta en menos de 4 horas · Lun–Sáb">Response in under 4 hours · Mon–Sat</span>
+          </div>
+          <div data-form-result class="hidden mono text-sm pt-3" style="color:var(--red);font-weight:700"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="py-14 md:py-20 bg-black border-t-2 border-[var(--paper)] relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
-    <div class="grid md:grid-cols-12 gap-10">
-      <div class="md:col-span-5">
-        <div class="flex items-center gap-3">
-          <svg viewBox="0 0 56 56" class="w-12 h-12">
-            <rect width="56" height="56" fill="#000"/>
-            <g transform="translate(8 8)">
-              <rect x="0" y="0" width="8" height="8" fill="#fff"/>
-              <rect x="16" y="0" width="8" height="8" fill="#fff"/>
-              <rect x="32" y="0" width="8" height="8" fill="#fff"/>
-              <rect x="8" y="8" width="8" height="8" fill="#fff"/>
-              <rect x="24" y="8" width="8" height="8" fill="#fff"/>
-              <rect x="0" y="16" width="8" height="8" fill="#fff"/>
-              <rect x="16" y="16" width="8" height="8" fill="#fff"/>
-              <rect x="32" y="16" width="8" height="8" fill="#fff"/>
-              <rect x="8" y="24" width="8" height="8" fill="#fff"/>
-              <rect x="24" y="24" width="8" height="8" fill="#fff"/>
-            </g>
-            <rect x="0" y="48" width="56" height="8" fill="#e10600"/>
-          </svg>
-          <div>
-            <div class="display text-2xl">A-Spec</div>
-            <div class="tech text-[.55rem] tracking-[.32em] uppercase text-red" style="font-weight:800">AUTO · HEADQUARTERS</div>
-          </div>
-        </div>
-        <p class="text-[var(--paper-3)] text-sm max-w-sm mt-6 leading-relaxed"
-           data-en="West Babylon's full-spec performance shop. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail."
-           data-es="El shop full-spec de performance en West Babylon. Builds custom, mecánica, suspensión, carrocería, powder coat, rines, polarizado, detallado.">
-          West Babylon's full-spec performance shop. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail.
+<footer class="site-footer">
+  <div class="racing-stripe" style="position:absolute;top:0;left:0;right:0"></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:20px;display:inline-flex">
+          <span class="logo-mark"><span>A</span></span>
+          <span class="logo-text">
+            <span class="l1">A-Spec</span>
+            <span class="l2">AUTO · HEADQUARTERS</span>
+          </span>
+        </a>
+        <p style="font-family:'Inter',sans-serif;font-size:14px;color:var(--paper-2);max-width:340px;line-height:1.65;margin-top:18px"
+           data-en="West Babylon's premium performance garage. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail."
+           data-es="El garage premium de performance en West Babylon. Builds custom, mecánica, suspensión, carrocería, powder coat, rines, tint, detallado.">
+          West Babylon's premium performance garage. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail.
         </p>
       </div>
-      <div class="md:col-span-2">
-        <div class="eyebrow mb-3" data-en="Sections" data-es="Secciones">Sections</div>
-        <div class="flex flex-col gap-2 text-sm tech text-[var(--paper-2)] font-bold">
-          <a href="index.html" class="hover:text-red transition-colors" data-en="Home" data-es="Inicio">Home</a>
-          <a href="services.html" class="hover:text-red transition-colors" data-en="Services" data-es="Servicios">Services</a>
-          <a href="builds.html" class="hover:text-red transition-colors" data-en="Builds" data-es="Builds">Builds</a>
-          <a href="about.html" class="hover:text-red transition-colors" data-en="The Shop" data-es="El Shop">The Shop</a>
-          <a href="contact.html" class="hover:text-red transition-colors" data-en="Contact" data-es="Contacto">Contact</a>
-        </div>
+      <div>
+        <h4 data-en="Sections" data-es="Secciones">Sections</h4>
+        <a href="index.html" class="foot-link" data-en="Home" data-es="Inicio">Home</a>
+        <a href="services.html" class="foot-link" data-en="Services" data-es="Servicios">Services</a>
+        <a href="builds.html" class="foot-link" data-en="Builds" data-es="Builds">Builds</a>
+        <a href="about.html" class="foot-link" data-en="The Shop" data-es="El Shop">The Shop</a>
+        <a href="contact.html" class="foot-link" data-en="Contact" data-es="Contacto">Contact</a>
       </div>
-      <div class="md:col-span-2">
-        <div class="eyebrow mb-3" data-en="Address" data-es="Dirección">Address</div>
-        <div class="text-sm tech text-[var(--paper-2)] leading-relaxed font-bold">31 Mahan St<br>West Babylon, NY 11704</div>
-        <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="text-[.66rem] tech tracking-[.18em] uppercase mt-3 inline-block u-anim text-red font-bold">Map ▸</a>
+      <div>
+        <h4 data-en="Address" data-es="Dirección">Address</h4>
+        <div style="font-family:'Inter',sans-serif;font-size:14px;color:var(--paper-2);line-height:1.65">31 Mahan St<br>West Babylon, NY 11704</div>
+        <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="foot-link mt-3" style="color:var(--red);font-weight:700">Open in Maps ▸</a>
       </div>
-      <div class="md:col-span-3">
-        <div class="eyebrow mb-3" data-en="Comms" data-es="Comunicación">Comms</div>
-        <div class="flex flex-col gap-2 text-sm">
-          <a href="tel:+15163957424" class="display text-2xl text-red">+1 (516) 395-7424</a>
-          <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank" class="text-[var(--paper-2)] hover:text-red tech text-sm transition-colors font-bold">@a_spec_auto_hq</a>
-          <div class="tech text-[.66rem] tracking-[.22em] uppercase pt-2 text-paper font-bold" data-en="Mon–Sat · 09:00–20:00" data-es="Lun–Sáb · 09:00–20:00">Mon–Sat · 09:00–20:00</div>
-        </div>
+      <div>
+        <h4 data-en="Comms" data-es="Comunicación">Comms</h4>
+        <a href="tel:+15163957424" class="foot-link" style="font-family:'Bebas Neue';font-size:22px;color:var(--paper);letter-spacing:.02em">+1 (516) 395-7424</a>
+        <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank" class="foot-link">@a_spec_auto_hq</a>
+        <div class="foot-link" style="color:var(--paper-3);font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;margin-top:8px">Mon–Sat · 09–20</div>
       </div>
     </div>
-    <div class="tick-strip mt-12 mb-6"></div>
-    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 tech text-[.66rem] tracking-[.22em] uppercase text-[var(--paper-3)] font-bold">
+    <div class="divider" style="margin:48px 0 24px"></div>
+    <div style="display:flex;flex-direction:column;gap:8px;justify-content:space-between;align-items:flex-start;font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--paper-3);font-weight:600" class="md:flex-row md:items-center">
       <div>© <span data-year></span> A-Spec Auto Headquarters · NY DMV registered</div>
-      <div data-en="★ PLATE REV. 11.2026 ★" data-es="★ PLATE REV. 11.2026 ★">★ PLATE REV. 11.2026 ★</div>
+      <div data-en="ASE Certified · OEM Parts · 12-month warranty" data-es="ASE Certified · Partes OEM · 12 meses de garantía">ASE Certified · OEM Parts · 12-month warranty</div>
     </div>
   </div>
 </footer>
 
 <!-- Mobile sticky CTA -->
 <div class="mobile-cta">
-  <a href="tel:+15163957424" class="btn-line text-paper">Call</a>
-  <a href="#" data-open-quote class="btn-red text-white" data-en="Spec sheet" data-es="Spec sheet">Spec sheet</a>
+  <a href="tel:+15163957424" class="mc-line">Call</a>
+  <a href="#" data-open-quote class="mc-red" data-en="Get Quote" data-es="Cotización">Get Quote</a>
 </div>
 
 <!-- Quote modal -->
@@ -730,32 +688,23 @@
   <div class="modal-card">
     <button class="modal-close" data-close-quote aria-label="Close">×</button>
     <div class="eyebrow" data-en="★ BUILD SHEET REQUEST ★" data-es="★ SOLICITUD DE BUILD SHEET ★">★ BUILD SHEET REQUEST ★</div>
-    <h3 class="heavy text-4xl mt-3 mb-2 leading-[.9]">
-      <span data-en="SPEC YOUR" data-es="ESPECIFICA TU">SPEC YOUR</span>
-      <span class="display-italic text-red" data-en="BUILD." data-es="BUILD.">BUILD.</span>
+    <h3 class="display mt-3 mb-2" style="font-size:36px;line-height:.95">
+      <span data-en="Spec your" data-es="Especifica tu">Spec your</span> <span class="text-red" data-en="build." data-es="build.">build.</span>
     </h3>
-    <p class="text-sm text-[var(--paper-3)] tech mb-7" data-en="> we draft. you approve. we build." data-es="> diseñamos. apruebas. construimos.">&gt; we draft. you approve. we build.</p>
-    <form data-fake class="space-y-5">
-      <div>
-        <span class="field-label" data-en="Name" data-es="Nombre">Name</span>
-        <input class="input" required data-en-placeholder="Your full name" data-es-placeholder="Tu nombre completo" />
+    <p style="font-family:'Inter',sans-serif;font-size:13px;color:var(--paper-3);margin-bottom:24px" data-en="We draft. You approve. We build." data-es="Diseñamos. Apruebas. Construimos.">We draft. You approve. We build.</p>
+    <form data-fake>
+      <div class="form-row">
+        <div><label class="field-label" data-en="Name" data-es="Nombre">Name</label><input class="input" required/></div>
       </div>
-      <div class="grid grid-cols-2 gap-5">
-        <div>
-          <span class="field-label" data-en="Phone" data-es="Teléfono">Phone</span>
-          <input class="input" required type="tel" placeholder="(516) ..." />
-        </div>
-        <div>
-          <span class="field-label" data-en="Vehicle" data-es="Vehículo">Vehicle</span>
-          <input class="input" data-en-placeholder="YR · MK · MDL" data-es-placeholder="AÑO · MARCA · MOD" />
-        </div>
+      <div class="form-row cols-2">
+        <div><label class="field-label" data-en="Phone" data-es="Teléfono">Phone</label><input class="input" type="tel" required placeholder="(516) ..."/></div>
+        <div><label class="field-label" data-en="Vehicle" data-es="Vehículo">Vehicle</label><input class="input" data-en-placeholder="Year · Make · Model" data-es-placeholder="Año · Marca · Modelo"/></div>
       </div>
-      <div>
-        <span class="field-label" data-en="Build description" data-es="Descripción del build">Build description</span>
-        <textarea class="input" rows="4" data-en-placeholder="What needs done? Photos? Reference build?" data-es-placeholder="¿Qué se necesita? ¿Fotos? ¿Build de referencia?"></textarea>
+      <div class="form-row">
+        <div><label class="field-label" data-en="Build description" data-es="Descripción del build">Build description</label><textarea class="input" rows="4" data-en-placeholder="What needs done?" data-es-placeholder="¿Qué se necesita?"></textarea></div>
       </div>
-      <button class="btn btn-red w-full"><span data-en="Send · get spec sheet" data-es="Enviar · obtener build sheet">Send · get spec sheet</span></button>
-      <div data-form-result class="hidden tech text-sm pt-2 text-red font-bold"></div>
+      <button type="submit" class="btn btn-red" style="width:100%"><span data-en="Send · get spec sheet" data-es="Enviar · obtener build sheet">Send · get spec sheet</span></button>
+      <div data-form-result class="hidden mono text-sm pt-3" style="color:var(--red);font-weight:700"></div>
     </form>
   </div>
 </div>
