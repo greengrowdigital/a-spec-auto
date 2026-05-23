@@ -1,14 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<rect width="64" height="64" rx="8" fill="#000"/>
-<g transform="translate(8 8)">
-<rect x="0" y="0" width="12" height="12" fill="#fff"/>
-<rect x="24" y="0" width="12" height="12" fill="#fff"/>
-<rect x="12" y="12" width="12" height="12" fill="#fff"/>
-<rect x="36" y="12" width="12" height="12" fill="#fff"/>
-<rect x="0" y="24" width="12" height="12" fill="#fff"/>
-<rect x="24" y="24" width="12" height="12" fill="#fff"/>
-<rect x="12" y="36" width="12" height="12" fill="#fff"/>
-<rect x="36" y="36" width="12" height="12" fill="#fff"/>
-</g>
-<rect x="0" y="56" width="64" height="8" fill="#e10600"/>
+<rect width="64" height="64" fill="#000"/>
+<rect x="0" y="56" width="64" height="8" fill="#ff0a1e"/>
+<text x="50%" y="60%" font-family="Arial Black, sans-serif" font-weight="900" font-size="38" text-anchor="middle" fill="#fff" letter-spacing="-2">A</text>
 </svg>

@@ -3,245 +3,305 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact · A-Spec Auto HQ · 31 Mahan St West Babylon</title>
-<meta name="description" content="Visit A-Spec Auto Headquarters at 31 Mahan St, West Babylon NY. Open Mon–Sat 9AM–8PM. Call (516) 395-7424." />
+<title>Contact — A-Spec Auto HQ</title>
+<meta name="description" content="Contact A-Spec Auto HQ at 31 Mahan St, West Babylon NY. Call (516) 395-7424. Open Mon–Sat." />
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Anton&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:#000;color:#fff;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',system-ui,sans-serif;background:#000;color:#fff;overflow-x:hidden;font-weight:400;line-height:1.55;font-size:16px}
+img{display:block;max-width:100%;height:auto}
+a{color:#fff;text-decoration:none}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+ul,ol{list-style:none}
+input,select,textarea{font:inherit;color:inherit;background:transparent;border:0;outline:none}
+::selection{background:#ff0a1e;color:#fff}
+:root{--r:#ff0a1e;--r-d:#cc0017}
+.wrap{max-width:1500px;margin:0 auto;padding:0 28px}
+@media(min-width:768px){.wrap{padding:0 56px}}
+h1,h2,h3,h4{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.01em;line-height:.9;text-transform:uppercase}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--r);font-weight:600;display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';display:block;width:36px;height:1px;background:var(--r)}
+.scroll-bar{position:fixed;top:0;left:0;height:2px;background:var(--r);z-index:90;width:0;transition:width .1s linear}
+.cf{position:fixed;top:0;left:0;width:12px;height:12px;border-radius:50%;background:var(--r);pointer-events:none;z-index:1000;transform:translate(-50%,-50%);transition:transform .15s ease,opacity .25s;mix-blend-mode:difference;opacity:0;will-change:transform}
+.cf.active{opacity:1}.cf.big{transform:translate(-50%,-50%) scale(2.6)}
+@media(max-width:960px){.cf{display:none}}
+.header{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(0,0,0,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);height:78px;display:flex;align-items:center}
+.header .row{width:100%;max-width:1500px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+@media(min-width:768px){.header .row{padding:0 56px}}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:42px;height:42px;background:#fff;position:relative;display:grid;place-items:center;flex-shrink:0}
+.logo-mark::after{content:'';position:absolute;left:0;right:0;bottom:0;height:7px;background:var(--r)}
+.logo-mark span{font-family:'Bebas Neue';font-size:26px;color:#000;line-height:1;padding-bottom:7px}
+.logo-name{font-family:'Bebas Neue';font-size:24px;letter-spacing:.02em;line-height:1}
+.logo-tag{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.32em;color:#888;margin-top:3px;display:block}
+.nav{display:none;gap:36px;align-items:center}
+@media(min-width:960px){.nav{display:flex}}
+.nav a{font-family:'Inter';font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#fff;position:relative;padding:8px 0}
+.nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--r);transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1);transform-origin:left}
+.nav a.active{color:var(--r)}
+.header-cta{display:flex;align-items:center;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;font-family:'Inter';font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;transition:all .3s ease;cursor:pointer;border-radius:0;border:1px solid transparent;position:relative;overflow:hidden}
+.btn-red{background:var(--r);color:#fff;border-color:var(--r)}
+.btn-red::before{content:'';position:absolute;inset:0;background:var(--r-d);transform:translateY(101%);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.btn-red:hover::before{transform:translateY(0)}
+.btn-red span,.btn-red svg{position:relative;z-index:1}
+.btn-line{background:transparent;color:#fff;border:1px solid #fff}
+.btn-line::before{content:'';position:absolute;inset:0;background:#fff;transform:translateY(101%);transition:transform .4s cubic-bezier(.16,1,.3,1);z-index:0}
+.btn-line:hover::before{transform:translateY(0)}
+.btn-line:hover{color:#000}
+.btn-line span,.btn-line svg{position:relative;z-index:1}
+.btn-sm{padding:11px 20px;font-size:11px}
+.menu-btn{display:grid;place-items:center;width:42px;height:42px;background:transparent;border:1px solid rgba(255,255,255,.16);color:#fff}
+@media(min-width:960px){.menu-btn{display:none}}
+.menu-panel{position:fixed;top:78px;left:0;right:0;background:#000;border-bottom:1px solid rgba(255,255,255,.16);padding:30px 28px;display:none;flex-direction:column;gap:20px;z-index:79}
+.menu-panel.open{display:flex}
+.menu-panel a{font-family:'Bebas Neue';font-size:32px;letter-spacing:.02em;color:#fff}
+.page-head{padding-top:200px;padding-bottom:80px;border-bottom:1px solid rgba(255,255,255,.08)}
+.page-head .num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--r);font-weight:700}
+.page-head .rule{height:1px;width:48px;background:var(--r);margin:18px 0 26px}
+.page-head h1{font-family:'Bebas Neue';font-size:clamp(56px,12vw,160px);line-height:.9;letter-spacing:.005em}
+.page-head h1 .a{font-family:'Playfair Display',serif;font-style:italic;color:var(--r);font-weight:500;letter-spacing:-.02em}
+.page-head p{font-family:'Inter';font-size:17px;color:#888;line-height:1.6;max-width:620px;margin-top:32px}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:start;margin-top:56px}
+@media(min-width:1024px){.contact-grid{grid-template-columns:5fr 7fr;gap:64px}}
+.c-info{display:flex;flex-direction:column;gap:18px}
+.c-card{background:#0a0a0a;border:1px solid rgba(255,255,255,.08);padding:28px;display:flex;gap:20px;align-items:flex-start;transition:border-color .25s,background .25s}
+.c-card:hover{border-color:var(--r);background:#0e0e0e}
+.c-card .ic{flex-shrink:0;width:46px;height:46px;display:grid;place-items:center;background:#000;border:1px solid rgba(255,255,255,.16);color:var(--r)}
+.c-card .ck{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:#888;font-weight:700;display:block;margin-bottom:8px}
+.c-card .cv{font-family:'Bebas Neue';font-size:24px;color:#fff;letter-spacing:.02em;text-transform:uppercase;line-height:1.2;display:block}
+.c-card .cv.big{font-size:32px}
+.c-card .cd{font-family:'Inter';font-size:13px;color:#888;margin-top:6px;display:block;line-height:1.5}
+.form-big{background:#0a0a0a;border:1px solid rgba(255,255,255,.08);padding:32px}
+@media(min-width:768px){.form-big{padding:48px}}
+.form-big h3{font-family:'Bebas Neue';font-size:48px;line-height:.95;letter-spacing:.005em;text-transform:uppercase;margin-bottom:8px}
+.form-big h3 .a{font-family:'Playfair Display';font-style:italic;color:var(--r);font-weight:500}
+.form-big > p{font-family:'Inter';font-size:14px;color:#888;margin-bottom:32px}
+.map-wrap{margin-top:64px;border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.map-wrap iframe{display:block;width:100%;height:480px;border:0;filter:invert(.92) hue-rotate(180deg) saturate(.4) contrast(.95)}
+.hours-card{padding:28px;background:#0a0a0a;border:1px solid rgba(255,255,255,.08)}
+.hours-card h4{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:#888;font-weight:700;margin-bottom:16px}
+.hours-card ul li{display:flex;justify-content:space-between;padding:7px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:#bbb;border-bottom:1px dashed rgba(255,255,255,.08)}
+.hours-card ul li:last-child{border-bottom:0}
+.hours-card ul li strong{color:#fff;font-weight:700}
+.hours-card .hl{color:var(--r);font-weight:700}
+.cat{padding:100px 0;position:relative}
+.field-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#888;margin-bottom:10px;display:block;font-weight:700}
+.field-label .req{color:var(--r)}
+.input{width:100%;background:#000;border:1px solid rgba(255,255,255,.14);padding:14px 16px;color:#fff;font-family:'Inter';font-size:14px;outline:none;transition:border-color .25s;font-weight:500}
+.input:focus{border-color:var(--r)}
+.input::placeholder{color:#555}
+textarea.input{resize:vertical;min-height:120px}
+select.input{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><path fill='%23888' d='M6 8L1 3h10z'/></svg>");background-repeat:no-repeat;background-position:right 16px center;background-size:10px;padding-right:40px}
+.form-row{margin-bottom:18px}
+.form-row.col2{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:600px){.form-row.col2{grid-template-columns:1fr 1fr}}
+.foot{padding:80px 0 36px;border-top:1px solid rgba(255,255,255,.08);background:#000}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:768px){.foot-grid{grid-template-columns:5fr 2fr 2fr 3fr}}
+.foot h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--r);font-weight:700;margin-bottom:18px}
+.foot a{display:block;font-family:'Inter';font-size:14px;color:#bbb;padding:5px 0;transition:color .2s}
+.foot a:hover{color:var(--r)}
+.foot p{font-family:'Inter';font-size:14px;color:#888;line-height:1.65;max-width:340px;margin-top:20px}
+.foot .big-phone{font-family:'Bebas Neue';font-size:24px;color:#fff;letter-spacing:.02em}
+.foot .copy{display:flex;flex-direction:column;gap:8px;margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#666;font-weight:600}
+@media(min-width:768px){.foot .copy{flex-direction:row;justify-content:space-between;align-items:center}}
+.mob-cta{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:1px solid rgba(255,255,255,.16);padding:12px;display:flex;gap:10px;z-index:85}
+.mob-cta a{flex:1;padding:14px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:800}
+.mob-cta .line{border:1px solid #fff;color:#fff}
+.mob-cta .red{background:var(--r);color:#fff;border:1px solid var(--r)}
+@media(min-width:960px){.mob-cta{display:none}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.92);backdrop-filter:blur(12px);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.open{display:flex}
+.modal-card{background:#080808;border:1px solid rgba(255,255,255,.1);max-width:560px;width:100%;padding:40px;position:relative}
+.modal-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--r)}
+.modal-x{position:absolute;top:16px;right:20px;color:#888;font-size:24px;line-height:1;transition:color .2s,transform .25s}
+.modal-x:hover{color:var(--r);transform:rotate(90deg)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
 </head>
 <body>
 
+<div class="scroll-bar"></div>
+<div class="cf"></div>
 
-
-<div class="scroll-progress"></div>
-
-<header class="site-header">
-  <div class="inner">
-    <a href="index.html" class="logo">
-      <span class="logo-mark"><span>A</span></span>
-      <span class="logo-text">
-        <span class="l1">A-Spec</span>
-        <span class="l2">AUTO · HQ</span>
-      </span>
-    </a>
-    <nav class="nav-center" aria-label="Primary">
-      <a href="services.html" class="nav-link">Services</a>
-      <a href="builds.html" class="nav-link">Builds</a>
-      <a href="builds.html" class="nav-link">Gallery</a>
-      <a href="about.html" class="nav-link">The Shop</a>
-      <a href="contact.html" class="nav-link active">Contact</a>
+<header class="header">
+  <div class="row">
+    <a href="index.html" class="logo"><span class="logo-mark"><span>A</span></span><div><div class="logo-name">A-Spec</div><div class="logo-tag">AUTO · HQ</div></div></a>
+    <nav class="nav">
+      <a href="services.html">Services</a>
+      <a href="builds.html">Builds</a>
+      <a href="about.html">The Shop</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
-    <div class="nav-right">
-      <div class="lang-toggle">
-        <button data-lang="en" class="active">EN</button>
-        <span style="color:#777">/</span>
-        <button data-lang="es">ES</button>
-      </div>
-      <a href="#" data-open-quote class="btn btn-red btn-sm">Get Quote</a>
-      <button id="menuBtn" class="menu-btn" aria-label="Menu">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+    <div class="header-cta">
+      <a href="#" data-quote class="btn btn-red btn-sm"><span>Get Quote</span></a>
+      <button id="menuBtn" class="menu-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
     </div>
-  </div>
-  <div id="menuPanel" class="menu-panel">
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="builds.html" class="nav-link">Builds</a>
-    <a href="builds.html" class="nav-link">Gallery</a>
-    <a href="about.html" class="nav-link">The Shop</a>
-    <a href="contact.html" class="nav-link active">Contact</a>
   </div>
 </header>
+<div id="menuPanel" class="menu-panel">
+  <a href="services.html">Services</a>
+  <a href="builds.html">Builds</a>
+  <a href="about.html">The Shop</a>
+  <a href="contact.html">Contact</a>
 </div>
-</div>
 
-
-
-<!-- HEADER -->
-<section class="pt-12 md:pt-16 pb-10 relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
-    <div class="reveal flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-3 border-b border-[var(--line-2)]">
-      <div class="flex flex-wrap items-baseline gap-4 md:gap-6">
-        <span class="eyebrow">DRAWING N°</span>
-        <span class="tech text-[var(--paper)]">A-005 / REV. 11.2026</span>
-      </div>
-      <div class="tech text-[.66rem] tracking-[.22em] uppercase text-[var(--paper-3)]">SCALE 1:1 · SHEET 5/5</div>
-    </div>
-    <div class="reveal">
-      <div class="eyebrow">COMMS · VISIT · QUOTE</div>
-      <h1 class="heavy hero-title mt-3 leading-[.9]">
-        <span class="block">Three ways</span>
-        <span class="block"><span style="color:var(--orange)">to reach</span></span>
-        <span class="block">us.</span>
-      </h1>
-    </div>
+<section class="page-head">
+  <div class="wrap reveal">
+    <div class="num">05 — CONTACT</div>
+    <div class="rule"></div>
+    <h1>Send the spec.<br><span class="a">We build it.</span></h1>
+    <p>Drop your vehicle info and what you want done. Typical response under 4 hours, Mon–Sat. Or just call — we answer.</p>
   </div>
 </section>
 
-<!-- CONTACT GRID -->
-<section class="py-12 md:py-16 relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10 md:gap-16">
-
-    <!-- LEFT: contact cards -->
-    <div class="md:col-span-5 space-y-5 reveal">
-      <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="card card-cad p-6 block">
-        <div class="flex items-start justify-between">
+<section class="cat" style="border-bottom:0;padding-top:0">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="c-info reveal">
+        <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="c-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>
-            <div class="eyebrow">01 · VISIT</div>
-            <div class="heavy text-xl md:text-2xl mt-3 leading-tight">31 Mahan St<br>West Babylon, NY 11704</div>
-            <div class="tech text-sm text-[var(--paper-3)] mt-3" data-en="Off Sunrise Hwy · Free customer parking" data-es="Cerca de Sunrise Hwy · Estacionamiento gratis">Off Sunrise Hwy · Free customer parking</div>
+            <span class="ck">Visit the shop</span>
+            <span class="cv">31 Mahan St<br>West Babylon, NY 11704</span>
+            <span class="cd">Off Sunrise Hwy · Free customer parking</span>
           </div>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-      </a>
-
-      <a href="tel:+15163957424" class="card card-cad p-6 block">
-        <div class="flex items-start justify-between">
+        </a>
+        <a href="tel:+15163957424" class="c-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg></div>
           <div>
-            <div class="eyebrow">02 · CALL</div>
-            <div class="dyno text-3xl mt-3" style="color:var(--orange)">+1 (516) 395-7424</div>
-            <div class="tech text-sm text-[var(--paper-3)] mt-2" data-en="Front desk. Mon–Sat 9–8." data-es="Recepción. Lun–Sáb 9–8.">Front desk. Mon–Sat 9–8.</div>
+            <span class="ck">Call · Mon–Sat</span>
+            <span class="cv big">+1 (516) 395-7424</span>
+            <span class="cd">Bilingual · English / Español</span>
           </div>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
-        </div>
-      </a>
-
-      <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank" class="card card-cad p-6 block">
-        <div class="flex items-start justify-between">
+        </a>
+        <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank" class="c-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
           <div>
-            <div class="eyebrow">03 · INSTAGRAM</div>
-            <div class="heavy text-xl mt-3 leading-tight">@a_spec_auto_hq</div>
-            <div class="tech text-sm text-[var(--paper-3)] mt-2" data-en="DM photo of your car for instant quote" data-es="DM con foto de tu auto para cotización inmediata">DM photo of your car for instant quote</div>
+            <span class="ck">Instagram</span>
+            <span class="cv">@a_spec_auto_hq</span>
+            <span class="cd">DM a photo of your car · daily build posts</span>
           </div>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <div class="hours-card">
+          <h4>★ HOURS · OPERATIONS</h4>
+          <ul>
+            <li><span>Monday</span><strong>09:00 — 20:00</strong></li>
+            <li><span>Tuesday</span><strong>09:00 — 20:00</strong></li>
+            <li><span>Wednesday</span><strong>09:00 — 20:00</strong></li>
+            <li><span>Thursday</span><strong>09:00 — 20:00</strong></li>
+            <li><span>Friday</span><strong>09:00 — 20:00</strong></li>
+            <li><span>Saturday</span><strong class="hl">09:00 — 20:00 ★</strong></li>
+            <li><span>Sunday</span><strong style="color:#666">Closed</strong></li>
+          </ul>
         </div>
-      </a>
-
-      <div class="card card-cad p-6">
-        <div class="eyebrow mb-4">HOURS · OPERATIONS</div>
-        <ul class="space-y-2 tech text-sm">
-          <li class="flex justify-between"><span data-en="Monday" data-es="Lunes">Monday</span><span style="color:var(--paper)">09:00 — 20:00</span></li>
-          <li class="flex justify-between"><span data-en="Tuesday" data-es="Martes">Tuesday</span><span style="color:var(--paper)">09:00 — 20:00</span></li>
-          <li class="flex justify-between"><span data-en="Wednesday" data-es="Miércoles">Wednesday</span><span style="color:var(--paper)">09:00 — 20:00</span></li>
-          <li class="flex justify-between"><span data-en="Thursday" data-es="Jueves">Thursday</span><span style="color:var(--paper)">09:00 — 20:00</span></li>
-          <li class="flex justify-between"><span data-en="Friday" data-es="Viernes">Friday</span><span style="color:var(--paper)">09:00 — 20:00</span></li>
-          <li class="flex justify-between"><span data-en="Saturday" data-es="Sábado">Saturday</span><span style="color:var(--orange)">09:00 — 20:00 ★</span></li>
-          <li class="flex justify-between pt-2 mt-2 border-t border-[var(--line-2)]"><span data-en="Sunday" data-es="Domingo">Sunday</span><span style="color:var(--paper-3)" data-en="Closed" data-es="Cerrado">Closed</span></li>
-        </ul>
       </div>
-    </div>
 
-    <!-- RIGHT: form -->
-    <div class="md:col-span-7 reveal">
-      <div class="card card-cad p-6 md:p-9">
-        <div class="eyebrow mb-2">BUILD SHEET REQUEST</div>
-        <h2 class="heavy text-3xl md:text-5xl leading-[.9] mb-6" data-en-html="Send the spec.<br><span style='color:var(--orange)'>Get a quote.</span>" data-es-html="Envía el spec.<br><span style='color:var(--orange)'>Recibe cotización.</span>">
-          Send the spec.<br><span style="color:var(--orange)">Get a quote.</span>
-        </h2>
-        <p class="tech text-sm text-[var(--paper-3)] mb-7" data-en="> typical response · under 4 hours · Mon–Sat" data-es="> respuesta · menos de 4 horas · Lun–Sáb">&gt; typical response · under 4 hours · Mon–Sat</p>
-
-        <form data-fake class="space-y-6">
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <span class="field-label" data-en="Name" data-es="Nombre">Name</span>
-              <input class="input" required data-en-placeholder="First & last" data-es-placeholder="Nombre y apellido"/>
-            </div>
-            <div>
-              <span class="field-label" data-en="Phone" data-es="Teléfono">Phone</span>
-              <input class="input" type="tel" required placeholder="(516) 555-0123"/>
-            </div>
+      <div class="form-big reveal">
+        <div class="eyebrow">★ BUILD SHEET REQUEST</div>
+        <h3 style="margin-top:14px">Spec your <span class="a">build.</span></h3>
+        <p>Typical response under 4 hours · Mon–Sat. We draft. You approve. We build.</p>
+        <form data-fake>
+          <div class="form-row col2">
+            <div><label class="field-label">Name <span class="req">*</span></label><input class="input" required placeholder="Full name"/></div>
+            <div><label class="field-label">Phone <span class="req">*</span></label><input class="input" type="tel" required placeholder="(516) ..."/></div>
           </div>
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <span class="field-label">Email</span>
-              <input class="input" type="email" data-en-placeholder="you@email.com" data-es-placeholder="tu@email.com"/>
-            </div>
-            <div>
-              <span class="field-label" data-en="Vehicle" data-es="Vehículo">Vehicle</span>
-              <input class="input" data-en-placeholder="YR · MAKE · MODEL" data-es-placeholder="AÑO · MARCA · MODELO"/>
-            </div>
+          <div class="form-row col2">
+            <div><label class="field-label">Email</label><input class="input" type="email" placeholder="you@email.com"/></div>
+            <div><label class="field-label">Vehicle <span class="req">*</span></label><input class="input" required placeholder="Year · Make · Model"/></div>
           </div>
-          <div>
-            <span class="field-label" data-en="Service tier" data-es="Tipo de servicio">Service tier</span>
-            <select class="input" style="background:transparent">
-              <option value="" style="background:#11233a">Select…</option>
-              <option style="background:#11233a">01.MECH · General mechanical</option>
-              <option style="background:#11233a">02.SUSP · Suspension / coilovers</option>
-              <option style="background:#11233a">03.BODY · Bodywork / paint</option>
-              <option style="background:#11233a">04.POWD · Powder coating</option>
-              <option style="background:#11233a">05.RIM · Rim repair / refinish</option>
-              <option style="background:#11233a">06.TINT · Window tint</option>
-              <option style="background:#11233a">07.DTAL · Detail / ceramic</option>
-              <option style="background:#11233a">CUSTOM · Multi-service build</option>
+          <div class="form-row">
+            <label class="field-label">Service category</label>
+            <select class="input">
+              <option style="background:#000">Select…</option>
+              <option style="background:#000">01 · Mechanical</option>
+              <option style="background:#000">02 · Suspension & Coilovers</option>
+              <option style="background:#000">03 · Bodywork & Paint</option>
+              <option style="background:#000">04 · Powder Coat</option>
+              <option style="background:#000">05 · Rim Repair</option>
+              <option style="background:#000">06 · Window Tint</option>
+              <option style="background:#000">07 · Detail & Ceramic</option>
+              <option style="background:#000">★ Multi-service Build (save 20%)</option>
             </select>
           </div>
-          <div>
-            <span class="field-label" data-en="Build description" data-es="Descripción del build">Build description</span>
-            <textarea class="input" rows="5" data-en-placeholder="What do you want done? Reference build IG link? Photos? Timeline?" data-es-placeholder="¿Qué quieres hacer? ¿Build de referencia en IG? ¿Fotos? ¿Tiempo?"></textarea>
+          <div class="form-row"><label class="field-label">Build description / message</label><textarea class="input" rows="5" placeholder="What do you want done? Reference build? Photos? Timeline?"></textarea></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:8px">
+            <button type="submit" class="btn btn-red"><span>Send Build Sheet</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+            <span style="font-family:'JetBrains Mono';font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#888;font-weight:700">Response &lt; 4h · Mon–Sat</span>
           </div>
-          <div class="flex items-start gap-3 pt-2">
-            <input type="checkbox" required class="mt-1 accent-[var(--orange)]" id="consent"/>
-            <label for="consent" class="text-[var(--paper-3)] text-sm font-light" data-en="I agree to be contacted by A-Spec Auto via phone, SMS or Instagram DM." data-es="Acepto ser contactado por A-Spec Auto por teléfono, SMS o Instagram DM.">I agree to be contacted by A-Spec Auto via phone, SMS or Instagram DM.</label>
-          </div>
-          <button class="btn btn-orange">
-            <span data-en="Send build sheet request" data-es="Enviar solicitud">Send build sheet request</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-          </button>
-          <div data-form-result class="hidden tech text-sm pt-2" style="color:var(--green)"></div>
+          <div data-result style="display:none;margin-top:16px;padding:14px;background:rgba(255,10,30,.08);border-left:3px solid var(--r);color:var(--r);font-family:'JetBrains Mono';font-size:12px;letter-spacing:.04em;font-weight:700">› Build sheet received · response under 4 hours</div>
         </form>
       </div>
     </div>
+
+    <div class="map-wrap reveal">
+      <iframe src="https://www.google.com/maps?q=31+Mahan+St,+West+Babylon,+NY+11704&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 </section>
 
-<!-- MAP -->
-<section class="py-12 md:py-20 relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
-    <div class="section-head reveal">
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
       <div>
-        <div class="axis"><span class="bar"></span><span class="eyebrow">FACILITY · MAP LOCATION</span></div>
-        <h2 class="heavy text-3xl md:text-5xl mt-3" data-en="West Babylon · Long Island." data-es="West Babylon · Long Island.">West Babylon · Long Island.</h2>
+        <a href="index.html" class="logo"><span class="logo-mark"><span>A</span></span><div><div class="logo-name">A-Spec</div><div class="logo-tag">AUTO · HEADQUARTERS</div></div></a>
+        <p>West Babylon's premium performance garage. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail.</p>
       </div>
+      <div><h4>Sections</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="builds.html">Builds</a><a href="about.html">The Shop</a><a href="contact.html">Contact</a></div>
+      <div><h4>Address</h4><p style="margin-top:0">31 Mahan St<br>West Babylon, NY 11704</p><a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" style="color:var(--r);font-weight:700;margin-top:10px">Open in Maps ↗</a></div>
+      <div><h4>Comms</h4><a href="tel:+15163957424" class="big-phone">+1 (516) 395-7424</a><a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank">@a_spec_auto_hq</a><p style="margin-top:8px;color:#666;font-family:'JetBrains Mono';font-size:10px;letter-spacing:.28em;text-transform:uppercase;font-weight:700">Mon–Sat · 09–20</p></div>
     </div>
-    <div class="card card-cad reveal overflow-hidden">
-      <iframe src="https://www.google.com/maps?q=31+Mahan+St,+West+Babylon,+NY+11704&output=embed" class="w-full" style="height:500px;border:0;filter:invert(.92) hue-rotate(180deg) saturate(.65) contrast(.95);" loading="lazy"></iframe>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="py-20 md:py-28 bg-[var(--bg-deep)] border-t border-[var(--line-blue)] relative z-10 text-center">
-  <div class="max-w-3xl mx-auto px-6 reveal">
-    <div class="eyebrow mb-3" data-en="Walk-ins welcome · Mon–Sat" data-es="Walk-ins bienvenidos · Lun–Sáb">Walk-ins welcome · Mon–Sat</div>
-    <h2 class="heavy text-5xl md:text-7xl leading-[.9]" data-en-html="Drive over.<br><span style='color:var(--orange)'>Bay 1 is open.</span>" data-es-html="Vente.<br><span style='color:var(--orange)'>Bay 1 está libre.</span>">
-      Drive over.<br><span style="color:var(--orange)">Bay 1 is open.</span>
-    </h2>
-    <a href="tel:+15163957424" class="btn btn-orange mt-8 inline-flex">+1 (516) 395-7424</a>
-  </div>
-</section>
-
-<footer class="py-12 border-t border-[var(--line-blue)] relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
-      <svg viewBox="0 0 40 40" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><circle cx="20" cy="20" r="17"/><path d="M3 20h34M20 3v34"/></svg>
-      <span class="display text-xl">A-Spec</span>
-      <span class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--paper-3)">© <span data-year></span></span>
-    </div>
-    <div class="flex items-center gap-6 text-sm tech text-[var(--paper-2)]">
-      <a href="index.html" class="hover:text-[var(--orange)]">Home</a>
-      <a href="services.html" class="hover:text-[var(--orange)]">Services</a>
-      <a href="builds.html" class="hover:text-[var(--orange)]">Builds</a>
-      <a href="about.html" class="hover:text-[var(--orange)]">The Shop</a>
-    </div>
+    <div class="copy"><div>© <span id="year"></span> A-Spec Auto Headquarters · NY DMV Registered</div><div>ASE Certified · OEM Parts · 12-Month Warranty</div></div>
   </div>
 </footer>
 
-<div class="mobile-cta">
-  <a href="tel:+15163957424" class="btn-cyan">Call</a>
-  <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" class="btn-orange">Map</a>
+<div class="mob-cta">
+  <a href="tel:+15163957424" class="line">Call</a>
+  <a href="#" data-quote class="red">Get Quote</a>
 </div>
 
-<script src="assets/app.js"></script>
+<div id="quoteModal" class="modal">
+  <div class="modal-card">
+    <button class="modal-x" data-close>×</button>
+    <div class="eyebrow">★ BUILD SHEET REQUEST</div>
+    <h3 style="font-family:'Bebas Neue';font-size:42px;line-height:.95;letter-spacing:.005em;text-transform:uppercase;margin:14px 0 8px">Spec your <span style="font-family:'Playfair Display';font-style:italic;color:var(--r);font-weight:500">build.</span></h3>
+    <p style="font-family:'Inter';font-size:13px;color:#888;margin-bottom:28px">We draft. You approve. We build.</p>
+    <form data-fake>
+      <div class="form-row"><label class="field-label">Name <span class="req">*</span></label><input class="input" required placeholder="Full name"/></div>
+      <div class="form-row col2"><div><label class="field-label">Phone <span class="req">*</span></label><input class="input" type="tel" required placeholder="(516) ..."/></div><div><label class="field-label">Vehicle</label><input class="input" placeholder="Year · Make · Model"/></div></div>
+      <div class="form-row"><label class="field-label">Build description</label><textarea class="input" rows="4" placeholder="What needs done?"></textarea></div>
+      <button type="submit" class="btn btn-red" style="width:100%"><span>Send · Get Spec Sheet</span></button>
+      <div data-result style="display:none;margin-top:16px;padding:14px;background:rgba(255,10,30,.08);border-left:3px solid var(--r);color:var(--r);font-family:'JetBrains Mono';font-size:12px;letter-spacing:.04em;font-weight:700">› Build sheet received · response under 4 hours</div>
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const sb=document.querySelector('.scroll-bar');
+window.addEventListener('scroll',()=>{const h=document.documentElement;sb.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%';},{passive:true});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cf=document.querySelector('.cf');let mx=-100,my=-100,cx=-100,cy=-100;
+window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cf.classList.add('active');});
+window.addEventListener('mouseleave',()=>cf.classList.remove('active'));
+(function loop(){cx+=(mx-cx)*.18;cy+=(my-cy)*.18;cf.style.transform=`translate(${cx}px,${cy}px) translate(-50%,-50%)`+(cf.classList.contains('big')?' scale(2.6)':'');requestAnimationFrame(loop);})();
+document.querySelectorAll('a,button,[data-quote]').forEach(el=>{el.addEventListener('mouseenter',()=>cf.classList.add('big'));el.addEventListener('mouseleave',()=>cf.classList.remove('big'));});
+const mb=document.getElementById('menuBtn'),mp=document.getElementById('menuPanel');
+if(mb&&mp){mb.addEventListener('click',()=>mp.classList.toggle('open'));mp.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mp.classList.remove('open')));}
+const qm=document.getElementById('quoteModal');
+document.querySelectorAll('[data-quote]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();qm.classList.add('open');}));
+document.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',()=>qm.classList.remove('open')));
+qm.addEventListener('click',e=>{if(e.target===qm)qm.classList.remove('open');});
+document.querySelectorAll('form[data-fake]').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();const r=f.querySelector('[data-result]');if(r)r.style.display='block';f.reset();}));
+</script>
+
 </body>
 </html>

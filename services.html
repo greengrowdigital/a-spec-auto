@@ -3,248 +3,434 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Services Catalog · A-Spec Auto HQ · West Babylon</title>
-<meta name="description" content="Full catalog: mechanical, suspension, bodywork, powder coating, rim repair, window tint, detailing at A-Spec Auto Headquarters." />
+<title>Services — A-Spec Auto HQ</title>
+<meta name="description" content="Full service catalog: mechanical, suspension, bodywork, powder coat, rim repair, window tint, detail. Straight pricing. No upsells." />
 <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Anton&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:#000;color:#fff;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',system-ui,sans-serif;background:#000;color:#fff;overflow-x:hidden;font-weight:400;line-height:1.55;font-size:16px}
+img{display:block;max-width:100%;height:auto}
+a{color:#fff;text-decoration:none}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+ul,ol{list-style:none}
+input,select,textarea{font:inherit;color:inherit;background:transparent;border:0;outline:none}
+::selection{background:#ff0a1e;color:#fff}
+:root{--r:#ff0a1e;--r-d:#cc0017}
+.wrap{max-width:1500px;margin:0 auto;padding:0 28px}
+@media(min-width:768px){.wrap{padding:0 56px}}
+h1,h2,h3,h4{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.01em;line-height:.9;text-transform:uppercase}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--r);font-weight:600;display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';display:block;width:36px;height:1px;background:var(--r)}
+.scroll-bar{position:fixed;top:0;left:0;height:2px;background:var(--r);z-index:90;width:0;transition:width .1s linear}
+.cf{position:fixed;top:0;left:0;width:12px;height:12px;border-radius:50%;background:var(--r);pointer-events:none;z-index:1000;transform:translate(-50%,-50%);transition:transform .15s ease,opacity .25s;mix-blend-mode:difference;opacity:0;will-change:transform}
+.cf.active{opacity:1}
+.cf.big{transform:translate(-50%,-50%) scale(2.6)}
+@media(max-width:960px){.cf{display:none}}
+.header{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(0,0,0,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);height:78px;display:flex;align-items:center}
+.header .row{width:100%;max-width:1500px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+@media(min-width:768px){.header .row{padding:0 56px}}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:42px;height:42px;background:#fff;position:relative;display:grid;place-items:center;flex-shrink:0}
+.logo-mark::after{content:'';position:absolute;left:0;right:0;bottom:0;height:7px;background:var(--r)}
+.logo-mark span{font-family:'Bebas Neue';font-size:26px;color:#000;line-height:1;padding-bottom:7px}
+.logo-name{font-family:'Bebas Neue';font-size:24px;letter-spacing:.02em;line-height:1}
+.logo-tag{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.32em;color:#888;margin-top:3px;display:block}
+.nav{display:none;gap:36px;align-items:center}
+@media(min-width:960px){.nav{display:flex}}
+.nav a{font-family:'Inter';font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#fff;position:relative;padding:8px 0}
+.nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--r);transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1);transform-origin:left}
+.nav a.active{color:var(--r)}
+.header-cta{display:flex;align-items:center;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;font-family:'Inter';font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;transition:all .3s ease;cursor:pointer;border-radius:0;border:1px solid transparent;position:relative;overflow:hidden}
+.btn-red{background:var(--r);color:#fff;border-color:var(--r)}
+.btn-red::before{content:'';position:absolute;inset:0;background:var(--r-d);transform:translateY(101%);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.btn-red:hover::before{transform:translateY(0)}
+.btn-red span,.btn-red svg{position:relative;z-index:1}
+.btn-line{background:transparent;color:#fff;border:1px solid #fff}
+.btn-line::before{content:'';position:absolute;inset:0;background:#fff;transform:translateY(101%);transition:transform .4s cubic-bezier(.16,1,.3,1);z-index:0}
+.btn-line:hover::before{transform:translateY(0)}
+.btn-line:hover{color:#000}
+.btn-line span,.btn-line svg{position:relative;z-index:1}
+.btn-sm{padding:11px 20px;font-size:11px}
+.menu-btn{display:grid;place-items:center;width:42px;height:42px;background:transparent;border:1px solid rgba(255,255,255,.16);color:#fff}
+@media(min-width:960px){.menu-btn{display:none}}
+.menu-panel{position:fixed;top:78px;left:0;right:0;background:#000;border-bottom:1px solid rgba(255,255,255,.16);padding:30px 28px;display:none;flex-direction:column;gap:20px;z-index:79}
+.menu-panel.open{display:flex}
+.menu-panel a{font-family:'Bebas Neue';font-size:32px;letter-spacing:.02em;color:#fff}
+
+.page-head{padding-top:200px;padding-bottom:80px;border-bottom:1px solid rgba(255,255,255,.08)}
+.page-head .num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--r);font-weight:700}
+.page-head .rule{height:1px;width:48px;background:var(--r);margin:18px 0 26px}
+.page-head h1{font-family:'Bebas Neue';font-size:clamp(56px,12vw,160px);line-height:.9;letter-spacing:.005em}
+.page-head h1 .a{font-family:'Playfair Display',serif;font-style:italic;color:var(--r);font-weight:500;letter-spacing:-.02em}
+.page-head h1 .out{color:transparent;-webkit-text-stroke:1.5px #fff}
+.page-head p{font-family:'Inter';font-size:17px;color:#888;line-height:1.6;max-width:580px;margin-top:32px}
+
+.cat{padding:100px 0;border-bottom:1px solid rgba(255,255,255,.06);position:relative}
+.cat .head{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:48px;align-items:end}
+@media(min-width:900px){.cat .head{grid-template-columns:auto 1fr;gap:64px}}
+.cat .head .left{display:flex;align-items:flex-start;gap:24px}
+.cat .head .big-num{font-family:'Bebas Neue';font-size:128px;line-height:.8;color:transparent;-webkit-text-stroke:1px var(--r);letter-spacing:-.04em}
+.cat .head h2{font-family:'Bebas Neue';font-size:clamp(40px,6vw,72px);line-height:.95;letter-spacing:.005em}
+.cat .head h2 .a{font-family:'Playfair Display',serif;font-style:italic;color:var(--r);font-weight:500}
+.cat .head .tag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.32em;color:var(--r);font-weight:700;margin-bottom:14px;text-transform:uppercase;display:block}
+.cat .head p{font-family:'Inter';font-size:15px;color:#888;line-height:1.65;max-width:480px;justify-self:end}
+
+.price-list{border-top:1px solid rgba(255,255,255,.08)}
+.price-row{display:grid;grid-template-columns:60px 1fr auto;gap:20px;align-items:center;padding:22px 16px;border-bottom:1px solid rgba(255,255,255,.08);transition:padding-left .25s,background .2s;position:relative}
+.price-row:hover{padding-left:32px;background:rgba(255,10,30,.04)}
+.price-row::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--r);transition:width .3s}
+.price-row:hover::before{width:4px}
+.price-row .pnum{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--r);font-weight:700}
+.price-row .pt{font-family:'Bebas Neue';font-size:24px;color:#fff;letter-spacing:.02em;text-transform:uppercase;line-height:1.1;display:block}
+.price-row .pd{font-family:'Inter';font-size:13px;color:#888;margin-top:5px;line-height:1.5;display:block}
+.price-row .pprice{font-family:'Bebas Neue';font-size:32px;color:#fff;letter-spacing:.02em;text-align:right;line-height:1}
+.price-row .pprice small{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.22em;color:#666;display:block;margin-bottom:4px;font-weight:700;text-transform:uppercase}
+
+.cta-mid{padding:140px 0;background:#0a0a0a;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);text-align:center;position:relative;overflow:hidden}
+.cta-mid::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(255,10,30,.15),transparent 60%);pointer-events:none}
+.cta-mid .wrap{position:relative;z-index:1}
+.cta-mid h2{font-family:'Bebas Neue';font-size:clamp(48px,9vw,128px);line-height:.88;letter-spacing:.005em}
+.cta-mid h2 .a{font-family:'Playfair Display',serif;font-style:italic;color:var(--r);font-weight:500}
+.cta-mid p{font-family:'Inter';font-size:16px;color:#888;max-width:520px;margin:24px auto 32px;line-height:1.6}
+
+.foot{padding:80px 0 36px;border-top:1px solid rgba(255,255,255,.08);background:#000}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:768px){.foot-grid{grid-template-columns:5fr 2fr 2fr 3fr}}
+.foot h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--r);font-weight:700;margin-bottom:18px}
+.foot a{display:block;font-family:'Inter';font-size:14px;color:#bbb;padding:5px 0;transition:color .2s}
+.foot a:hover{color:var(--r)}
+.foot p{font-family:'Inter';font-size:14px;color:#888;line-height:1.65;max-width:340px;margin-top:20px}
+.foot .big-phone{font-family:'Bebas Neue';font-size:24px;color:#fff;letter-spacing:.02em}
+.foot .copy{display:flex;flex-direction:column;gap:8px;margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#666;font-weight:600}
+@media(min-width:768px){.foot .copy{flex-direction:row;justify-content:space-between;align-items:center}}
+
+.mob-cta{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:1px solid rgba(255,255,255,.16);padding:12px;display:flex;gap:10px;z-index:85}
+.mob-cta a{flex:1;padding:14px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:800}
+.mob-cta .line{border:1px solid #fff;color:#fff}
+.mob-cta .red{background:var(--r);color:#fff;border:1px solid var(--r)}
+@media(min-width:960px){.mob-cta{display:none}}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.92);backdrop-filter:blur(12px);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.open{display:flex}
+.modal-card{background:#080808;border:1px solid rgba(255,255,255,.1);max-width:560px;width:100%;padding:40px;position:relative}
+.modal-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--r)}
+.modal-x{position:absolute;top:16px;right:20px;color:#888;font-size:24px;line-height:1;transition:color .2s,transform .25s}
+.modal-x:hover{color:var(--r);transform:rotate(90deg)}
+.field-label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#888;margin-bottom:10px;display:block;font-weight:700}
+.field-label .req{color:var(--r)}
+.input{width:100%;background:#000;border:1px solid rgba(255,255,255,.14);padding:14px 16px;color:#fff;font-family:'Inter';font-size:14px;outline:none;transition:border-color .25s;font-weight:500}
+.input:focus{border-color:var(--r)}
+.input::placeholder{color:#555}
+textarea.input{resize:vertical;min-height:120px}
+.form-row{margin-bottom:18px}
+.form-row.col2{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:600px){.form-row.col2{grid-template-columns:1fr 1fr}}
+
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.stagger > *{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.stagger.in > *{opacity:1;transform:translateY(0)}
+.stagger.in > *:nth-child(1){transition-delay:0s}
+.stagger.in > *:nth-child(2){transition-delay:.06s}
+.stagger.in > *:nth-child(3){transition-delay:.12s}
+.stagger.in > *:nth-child(4){transition-delay:.18s}
+.stagger.in > *:nth-child(5){transition-delay:.24s}
+</style>
 </head>
 <body>
 
+<div class="scroll-bar"></div>
+<div class="cf"></div>
 
-
-<div class="scroll-progress"></div>
-
-<header class="site-header">
-  <div class="inner">
+<header class="header">
+  <div class="row">
     <a href="index.html" class="logo">
       <span class="logo-mark"><span>A</span></span>
-      <span class="logo-text">
-        <span class="l1">A-Spec</span>
-        <span class="l2">AUTO · HQ</span>
-      </span>
+      <div><div class="logo-name">A-Spec</div><div class="logo-tag">AUTO · HQ</div></div>
     </a>
-    <nav class="nav-center" aria-label="Primary">
-      <a href="services.html" class="nav-link active">Services</a>
-      <a href="builds.html" class="nav-link">Builds</a>
-      <a href="builds.html" class="nav-link">Gallery</a>
-      <a href="about.html" class="nav-link">The Shop</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+    <nav class="nav">
+      <a href="services.html" class="active">Services</a>
+      <a href="builds.html">Builds</a>
+      <a href="about.html">The Shop</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <div class="nav-right">
-      <div class="lang-toggle">
-        <button data-lang="en" class="active">EN</button>
-        <span style="color:#777">/</span>
-        <button data-lang="es">ES</button>
-      </div>
-      <a href="#" data-open-quote class="btn btn-red btn-sm">Get Quote</a>
-      <button id="menuBtn" class="menu-btn" aria-label="Menu">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+    <div class="header-cta">
+      <a href="#" data-quote class="btn btn-red btn-sm"><span>Get Quote</span></a>
+      <button id="menuBtn" class="menu-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
     </div>
-  </div>
-  <div id="menuPanel" class="menu-panel">
-    <a href="services.html" class="nav-link active">Services</a>
-    <a href="builds.html" class="nav-link">Builds</a>
-    <a href="builds.html" class="nav-link">Gallery</a>
-    <a href="about.html" class="nav-link">The Shop</a>
-    <a href="contact.html" class="nav-link">Contact</a>
   </div>
 </header>
+<div id="menuPanel" class="menu-panel">
+  <a href="services.html">Services</a>
+  <a href="builds.html">Builds</a>
+  <a href="about.html">The Shop</a>
+  <a href="contact.html">Contact</a>
 </div>
-</div>
 
-
-
-<!-- HEADER -->
-<section class="pt-12 md:pt-16 pb-10 relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
-    <div class="reveal flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-3 border-b border-[var(--line-2)]">
-      <div class="flex flex-wrap items-baseline gap-4 md:gap-6">
-        <span class="eyebrow">DRAWING N°</span>
-        <span class="tech text-[var(--paper)]">A-002 / REV. 11.2026</span>
-      </div>
-      <div class="tech text-[.66rem] tracking-[.22em] uppercase text-[var(--paper-3)]">SCALE 1:1 · SHEET 2/5</div>
-    </div>
-    <div class="reveal">
-      <div class="eyebrow">SERVICES · FULL CATALOG</div>
-      <h1 class="heavy hero-title mt-3 leading-[.9]">
-        <span class="block">Every</span>
-        <span class="block"><span style="color:var(--orange)">spec.</span></span>
-        <span class="block">Documented.</span>
-      </h1>
-      <p class="mt-8 max-w-2xl text-base md:text-lg text-[var(--paper-2)] leading-relaxed font-light"
-         data-en="Every service quoted line-by-line. Every part listed by brand and tier. No upsells, no surprise supplements. If we find something during the job, you hear from us first."
-         data-es="Cada servicio cotizado por línea. Cada parte listada por marca y nivel. Sin upsells, sin suplementos sorpresa. Si encontramos algo, te llamamos primero.">
-        Every service quoted line-by-line. Every part listed by brand and tier. No upsells, no surprise supplements. If we find something during the job, you hear from us first.
-      </p>
-    </div>
+<section class="page-head">
+  <div class="wrap reveal">
+    <div class="num">02 — SERVICES</div>
+    <div class="rule"></div>
+    <h1>
+      Every <span class="a">discipline.</span><br>
+      <span class="out">Under one roof.</span>
+    </h1>
+    <p>Seven service categories. One spec sheet. Every step documented. Quoted line-by-line. No upsells. If we find something mid-job, you hear from us first.</p>
   </div>
 </section>
 
 <!-- MECHANICAL -->
-<section id="mechanical" class="py-16 md:py-24 relative z-10 border-t border-[var(--line-2)]">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
-    <div class="md:col-span-4 reveal">
-      <div class="callout mb-5">01.MECH</div>
-      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Mechanical." data-es="Mecánica.">Mechanical.</h2>
-      <p class="mt-5 text-[var(--paper-2)] leading-relaxed" data-en="OEM-grade parts. Bilingual diagnostics. ASE-certified techs." data-es="Partes OEM. Diagnóstico bilingüe. Técnicos ASE.">OEM-grade parts. Bilingual diagnostics. ASE-certified techs.</p>
+<section id="mechanical" class="cat">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="left">
+        <div class="big-num">01</div>
+        <div>
+          <span class="tag">M / Mechanical</span>
+          <h2>Mechanical &amp; <span class="a">general repair.</span></h2>
+        </div>
+      </div>
+      <p>OEM-grade parts. Bilingual diagnostics. ASE-certified techs. Daily drivers and performance builds — same standard, every visit.</p>
     </div>
-    <div class="md:col-span-8 reveal-stagger">
-      <a href="#" data-open-quote class="svc-row"><div class="num">M.01</div><div><div class="display text-xl">Brake service</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Pads, rotors, calipers, lines, fluid flush</p></div><div class="arrow">FROM $180</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">M.02</div><div><div class="display text-xl">Diagnostic scan</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">OBD-II + manufacturer tool + road test</p></div><div class="arrow">$95</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">M.03</div><div><div class="display text-xl">Alignment · 4-wheel</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Hunter Hawkeye Elite. Print-out included.</p></div><div class="arrow">$120</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">M.04</div><div><div class="display text-xl">Oil & filter</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Mobil 1, Castrol Edge, Liqui-Moly</p></div><div class="arrow">FROM $89</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">M.05</div><div><div class="display text-xl">Belt / hose / fluid</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Timing, serpentine, coolant, brake, trans</p></div><div class="arrow">QUOTE</div></a>
+    <div class="price-list stagger">
+      <div class="price-row"><span class="pnum">M.01</span><div><span class="pt">Brake Service</span><span class="pd">Pads, rotors, calipers, lines, fluid flush</span></div><div class="pprice"><small>FROM</small>$180</div></div>
+      <div class="price-row"><span class="pnum">M.02</span><div><span class="pt">Diagnostic Scan</span><span class="pd">OBD-II + manufacturer tool + road test</span></div><div class="pprice">$75</div></div>
+      <div class="price-row"><span class="pnum">M.03</span><div><span class="pt">Alignment · 4-Wheel</span><span class="pd">Hunter Hawkeye Elite · printout included</span></div><div class="pprice">$120</div></div>
+      <div class="price-row"><span class="pnum">M.04</span><div><span class="pt">Oil &amp; Filter</span><span class="pd">Liqui Moly · Castrol Edge · Mobil 1</span></div><div class="pprice"><small>FROM</small>$89</div></div>
+      <div class="price-row"><span class="pnum">M.05</span><div><span class="pt">Belt / Hose / Fluid</span><span class="pd">Timing, serpentine, coolant, brake, trans</span></div><div class="pprice">QUOTE</div></div>
     </div>
   </div>
 </section>
 
 <!-- SUSPENSION -->
-<section id="suspension" class="py-16 md:py-24 relative z-10 bg-[var(--bg-deep)] border-y border-[var(--line-blue)]">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
-    <div class="md:col-span-4 reveal">
-      <div class="callout mb-5" style="border-color:var(--cyan);color:var(--cyan);background:rgba(0,212,255,.06)">02.SUSP</div>
-      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en-html="Suspension &<br>Coilovers." data-es-html="Suspensión y<br>Coilovers.">Suspension &<br>Coilovers.</h2>
-      <p class="mt-5 text-[var(--paper-2)] leading-relaxed" data-en="BC Racing, KW, Bilstein, Tein, Ohlins. Corner balance every install." data-es="BC Racing, KW, Bilstein, Tein, Ohlins. Corner balance en cada instalación.">BC Racing, KW, Bilstein, Tein, Ohlins. Corner balance every install.</p>
+<section id="suspension" class="cat">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="left">
+        <div class="big-num">02</div>
+        <div>
+          <span class="tag">S / Suspension</span>
+          <h2>Suspension &amp; <span class="a">coilovers.</span></h2>
+        </div>
+      </div>
+      <p>BC Racing, KW, Bilstein, Tein, Ohlins. Every coilover install corner-balanced. Ride-height set to spec. 4-wheel alignment included.</p>
     </div>
-    <div class="md:col-span-8 reveal-stagger">
-      <a href="#" data-open-quote class="svc-row"><div class="num">S.01</div><div><div class="display text-xl">Coilover install · standard</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Bolt-on, set ride height, road test</p></div><div class="arrow">FROM $450</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">S.02</div><div><div class="display text-xl">Coilover + corner balance</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Track-tuned, fluid weights, alignment incl.</p></div><div class="arrow">$895</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">S.03</div><div><div class="display text-xl">Lift kit · truck/SUV</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">2–6" Bilstein, ICON, Old Man Emu</p></div><div class="arrow">FROM $750</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">S.04</div><div><div class="display text-xl">Lowering springs</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Eibach, H&R, Tein. Install + align.</p></div><div class="arrow">FROM $385</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">S.05</div><div><div class="display text-xl">Sway bar · end links</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Whiteline, Hotchkis. Polyurethane bushings.</p></div><div class="arrow">FROM $290</div></a>
+    <div class="price-list stagger">
+      <div class="price-row"><span class="pnum">S.01</span><div><span class="pt">Coilover Install · Standard</span><span class="pd">Bolt-on, ride-height set, road test</span></div><div class="pprice"><small>FROM</small>$450</div></div>
+      <div class="price-row"><span class="pnum">S.02</span><div><span class="pt">Coilover + Corner Balance</span><span class="pd">Track-tuned, fluid weights, alignment incl.</span></div><div class="pprice">$895</div></div>
+      <div class="price-row"><span class="pnum">S.03</span><div><span class="pt">Lift Kit · Truck/SUV</span><span class="pd">2 to 6 inch · Bilstein, ICON, OME</span></div><div class="pprice"><small>FROM</small>$750</div></div>
+      <div class="price-row"><span class="pnum">S.04</span><div><span class="pt">Lowering Springs</span><span class="pd">Eibach, H&amp;R, Tein · install + align</span></div><div class="pprice"><small>FROM</small>$385</div></div>
+      <div class="price-row"><span class="pnum">S.05</span><div><span class="pt">Sway Bar · End Links</span><span class="pd">Whiteline, Hotchkis · poly bushings</span></div><div class="pprice"><small>FROM</small>$290</div></div>
     </div>
   </div>
 </section>
 
 <!-- BODYWORK -->
-<section id="bodywork" class="py-16 md:py-24 relative z-10 border-b border-[var(--line-2)]">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
-    <div class="md:col-span-4 reveal">
-      <div class="callout mb-5">03.BODY</div>
-      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en-html="Bodywork.<br>Paint." data-es-html="Carrocería.<br>Pintura.">Bodywork.<br>Paint.</h2>
-      <p class="mt-5 text-[var(--paper-2)] leading-relaxed" data-en="Downdraft booth, computerized color match, OEM blending." data-es="Cabina downdraft, color computarizado, mezclado OEM.">Downdraft booth, computerized color match, OEM blending.</p>
+<section id="bodywork" class="cat">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="left">
+        <div class="big-num">03</div>
+        <div>
+          <span class="tag">B / Bodywork</span>
+          <h2>Bodywork &amp; <span class="a">paint.</span></h2>
+        </div>
+      </div>
+      <p>Downdraft booth. Computerized color match. PPG, Sikkens, BASF. OEM blending — every panel seam invisible.</p>
     </div>
-    <div class="md:col-span-8 reveal-stagger">
-      <a href="#" data-open-quote class="svc-row"><div class="num">B.01</div><div><div class="display text-xl">Panel repair / paint</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Door, fender, bumper. Single-panel.</p></div><div class="arrow">FROM $480</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">B.02</div><div><div class="display text-xl">Full repaint</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">PPG, Sikkens, BASF. 3-stage clearcoat.</p></div><div class="arrow">QUOTE</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">B.03</div><div><div class="display text-xl">Dent removal · PDR</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Paintless dent repair. Hail, door dings.</p></div><div class="arrow">FROM $125</div></a>
-      <a href="#" data-open-quote class="svc-row"><div class="num">B.04</div><div><div class="display text-xl">Body kit install</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Lip, splitter, side skirts, wing. Paint-matched.</p></div><div class="arrow">QUOTE</div></a>
+    <div class="price-list stagger">
+      <div class="price-row"><span class="pnum">B.01</span><div><span class="pt">Panel Repair / Paint</span><span class="pd">Door, fender, bumper · single panel</span></div><div class="pprice"><small>FROM</small>$480</div></div>
+      <div class="price-row"><span class="pnum">B.02</span><div><span class="pt">Full Repaint</span><span class="pd">PPG, Sikkens, BASF · 3-stage clearcoat</span></div><div class="pprice">QUOTE</div></div>
+      <div class="price-row"><span class="pnum">B.03</span><div><span class="pt">Dent Removal · PDR</span><span class="pd">Paintless dent repair · hail, door dings</span></div><div class="pprice"><small>FROM</small>$125</div></div>
+      <div class="price-row"><span class="pnum">B.04</span><div><span class="pt">Body Kit Install</span><span class="pd">Lip, splitter, side skirts, wing · paint-matched</span></div><div class="pprice">QUOTE</div></div>
     </div>
   </div>
 </section>
 
-<!-- POWDER + RIM -->
-<section class="py-16 md:py-24 relative z-10 bg-[var(--bg-deep)] border-b border-[var(--line-blue)]">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10">
-    <div id="powder" class="reveal">
-      <div class="callout mb-5" style="border-color:var(--yellow);color:var(--yellow);background:rgba(255,214,10,.06)">04.POWD</div>
-      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Powder Coat." data-es="Powder Coat.">Powder Coat.</h2>
-      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="In-house cure oven. 200+ color options. Temperature-logged." data-es="Horno de curado in-house. 200+ colores. Temperatura logueada.">In-house cure oven. 200+ color options. Temperature-logged.</p>
-      <div class="space-y-2">
-        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.01</div><div><div class="display text-base">Wheels · set of 4</div></div><div class="arrow">$520</div></a>
-        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.02</div><div><div class="display text-base">Brake calipers · 4-pc</div></div><div class="arrow">$340</div></a>
-        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.03</div><div><div class="display text-base">Suspension components</div></div><div class="arrow">FROM $180</div></a>
-        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.04</div><div><div class="display text-base">Engine bay parts</div></div><div class="arrow">QUOTE</div></a>
+<!-- POWDER -->
+<section id="powder" class="cat">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="left">
+        <div class="big-num">04</div>
+        <div>
+          <span class="tag">P / Powder Coat</span>
+          <h2>Powder <span class="a">coating.</span></h2>
+        </div>
       </div>
+      <p>In-house cure oven calibrated weekly. 200+ color options. Every cure temperature-logged. Cure logs available on request.</p>
     </div>
-    <div id="rim" class="reveal">
-      <div class="callout mb-5" style="border-color:var(--cyan);color:var(--cyan);background:rgba(0,212,255,.06)">05.RIM</div>
-      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Rim Repair." data-es="Rines.">Rim Repair.</h2>
-      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="Curb rash, structural damage, finish refresh. CNC re-machining available." data-es="Raspaduras, daño estructural, refresh de acabado. Re-mecanizado CNC disponible.">Curb rash, structural damage, finish refresh. CNC re-machining available.</p>
-      <div class="space-y-2">
-        <a href="#" data-open-quote class="svc-row"><div class="num">R.01</div><div><div class="display text-base">Curb rash repair</div></div><div class="arrow">$95/wheel</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">R.02</div><div><div class="display text-base">Bent rim · weld + true</div></div><div class="arrow">FROM $145</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">R.03</div><div><div class="display text-base">Color change · full set</div></div><div class="arrow">$680</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">R.04</div><div><div class="display text-base">CNC diamond cut refinish</div></div><div class="arrow">FROM $220</div></a>
-      </div>
+    <div class="price-list stagger">
+      <div class="price-row"><span class="pnum">P.01</span><div><span class="pt">Wheels · Set of 4</span><span class="pd">Strip, prep, coat, cure · color of choice</span></div><div class="pprice">$520</div></div>
+      <div class="price-row"><span class="pnum">P.02</span><div><span class="pt">Brake Calipers · 4-pc</span><span class="pd">Includes heat-cure topcoat</span></div><div class="pprice">$340</div></div>
+      <div class="price-row"><span class="pnum">P.03</span><div><span class="pt">Suspension Components</span><span class="pd">Control arms, links, brackets</span></div><div class="pprice"><small>FROM</small>$180</div></div>
+      <div class="price-row"><span class="pnum">P.04</span><div><span class="pt">Engine Bay Parts</span><span class="pd">Intake manifold, valve covers, brackets</span></div><div class="pprice">QUOTE</div></div>
     </div>
   </div>
 </section>
 
-<!-- TINT + DETAIL -->
-<section class="py-16 md:py-24 relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10">
-    <div id="tint" class="reveal">
-      <div class="callout mb-5">06.TINT</div>
-      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Window Tint." data-es="Polarizado.">Window Tint.</h2>
-      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="3M Ceramic IR, Suntek, Llumar. NY-legal VLT. Lifetime warranty." data-es="3M Cerámico IR, Suntek, Llumar. Tonos legales en NY. Garantía de por vida.">3M Ceramic IR, Suntek, Llumar. NY-legal VLT. Lifetime warranty.</p>
-      <div class="space-y-2">
-        <a href="#" data-open-quote class="svc-row"><div class="num">T.01</div><div><div class="display text-base">2-door · all windows</div></div><div class="arrow">$320</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">T.02</div><div><div class="display text-base">4-door / sedan</div></div><div class="arrow">$420</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">T.03</div><div><div class="display text-base">SUV / truck</div></div><div class="arrow">$520</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">T.04</div><div><div class="display text-base">Windshield · ceramic only</div></div><div class="arrow">$220</div></a>
+<!-- RIM REPAIR -->
+<section id="rim" class="cat">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="left">
+        <div class="big-num">05</div>
+        <div>
+          <span class="tag">R / Rim Repair</span>
+          <h2>Rim repair &amp; <span class="a">refinish.</span></h2>
+        </div>
       </div>
+      <p>Curb rash, structural damage, finish refresh. CNC re-machining available for diamond cut faces.</p>
     </div>
-    <div id="detail" class="reveal">
-      <div class="callout mb-5" style="border-color:var(--green);color:var(--green);background:rgba(0,255,133,.06)">07.DTAL</div>
-      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Detail." data-es="Detallado.">Detail.</h2>
-      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="Multi-stage paint correction, ceramic coating, leather restoration." data-es="Corrección multi-etapa, cerámico, restauración de cuero.">Multi-stage paint correction, ceramic coating, leather restoration.</p>
-      <div class="space-y-2">
-        <a href="#" data-open-quote class="svc-row"><div class="num">D.01</div><div><div class="display text-base">Express detail</div></div><div class="arrow">$149</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">D.02</div><div><div class="display text-base">Full interior + exterior</div></div><div class="arrow">$349</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">D.03</div><div><div class="display text-base">Paint correction · 2-stage</div></div><div class="arrow">FROM $550</div></a>
-        <a href="#" data-open-quote class="svc-row"><div class="num">D.04</div><div><div class="display text-base">Ceramic coating · 3-yr</div></div><div class="arrow">$895</div></a>
-      </div>
+    <div class="price-list stagger">
+      <div class="price-row"><span class="pnum">R.01</span><div><span class="pt">Curb Rash Repair</span><span class="pd">Per wheel · sand, fill, paint, clear</span></div><div class="pprice">$95</div></div>
+      <div class="price-row"><span class="pnum">R.02</span><div><span class="pt">Bent Rim · Weld + True</span><span class="pd">Structural repair · road tested</span></div><div class="pprice"><small>FROM</small>$145</div></div>
+      <div class="price-row"><span class="pnum">R.03</span><div><span class="pt">Color Change · Full Set</span><span class="pd">200+ colors · gloss, matte, satin</span></div><div class="pprice">$680</div></div>
+      <div class="price-row"><span class="pnum">R.04</span><div><span class="pt">CNC Diamond Cut Refinish</span><span class="pd">Re-machined face · clear coat</span></div><div class="pprice"><small>FROM</small>$220</div></div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="py-20 md:py-28 bg-[var(--bg-deep)] border-y border-[var(--line-blue)] relative z-10 text-center">
-  <div class="max-w-3xl mx-auto px-6 reveal">
-    <div class="eyebrow mb-3" data-en="Bundle multiple services" data-es="Combina servicios">Bundle multiple services</div>
-    <h2 class="heavy text-5xl md:text-7xl leading-[.9]" data-en-html="Save up to <span style='color:var(--orange)'>22%</span><br>on bundles." data-es-html="Ahorra hasta <span style='color:var(--orange)'>22%</span><br>en combos.">
-      Save up to <span style="color:var(--orange)">22%</span><br>on bundles.
-    </h2>
-    <p class="mt-6 text-[var(--paper-2)] max-w-xl mx-auto leading-relaxed font-light" data-en="Coilover + alignment + tint = standard bundle. Ask for our build packages — multi-service quotes price-locked for 30 days." data-es="Coilover + alineación + tint = combo estándar. Pregunta por nuestros build packages — cotizaciones lock por 30 días.">Coilover + alignment + tint = standard bundle. Ask for our build packages — multi-service quotes price-locked for 30 days.</p>
-    <a href="#" data-open-quote class="btn btn-orange mt-8 inline-flex">Request build sheet</a>
+<!-- TINT -->
+<section id="tint" class="cat">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="left">
+        <div class="big-num">06</div>
+        <div>
+          <span class="tag">T / Window Tint</span>
+          <h2>Window <span class="a">tint.</span></h2>
+        </div>
+      </div>
+      <p>3M Ceramic IR, Suntek, Llumar. NY-legal VLT only. Lifetime warranty on all installs.</p>
+    </div>
+    <div class="price-list stagger">
+      <div class="price-row"><span class="pnum">T.01</span><div><span class="pt">2-Door · All Windows</span><span class="pd">Ceramic IR · NY-legal VLT</span></div><div class="pprice">$320</div></div>
+      <div class="price-row"><span class="pnum">T.02</span><div><span class="pt">4-Door / Sedan</span><span class="pd">Includes rear windshield</span></div><div class="pprice">$420</div></div>
+      <div class="price-row"><span class="pnum">T.03</span><div><span class="pt">SUV / Truck</span><span class="pd">Larger glass surface · custom cut</span></div><div class="pprice">$520</div></div>
+      <div class="price-row"><span class="pnum">T.04</span><div><span class="pt">Windshield · Ceramic Only</span><span class="pd">70%+ VLT · heat rejection</span></div><div class="pprice">$220</div></div>
+    </div>
   </div>
 </section>
 
-<footer class="py-12 border-t border-[var(--line-blue)] bg-[var(--bg-deep)] relative z-10">
-  <div class="max-w-[1500px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
-      <svg viewBox="0 0 40 40" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><circle cx="20" cy="20" r="17"/><path d="M3 20h34M20 3v34"/></svg>
-      <span class="display text-xl">A-Spec</span>
-      <span class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--paper-3)">© <span data-year></span></span>
+<!-- DETAIL -->
+<section id="detail" class="cat">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="left">
+        <div class="big-num">07</div>
+        <div>
+          <span class="tag">D / Detail</span>
+          <h2>Detail &amp; <span class="a">ceramic.</span></h2>
+        </div>
+      </div>
+      <p>Hand wash, two-bucket method. Multi-stage paint correction. Gtechniq + IGL certified. 3-year ceramic guaranteed.</p>
     </div>
-    <div class="flex items-center gap-6 text-sm tech text-[var(--paper-2)]">
-      <a href="index.html" class="hover:text-[var(--orange)]">Home</a>
-      <a href="builds.html" class="hover:text-[var(--orange)]">Builds</a>
-      <a href="about.html" class="hover:text-[var(--orange)]">The Shop</a>
-      <a href="contact.html" class="hover:text-[var(--orange)]">Contact</a>
+    <div class="price-list stagger">
+      <div class="price-row"><span class="pnum">D.01</span><div><span class="pt">Express Detail</span><span class="pd">Wash, clay, interior vacuum, dressing</span></div><div class="pprice">$149</div></div>
+      <div class="price-row"><span class="pnum">D.02</span><div><span class="pt">Full Interior + Exterior</span><span class="pd">Steam, extraction, leather, polish, sealant</span></div><div class="pprice">$349</div></div>
+      <div class="price-row"><span class="pnum">D.03</span><div><span class="pt">Paint Correction · 2-stage</span><span class="pd">Compound + polish + finishing</span></div><div class="pprice"><small>FROM</small>$550</div></div>
+      <div class="price-row"><span class="pnum">D.04</span><div><span class="pt">Ceramic Coating · 3-year</span><span class="pd">Multi-stage prep · Gtechniq / IGL</span></div><div class="pprice">$895</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-mid">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;margin-bottom:24px">★ BUNDLE &amp; SAVE</div>
+    <h2>Save up to <span class="a">20%</span><br>on multi-service builds.</h2>
+    <p>Bundle coilovers, tint, detail, powder coat and alignment for a complete transformation. Price-locked for 30 days once we deliver your quote.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a href="#" data-quote class="btn btn-red"><span>Request Build Quote</span></a>
+      <a href="contact.html" class="btn btn-line"><span>Contact</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-mark"><span>A</span></span><div><div class="logo-name">A-Spec</div><div class="logo-tag">AUTO · HEADQUARTERS</div></div></a>
+        <p>West Babylon's premium performance garage. Custom builds, mechanical, suspension, bodywork, powder coat, rim repair, tint, detail.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="builds.html">Builds</a>
+        <a href="about.html">The Shop</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p style="margin-top:0">31 Mahan St<br>West Babylon, NY 11704</p>
+        <a href="https://maps.google.com/?q=31+Mahan+St+West+Babylon+NY" target="_blank" style="color:var(--r);font-weight:700;margin-top:10px">Open in Maps ↗</a>
+      </div>
+      <div>
+        <h4>Comms</h4>
+        <a href="tel:+15163957424" class="big-phone">+1 (516) 395-7424</a>
+        <a href="https://www.instagram.com/a_spec_auto_hq/" target="_blank">@a_spec_auto_hq</a>
+        <p style="margin-top:8px;color:#666;font-family:'JetBrains Mono';font-size:10px;letter-spacing:.28em;text-transform:uppercase;font-weight:700">Mon–Sat · 09–20</p>
+      </div>
+    </div>
+    <div class="copy">
+      <div>© <span id="year"></span> A-Spec Auto Headquarters · NY DMV Registered</div>
+      <div>ASE Certified · OEM Parts · 12-Month Warranty</div>
     </div>
   </div>
 </footer>
 
-<div class="mobile-cta">
-  <a href="tel:+15163957424" class="btn-cyan">Call</a>
-  <a href="#" data-open-quote class="btn-orange">Spec sheet</a>
+<div class="mob-cta">
+  <a href="tel:+15163957424" class="line">Call</a>
+  <a href="#" data-quote class="red">Get Quote</a>
 </div>
 
-<div id="quoteModal" class="modal-bg">
+<div id="quoteModal" class="modal">
   <div class="modal-card">
-    <button class="modal-close" data-close-quote>×</button>
-    <div class="eyebrow">Build sheet request</div>
-    <h3 class="heavy text-3xl mt-3 mb-2 leading-[.9]">Spec your build.</h3>
-    <p class="text-sm text-[var(--paper-3)] tech mb-7">&gt; we draft. you approve. we build.</p>
-    <form data-fake class="space-y-5">
-      <div><span class="field-label">Name</span><input class="input" required/></div>
-      <div class="grid grid-cols-2 gap-5">
-        <div><span class="field-label">Phone</span><input class="input" type="tel" required placeholder="(516) ..."/></div>
-        <div><span class="field-label">Vehicle</span><input class="input" placeholder="YR · MK · MDL"/></div>
+    <button class="modal-x" data-close>×</button>
+    <div class="eyebrow">★ BUILD SHEET REQUEST</div>
+    <h3 style="font-family:'Bebas Neue';font-size:42px;line-height:.95;letter-spacing:.005em;text-transform:uppercase;margin:14px 0 8px">Spec your <span style="font-family:'Playfair Display';font-style:italic;color:var(--r);font-weight:500">build.</span></h3>
+    <p style="font-family:'Inter';font-size:13px;color:#888;margin-bottom:28px">We draft. You approve. We build.</p>
+    <form data-fake>
+      <div class="form-row"><label class="field-label">Name <span class="req">*</span></label><input class="input" required placeholder="Full name"/></div>
+      <div class="form-row col2">
+        <div><label class="field-label">Phone <span class="req">*</span></label><input class="input" type="tel" required placeholder="(516) ..."/></div>
+        <div><label class="field-label">Vehicle</label><input class="input" placeholder="Year · Make · Model"/></div>
       </div>
-      <div><span class="field-label">Build description</span><textarea class="input" rows="4"></textarea></div>
-      <button class="btn btn-orange w-full">Send · get spec sheet</button>
-      <div data-form-result class="hidden tech text-sm pt-2" style="color:var(--green)"></div>
+      <div class="form-row"><label class="field-label">Build description</label><textarea class="input" rows="4" placeholder="What needs done?"></textarea></div>
+      <button type="submit" class="btn btn-red" style="width:100%"><span>Send · Get Spec Sheet</span></button>
+      <div data-result style="display:none;margin-top:16px;padding:14px;background:rgba(255,10,30,.08);border-left:3px solid var(--r);color:var(--r);font-family:'JetBrains Mono';font-size:12px;letter-spacing:.04em;font-weight:700">› Build sheet received · response under 4 hours</div>
     </form>
   </div>
 </div>
 
-<script src="assets/app.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const sb = document.querySelector('.scroll-bar');
+window.addEventListener('scroll', () => { const h = document.documentElement; sb.style.width = ((h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100) + '%'; }, {passive:true});
+const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.14, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
+const cf = document.querySelector('.cf');
+let mx = -100, my = -100, cx = -100, cy = -100;
+window.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; cf.classList.add('active'); });
+window.addEventListener('mouseleave', () => cf.classList.remove('active'));
+(function loop(){ cx += (mx-cx)*.18; cy += (my-cy)*.18; cf.style.transform = `translate(${cx}px,${cy}px) translate(-50%,-50%)` + (cf.classList.contains('big') ? ' scale(2.6)' : ''); requestAnimationFrame(loop); })();
+document.querySelectorAll('a, button, [data-quote]').forEach(el => { el.addEventListener('mouseenter', () => cf.classList.add('big')); el.addEventListener('mouseleave', () => cf.classList.remove('big')); });
+const mb = document.getElementById('menuBtn'), mp = document.getElementById('menuPanel');
+if (mb && mp) { mb.addEventListener('click', () => mp.classList.toggle('open')); mp.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mp.classList.remove('open'))); }
+const qm = document.getElementById('quoteModal');
+document.querySelectorAll('[data-quote]').forEach(el => el.addEventListener('click', (e) => { e.preventDefault(); qm.classList.add('open'); }));
+document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => qm.classList.remove('open')));
+qm.addEventListener('click', (e) => { if (e.target === qm) qm.classList.remove('open'); });
+document.querySelectorAll('form[data-fake]').forEach(f => f.addEventListener('submit', (e) => { e.preventDefault(); const r = f.querySelector('[data-result]'); if (r) r.style.display = 'block'; f.reset(); }));
+</script>
+
 </body>
 </html>
