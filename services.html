@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services Catalog · A-Spec Auto HQ · West Babylon</title>
+<meta name="description" content="Full catalog: mechanical, suspension, bodywork, powder coating, rim repair, window tint, detailing at A-Spec Auto Headquarters." />
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&family=Anton&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="loader">
+  <div class="loader-logo">A-SPEC<small>★ AUTO HEADQUARTERS · WEST BABYLON ★</small></div>
+  <div class="loader-bar"></div>
+  <div class="loader-readout" data-readout>&gt; booting...</div>
+</div>
+
+<div class="grain"></div>
+<div class="scroll-progress"></div>
+
+<div class="hidden md:block border-b border-[var(--line-blue)] relative z-10">
+  <div class="max-w-[1500px] mx-auto px-8 py-2 flex items-center justify-between mono text-[.64rem] tracking-[.22em] uppercase">
+    <div class="flex items-center gap-7 text-[var(--paper-3)]">
+      <span class="flex items-center gap-2"><span class="dot-orange"></span><span style="color:var(--orange)">STATUS · OPEN · BAY 1–4</span></span>
+      <span class="hidden lg:inline">31 MAHAN ST · WEST BABYLON · NY 11704</span>
+      <span class="hidden lg:inline" style="color:var(--cyan)">BILINGÜE · EN/ES</span>
+    </div>
+    <div class="flex items-center gap-6 text-[var(--paper-3)]">
+      <a href="tel:+15163957424" class="hover:text-[var(--orange)]">+1 (516) 395-7424</a>
+      <div class="lang-toggle flex items-center gap-1">
+        <button data-lang="en" class="px-2 py-1">EN</button><span>/</span><button data-lang="es" class="px-2 py-1">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="sticky top-0 z-40 backdrop-blur-md bg-[#0a1929]/85 border-b border-[var(--line-blue)]">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <svg viewBox="0 0 40 40" class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><circle cx="20" cy="20" r="17"/><circle cx="20" cy="20" r="10"/><path d="M3 20h34M20 3v34"/></svg>
+      <div>
+        <div class="display text-xl md:text-2xl tracking-tight">A-Spec</div>
+        <div class="tech text-[.55rem] tracking-[.32em] uppercase text-[var(--cyan)]">Auto · HQ</div>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-9">
+      <a href="index.html" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
+      <a href="services.html" class="nav-link active" data-en="Services" data-es="Servicios">Services</a>
+      <a href="builds.html" class="nav-link" data-en="Builds" data-es="Builds">Builds</a>
+      <a href="about.html" class="nav-link" data-en="The Shop" data-es="El Shop">The Shop</a>
+      <a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#" data-open-quote class="hidden md:inline-flex btn btn-orange !py-3 !px-5 !text-[.66rem]" data-en="Request quote" data-es="Cotización">Request quote</a>
+      <button id="menuBtn" class="md:hidden p-2 text-[var(--paper)]"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+    </div>
+  </div>
+  <div id="menuPanel" class="hidden md:hidden border-t border-[var(--line-blue)] px-6 py-5 flex flex-col gap-4">
+    <a href="index.html" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
+    <a href="services.html" class="nav-link active" data-en="Services" data-es="Servicios">Services</a>
+    <a href="builds.html" class="nav-link" data-en="Builds" data-es="Builds">Builds</a>
+    <a href="about.html" class="nav-link" data-en="The Shop" data-es="El Shop">The Shop</a>
+    <a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="pt-12 md:pt-16 pb-10 relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+    <div class="reveal flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-3 border-b border-[var(--line-2)]">
+      <div class="flex flex-wrap items-baseline gap-4 md:gap-6">
+        <span class="eyebrow">DRAWING N°</span>
+        <span class="tech text-[var(--paper)]">A-002 / REV. 11.2026</span>
+      </div>
+      <div class="tech text-[.66rem] tracking-[.22em] uppercase text-[var(--paper-3)]">SCALE 1:1 · SHEET 2/5</div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">SERVICES · FULL CATALOG</div>
+      <h1 class="heavy hero-title mt-3 leading-[.9]">
+        <span class="block">Every</span>
+        <span class="block"><span style="color:var(--orange)">spec.</span></span>
+        <span class="block">Documented.</span>
+      </h1>
+      <p class="mt-8 max-w-2xl text-base md:text-lg text-[var(--paper-2)] leading-relaxed font-light"
+         data-en="Every service quoted line-by-line. Every part listed by brand and tier. No upsells, no surprise supplements. If we find something during the job, you hear from us first."
+         data-es="Cada servicio cotizado por línea. Cada parte listada por marca y nivel. Sin upsells, sin suplementos sorpresa. Si encontramos algo, te llamamos primero.">
+        Every service quoted line-by-line. Every part listed by brand and tier. No upsells, no surprise supplements. If we find something during the job, you hear from us first.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MECHANICAL -->
+<section id="mechanical" class="py-16 md:py-24 relative z-10 border-t border-[var(--line-2)]">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4 reveal">
+      <div class="callout mb-5">01.MECH</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Mechanical." data-es="Mecánica.">Mechanical.</h2>
+      <p class="mt-5 text-[var(--paper-2)] leading-relaxed" data-en="OEM-grade parts. Bilingual diagnostics. ASE-certified techs." data-es="Partes OEM. Diagnóstico bilingüe. Técnicos ASE.">OEM-grade parts. Bilingual diagnostics. ASE-certified techs.</p>
+    </div>
+    <div class="md:col-span-8 reveal-stagger">
+      <a href="#" data-open-quote class="svc-row"><div class="num">M.01</div><div><div class="display text-xl">Brake service</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Pads, rotors, calipers, lines, fluid flush</p></div><div class="arrow">FROM $180</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">M.02</div><div><div class="display text-xl">Diagnostic scan</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">OBD-II + manufacturer tool + road test</p></div><div class="arrow">$95</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">M.03</div><div><div class="display text-xl">Alignment · 4-wheel</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Hunter Hawkeye Elite. Print-out included.</p></div><div class="arrow">$120</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">M.04</div><div><div class="display text-xl">Oil & filter</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Mobil 1, Castrol Edge, Liqui-Moly</p></div><div class="arrow">FROM $89</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">M.05</div><div><div class="display text-xl">Belt / hose / fluid</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Timing, serpentine, coolant, brake, trans</p></div><div class="arrow">QUOTE</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- SUSPENSION -->
+<section id="suspension" class="py-16 md:py-24 relative z-10 bg-[var(--bg-deep)] border-y border-[var(--line-blue)]">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4 reveal">
+      <div class="callout mb-5" style="border-color:var(--cyan);color:var(--cyan);background:rgba(0,212,255,.06)">02.SUSP</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en-html="Suspension &<br>Coilovers." data-es-html="Suspensión y<br>Coilovers.">Suspension &<br>Coilovers.</h2>
+      <p class="mt-5 text-[var(--paper-2)] leading-relaxed" data-en="BC Racing, KW, Bilstein, Tein, Ohlins. Corner balance every install." data-es="BC Racing, KW, Bilstein, Tein, Ohlins. Corner balance en cada instalación.">BC Racing, KW, Bilstein, Tein, Ohlins. Corner balance every install.</p>
+    </div>
+    <div class="md:col-span-8 reveal-stagger">
+      <a href="#" data-open-quote class="svc-row"><div class="num">S.01</div><div><div class="display text-xl">Coilover install · standard</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Bolt-on, set ride height, road test</p></div><div class="arrow">FROM $450</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">S.02</div><div><div class="display text-xl">Coilover + corner balance</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Track-tuned, fluid weights, alignment incl.</p></div><div class="arrow">$895</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">S.03</div><div><div class="display text-xl">Lift kit · truck/SUV</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">2–6" Bilstein, ICON, Old Man Emu</p></div><div class="arrow">FROM $750</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">S.04</div><div><div class="display text-xl">Lowering springs</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Eibach, H&R, Tein. Install + align.</p></div><div class="arrow">FROM $385</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">S.05</div><div><div class="display text-xl">Sway bar · end links</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Whiteline, Hotchkis. Polyurethane bushings.</p></div><div class="arrow">FROM $290</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- BODYWORK -->
+<section id="bodywork" class="py-16 md:py-24 relative z-10 border-b border-[var(--line-2)]">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4 reveal">
+      <div class="callout mb-5">03.BODY</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en-html="Bodywork.<br>Paint." data-es-html="Carrocería.<br>Pintura.">Bodywork.<br>Paint.</h2>
+      <p class="mt-5 text-[var(--paper-2)] leading-relaxed" data-en="Downdraft booth, computerized color match, OEM blending." data-es="Cabina downdraft, color computarizado, mezclado OEM.">Downdraft booth, computerized color match, OEM blending.</p>
+    </div>
+    <div class="md:col-span-8 reveal-stagger">
+      <a href="#" data-open-quote class="svc-row"><div class="num">B.01</div><div><div class="display text-xl">Panel repair / paint</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Door, fender, bumper. Single-panel.</p></div><div class="arrow">FROM $480</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">B.02</div><div><div class="display text-xl">Full repaint</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">PPG, Sikkens, BASF. 3-stage clearcoat.</p></div><div class="arrow">QUOTE</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">B.03</div><div><div class="display text-xl">Dent removal · PDR</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Paintless dent repair. Hail, door dings.</p></div><div class="arrow">FROM $125</div></a>
+      <a href="#" data-open-quote class="svc-row"><div class="num">B.04</div><div><div class="display text-xl">Body kit install</div><p class="tech text-xs mt-1 text-[var(--paper-3)]">Lip, splitter, side skirts, wing. Paint-matched.</p></div><div class="arrow">QUOTE</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- POWDER + RIM -->
+<section class="py-16 md:py-24 relative z-10 bg-[var(--bg-deep)] border-b border-[var(--line-blue)]">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10">
+    <div id="powder" class="reveal">
+      <div class="callout mb-5" style="border-color:var(--yellow);color:var(--yellow);background:rgba(255,214,10,.06)">04.POWD</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Powder Coat." data-es="Powder Coat.">Powder Coat.</h2>
+      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="In-house cure oven. 200+ color options. Temperature-logged." data-es="Horno de curado in-house. 200+ colores. Temperatura logueada.">In-house cure oven. 200+ color options. Temperature-logged.</p>
+      <div class="space-y-2">
+        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.01</div><div><div class="display text-base">Wheels · set of 4</div></div><div class="arrow">$520</div></a>
+        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.02</div><div><div class="display text-base">Brake calipers · 4-pc</div></div><div class="arrow">$340</div></a>
+        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.03</div><div><div class="display text-base">Suspension components</div></div><div class="arrow">FROM $180</div></a>
+        <a href="#" data-open-quote class="svc-row" style="border-bottom-color:rgba(255,214,10,.15)"><div class="num">P.04</div><div><div class="display text-base">Engine bay parts</div></div><div class="arrow">QUOTE</div></a>
+      </div>
+    </div>
+    <div id="rim" class="reveal">
+      <div class="callout mb-5" style="border-color:var(--cyan);color:var(--cyan);background:rgba(0,212,255,.06)">05.RIM</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Rim Repair." data-es="Rines.">Rim Repair.</h2>
+      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="Curb rash, structural damage, finish refresh. CNC re-machining available." data-es="Raspaduras, daño estructural, refresh de acabado. Re-mecanizado CNC disponible.">Curb rash, structural damage, finish refresh. CNC re-machining available.</p>
+      <div class="space-y-2">
+        <a href="#" data-open-quote class="svc-row"><div class="num">R.01</div><div><div class="display text-base">Curb rash repair</div></div><div class="arrow">$95/wheel</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">R.02</div><div><div class="display text-base">Bent rim · weld + true</div></div><div class="arrow">FROM $145</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">R.03</div><div><div class="display text-base">Color change · full set</div></div><div class="arrow">$680</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">R.04</div><div><div class="display text-base">CNC diamond cut refinish</div></div><div class="arrow">FROM $220</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TINT + DETAIL -->
+<section class="py-16 md:py-24 relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-10">
+    <div id="tint" class="reveal">
+      <div class="callout mb-5">06.TINT</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Window Tint." data-es="Polarizado.">Window Tint.</h2>
+      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="3M Ceramic IR, Suntek, Llumar. NY-legal VLT. Lifetime warranty." data-es="3M Cerámico IR, Suntek, Llumar. Tonos legales en NY. Garantía de por vida.">3M Ceramic IR, Suntek, Llumar. NY-legal VLT. Lifetime warranty.</p>
+      <div class="space-y-2">
+        <a href="#" data-open-quote class="svc-row"><div class="num">T.01</div><div><div class="display text-base">2-door · all windows</div></div><div class="arrow">$320</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">T.02</div><div><div class="display text-base">4-door / sedan</div></div><div class="arrow">$420</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">T.03</div><div><div class="display text-base">SUV / truck</div></div><div class="arrow">$520</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">T.04</div><div><div class="display text-base">Windshield · ceramic only</div></div><div class="arrow">$220</div></a>
+      </div>
+    </div>
+    <div id="detail" class="reveal">
+      <div class="callout mb-5" style="border-color:var(--green);color:var(--green);background:rgba(0,255,133,.06)">07.DTAL</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en="Detail." data-es="Detallado.">Detail.</h2>
+      <p class="mt-5 text-[var(--paper-2)] leading-relaxed mb-6" data-en="Multi-stage paint correction, ceramic coating, leather restoration." data-es="Corrección multi-etapa, cerámico, restauración de cuero.">Multi-stage paint correction, ceramic coating, leather restoration.</p>
+      <div class="space-y-2">
+        <a href="#" data-open-quote class="svc-row"><div class="num">D.01</div><div><div class="display text-base">Express detail</div></div><div class="arrow">$149</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">D.02</div><div><div class="display text-base">Full interior + exterior</div></div><div class="arrow">$349</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">D.03</div><div><div class="display text-base">Paint correction · 2-stage</div></div><div class="arrow">FROM $550</div></a>
+        <a href="#" data-open-quote class="svc-row"><div class="num">D.04</div><div><div class="display text-base">Ceramic coating · 3-yr</div></div><div class="arrow">$895</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 md:py-28 bg-[var(--bg-deep)] border-y border-[var(--line-blue)] relative z-10 text-center">
+  <div class="max-w-3xl mx-auto px-6 reveal">
+    <div class="eyebrow mb-3" data-en="Bundle multiple services" data-es="Combina servicios">Bundle multiple services</div>
+    <h2 class="heavy text-5xl md:text-7xl leading-[.9]" data-en-html="Save up to <span style='color:var(--orange)'>22%</span><br>on bundles." data-es-html="Ahorra hasta <span style='color:var(--orange)'>22%</span><br>en combos.">
+      Save up to <span style="color:var(--orange)">22%</span><br>on bundles.
+    </h2>
+    <p class="mt-6 text-[var(--paper-2)] max-w-xl mx-auto leading-relaxed font-light" data-en="Coilover + alignment + tint = standard bundle. Ask for our build packages — multi-service quotes price-locked for 30 days." data-es="Coilover + alineación + tint = combo estándar. Pregunta por nuestros build packages — cotizaciones lock por 30 días.">Coilover + alignment + tint = standard bundle. Ask for our build packages — multi-service quotes price-locked for 30 days.</p>
+    <a href="#" data-open-quote class="btn btn-orange mt-8 inline-flex">Request build sheet</a>
+  </div>
+</section>
+
+<footer class="py-12 border-t border-[var(--line-blue)] bg-[var(--bg-deep)] relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <svg viewBox="0 0 40 40" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><circle cx="20" cy="20" r="17"/><path d="M3 20h34M20 3v34"/></svg>
+      <span class="display text-xl">A-Spec</span>
+      <span class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--paper-3)">© <span data-year></span></span>
+    </div>
+    <div class="flex items-center gap-6 text-sm tech text-[var(--paper-2)]">
+      <a href="index.html" class="hover:text-[var(--orange)]">Home</a>
+      <a href="builds.html" class="hover:text-[var(--orange)]">Builds</a>
+      <a href="about.html" class="hover:text-[var(--orange)]">The Shop</a>
+      <a href="contact.html" class="hover:text-[var(--orange)]">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="tel:+15163957424" class="btn-cyan">Call</a>
+  <a href="#" data-open-quote class="btn-orange">Spec sheet</a>
+</div>
+
+<div id="quoteModal" class="modal-bg">
+  <div class="modal-card">
+    <button class="modal-close" data-close-quote>×</button>
+    <div class="eyebrow">Build sheet request</div>
+    <h3 class="heavy text-3xl mt-3 mb-2 leading-[.9]">Spec your build.</h3>
+    <p class="text-sm text-[var(--paper-3)] tech mb-7">&gt; we draft. you approve. we build.</p>
+    <form data-fake class="space-y-5">
+      <div><span class="field-label">Name</span><input class="input" required/></div>
+      <div class="grid grid-cols-2 gap-5">
+        <div><span class="field-label">Phone</span><input class="input" type="tel" required placeholder="(516) ..."/></div>
+        <div><span class="field-label">Vehicle</span><input class="input" placeholder="YR · MK · MDL"/></div>
+      </div>
+      <div><span class="field-label">Build description</span><textarea class="input" rows="4"></textarea></div>
+      <button class="btn btn-orange w-full">Send · get spec sheet</button>
+      <div data-form-result class="hidden tech text-sm pt-2" style="color:var(--green)"></div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

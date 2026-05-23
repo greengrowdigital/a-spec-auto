@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Shop · A-Spec Auto HQ</title>
+<meta name="description" content="A-Spec Auto Headquarters — the shop, the crew, the way we work. 31 Mahan St, West Babylon NY." />
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&family=Anton&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="loader">
+  <div class="loader-logo">A-SPEC<small>★ AUTO HEADQUARTERS · WEST BABYLON ★</small></div>
+  <div class="loader-bar"></div>
+  <div class="loader-readout" data-readout>&gt; booting...</div>
+</div>
+
+<div class="grain"></div>
+<div class="scroll-progress"></div>
+
+<div class="hidden md:block border-b border-[var(--line-blue)] relative z-10">
+  <div class="max-w-[1500px] mx-auto px-8 py-2 flex items-center justify-between mono text-[.64rem] tracking-[.22em] uppercase">
+    <div class="flex items-center gap-7 text-[var(--paper-3)]">
+      <span class="flex items-center gap-2"><span class="dot-orange"></span><span style="color:var(--orange)">STATUS · OPEN · BAY 1–4</span></span>
+      <span class="hidden lg:inline">31 MAHAN ST · WEST BABYLON · NY 11704</span>
+    </div>
+    <div class="flex items-center gap-6 text-[var(--paper-3)]">
+      <a href="tel:+15163957424" class="hover:text-[var(--orange)]">+1 (516) 395-7424</a>
+      <div class="lang-toggle flex items-center gap-1">
+        <button data-lang="en" class="px-2 py-1">EN</button><span>/</span><button data-lang="es" class="px-2 py-1">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="sticky top-0 z-40 backdrop-blur-md bg-[#0a1929]/85 border-b border-[var(--line-blue)]">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <svg viewBox="0 0 40 40" class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><circle cx="20" cy="20" r="17"/><circle cx="20" cy="20" r="10"/><path d="M3 20h34M20 3v34"/></svg>
+      <div>
+        <div class="display text-xl md:text-2xl tracking-tight">A-Spec</div>
+        <div class="tech text-[.55rem] tracking-[.32em] uppercase text-[var(--cyan)]">Auto · HQ</div>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-9">
+      <a href="index.html" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
+      <a href="services.html" class="nav-link" data-en="Services" data-es="Servicios">Services</a>
+      <a href="builds.html" class="nav-link" data-en="Builds" data-es="Builds">Builds</a>
+      <a href="about.html" class="nav-link active" data-en="The Shop" data-es="El Shop">The Shop</a>
+      <a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#" data-open-quote class="hidden md:inline-flex btn btn-orange !py-3 !px-5 !text-[.66rem]">Request quote</a>
+      <button id="menuBtn" class="md:hidden p-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+    </div>
+  </div>
+  <div id="menuPanel" class="hidden md:hidden border-t border-[var(--line-blue)] px-6 py-5 flex flex-col gap-4">
+    <a href="index.html" class="nav-link" data-en="Home" data-es="Inicio">Home</a>
+    <a href="services.html" class="nav-link" data-en="Services" data-es="Servicios">Services</a>
+    <a href="builds.html" class="nav-link" data-en="Builds" data-es="Builds">Builds</a>
+    <a href="about.html" class="nav-link active" data-en="The Shop" data-es="El Shop">The Shop</a>
+    <a href="contact.html" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="pt-12 md:pt-16 pb-10 relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+    <div class="reveal flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-3 border-b border-[var(--line-2)]">
+      <div class="flex flex-wrap items-baseline gap-4 md:gap-6">
+        <span class="eyebrow">DRAWING N°</span>
+        <span class="tech text-[var(--paper)]">A-004 / REV. 11.2026</span>
+      </div>
+      <div class="tech text-[.66rem] tracking-[.22em] uppercase text-[var(--paper-3)]">SCALE 1:1 · SHEET 4/5</div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">THE SHOP · WEST BABYLON</div>
+      <h1 class="heavy hero-title mt-3 leading-[.9]">
+        <span class="block">31 Mahan</span>
+        <span class="block"><span style="color:var(--orange)">St.</span></span>
+      </h1>
+    </div>
+  </div>
+</section>
+
+<!-- THE SHOP -->
+<section class="py-16 md:py-24 relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10 md:gap-16 items-center">
+    <div class="md:col-span-7 reveal">
+      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=85" alt="A-Spec shop interior" class="w-full aspect-[4/3] object-cover border border-[var(--line-2)]" style="filter:contrast(1.05) saturate(.85);"/>
+    </div>
+    <div class="md:col-span-5 reveal">
+      <div class="callout mb-5">SHOP · FACILITY</div>
+      <h2 class="heavy text-4xl md:text-5xl leading-[.9]" data-en-html="4 bays.<br>2 lifts.<br><span style='color:var(--orange)'>1 cure oven.</span>" data-es-html="4 bays.<br>2 elevadores.<br><span style='color:var(--orange)'>1 horno cure.</span>">
+        4 bays.<br>2 lifts.<br><span style="color:var(--orange)">1 cure oven.</span>
+      </h2>
+      <p class="mt-6 text-[var(--paper-2)] leading-relaxed font-light"
+         data-en="A-Spec opened in 2018 in a 4,800 sq ft warehouse off Mahan St. Two MaxJax lifts, four open bays, a downdraft paint booth, and a powder-coat oven calibrated to 400°F."
+         data-es="A-Spec abrió en 2018 en un almacén de 4,800 sq ft en Mahan St. Dos elevadores MaxJax, cuatro bahías, cabina de pintura downdraft y un horno de powder coat calibrado a 400°F.">
+        A-Spec opened in 2018 in a 4,800 sq ft warehouse off Mahan St. Two MaxJax lifts, four open bays, a downdraft paint booth, and a powder-coat oven calibrated to 400°F.
+      </p>
+      <div class="mt-8 grid grid-cols-3 gap-4">
+        <div><div class="dyno text-3xl">4,800</div><div class="label mt-1" data-en="SQ FT" data-es="SQ FT">SQ FT</div></div>
+        <div><div class="dyno dyno-cyan text-3xl">2</div><div class="label mt-1" data-en="LIFTS" data-es="LIFTS">LIFTS</div></div>
+        <div><div class="dyno dyno-paper text-3xl">7<span style="color:var(--orange)">y</span></div><div class="label mt-1" data-en="OPEN" data-es="ABIERTO">OPEN</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="py-16 md:py-24 relative z-10 bg-[var(--bg-deep)] border-y border-[var(--line-blue)]">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+    <div class="section-head reveal">
+      <div>
+        <div class="axis"><span class="bar"></span><span class="eyebrow">PRINCIPLES · OPERATIONS</span></div>
+        <h2 class="heavy text-4xl md:text-6xl mt-4 leading-[.9]" data-en-html="Four <span style='color:var(--orange)'>rules.</span>" data-es-html="Cuatro <span style='color:var(--orange)'>reglas.</span>">
+          Four <span style="color:var(--orange)">rules.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5 reveal-stagger">
+      <div class="card card-cad p-7">
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-5xl">01</div>
+          <div class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--cyan)">OEM-GRADE</div>
+        </div>
+        <h3 class="display text-2xl mb-3" data-en="Real parts. Real torque specs." data-es="Partes reales. Torques reales.">Real parts. Real torque specs.</h3>
+        <p class="text-sm text-[var(--paper-3)] leading-relaxed font-light" data-en="OEM or named-brand aftermarket. Torque-wrenched to manufacturer spec. Every fastener logged on the build sheet." data-es="OEM o aftermarket de marca. Torque al spec del fabricante. Cada tornillo en el build sheet.">OEM or named-brand aftermarket. Torque-wrenched to manufacturer spec. Every fastener logged on the build sheet.</p>
+      </div>
+      <div class="card card-cad p-7">
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-5xl">02</div>
+          <div class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--cyan)">TRANSPARENT</div>
+        </div>
+        <h3 class="display text-2xl mb-3" data-en="No silent supplements." data-es="Sin suplementos en silencio.">No silent supplements.</h3>
+        <p class="text-sm text-[var(--paper-3)] leading-relaxed font-light" data-en="If we find something during the job, you hear from us first. Photos, video, options — your call before we proceed." data-es="Si encontramos algo durante el trabajo, te llamamos primero. Fotos, video, opciones — tú decides antes de seguir.">If we find something during the job, you hear from us first. Photos, video, options — your call before we proceed.</p>
+      </div>
+      <div class="card card-cad p-7">
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-5xl">03</div>
+          <div class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--cyan)">BILINGUAL</div>
+        </div>
+        <h3 class="display text-2xl mb-3" data-en="EN or ES. Same answer." data-es="EN o ES. Misma respuesta.">EN or ES. Same answer.</h3>
+        <p class="text-sm text-[var(--paper-3)] leading-relaxed font-light" data-en="Every tech on the floor is bilingual. Explanations, options, invoices in whichever language you need. No translation app required." data-es="Cada técnico habla los dos idiomas. Explicaciones, opciones, facturas en el idioma que necesites. Sin app de traducción.">Every tech on the floor is bilingual. Explanations, options, invoices in whichever language you need. No translation app required.</p>
+      </div>
+      <div class="card card-cad p-7">
+        <div class="flex items-baseline justify-between mb-4">
+          <div class="dyno text-5xl">04</div>
+          <div class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--cyan)">DOCUMENTED</div>
+        </div>
+        <h3 class="display text-2xl mb-3" data-en="Photographed. Specced. Archived." data-es="Fotografiado. Speceado. Archivado.">Photographed. Specced. Archived.</h3>
+        <p class="text-sm text-[var(--paper-3)] leading-relaxed font-light" data-en="Every build photographed from intake to delivery. Spec sheet PDF emailed to you. Posted on Instagram (with your approval)." data-es="Cada build fotografiado de entrada a entrega. Spec sheet PDF al email. Posteado en Instagram (con tu aprobación).">Every build photographed from intake to delivery. Spec sheet PDF emailed to you. Posted on Instagram (with your approval).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE CREW -->
+<section class="py-16 md:py-24 relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+    <div class="section-head reveal">
+      <div>
+        <div class="axis"><span class="bar"></span><span class="eyebrow">CREW · CERTIFIED TECHS</span></div>
+        <h2 class="heavy text-4xl md:text-6xl mt-4 leading-[.9]" data-en-html="The <span style='color:var(--orange)'>floor.</span>" data-es-html="El <span style='color:var(--orange)'>piso.</span>">
+          The <span style="color:var(--orange)">floor.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 reveal-stagger">
+      <div class="card card-cad p-7">
+        <div class="flex items-baseline justify-between mb-2">
+          <span class="dyno text-3xl dyno-paper">A.01</span>
+          <span class="stamp stamp-orange">FOUNDER</span>
+        </div>
+        <h3 class="display text-3xl mt-3 mb-2">Carlos R.</h3>
+        <div class="tech text-[.62rem] tracking-[.22em] uppercase mb-4" style="color:var(--cyan)">LEAD · MASTER TECH</div>
+        <div class="space-y-2 mb-4">
+          <div class="spec"><span class="k">EXP</span><span class="v ml-auto">17 yrs</span></div>
+          <div class="spec"><span class="k">CERTS</span><span class="v ml-auto">ASE Master + L1</span></div>
+          <div class="spec"><span class="k">LANG</span><span class="v ml-auto">EN / ES</span></div>
+        </div>
+        <p class="text-sm text-[var(--paper-3)] leading-relaxed" data-en="Started wrenching in Queens at 16. Founded A-Spec in 2018. Best at: suspension, custom builds, the diagnoses other shops give up on." data-es="Empezó a los 16 en Queens. Fundó A-Spec en 2018. Lo suyo: suspensión, builds custom, los diagnósticos que otros shops abandonan.">Started wrenching in Queens at 16. Founded A-Spec in 2018. Best at: suspension, custom builds, the diagnoses other shops give up on.</p>
+      </div>
+
+      <div class="card card-cad p-7">
+        <div class="flex items-baseline justify-between mb-2">
+          <span class="dyno text-3xl dyno-paper">A.02</span>
+          <span class="stamp">BODY · PAINT</span>
+        </div>
+        <h3 class="display text-3xl mt-3 mb-2">Marco D.</h3>
+        <div class="tech text-[.62rem] tracking-[.22em] uppercase mb-4" style="color:var(--cyan)">SENIOR · BODYWORK</div>
+        <div class="space-y-2 mb-4">
+          <div class="spec"><span class="k">EXP</span><span class="v ml-auto">12 yrs</span></div>
+          <div class="spec"><span class="k">CERTS</span><span class="v ml-auto">I-CAR · PPG</span></div>
+          <div class="spec"><span class="k">LANG</span><span class="v ml-auto">EN / ES</span></div>
+        </div>
+        <p class="text-sm text-[var(--paper-3)] leading-relaxed" data-en="Twelve years on the spray gun. PPG and Sikkens certified. Best at: full repaints, panel blending, the color matches you can't tell apart." data-es="Doce años con la pistola. Certificado PPG y Sikkens. Lo suyo: repintados completos, mezclado de paneles, color matches que no se distinguen.">Twelve years on the spray gun. PPG and Sikkens certified. Best at: full repaints, panel blending, the color matches you can't tell apart.</p>
+      </div>
+
+      <div class="card card-cad p-7">
+        <div class="flex items-baseline justify-between mb-2">
+          <span class="dyno text-3xl dyno-paper">A.03</span>
+          <span class="stamp">POWDER · DETAIL</span>
+        </div>
+        <h3 class="display text-3xl mt-3 mb-2">Javier T.</h3>
+        <div class="tech text-[.62rem] tracking-[.22em] uppercase mb-4" style="color:var(--cyan)">TECH · FINISH WORK</div>
+        <div class="space-y-2 mb-4">
+          <div class="spec"><span class="k">EXP</span><span class="v ml-auto">9 yrs</span></div>
+          <div class="spec"><span class="k">CERTS</span><span class="v ml-auto">Gtechniq + IGL</span></div>
+          <div class="spec"><span class="k">LANG</span><span class="v ml-auto">EN / ES</span></div>
+        </div>
+        <p class="text-sm text-[var(--paper-3)] leading-relaxed" data-en="Powder coat, paint correction, ceramic. The finish-work guy. Runs the cure oven and the tint room — both calibrated weekly." data-es="Powder coat, corrección de pintura, cerámico. El del acabado. Maneja el horno y la sala de tint — calibrados semanalmente.">Powder coat, paint correction, ceramic. The finish-work guy. Runs the cure oven and the tint room — both calibrated weekly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="py-16 md:py-24 bg-[var(--bg-deep)] border-y border-[var(--line-blue)] relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10">
+    <div class="section-head reveal">
+      <div>
+        <div class="axis"><span class="bar"></span><span class="eyebrow">CHRONOLOG · 2018→2026</span></div>
+        <h2 class="heavy text-4xl md:text-6xl mt-4 leading-[.9]" data-en="Seven years on Mahan." data-es="Siete años en Mahan.">Seven years on Mahan.</h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-5 reveal-stagger">
+      <div>
+        <div class="dyno text-5xl">2018</div>
+        <div class="schem-line my-4"></div>
+        <h3 class="display text-lg mb-2" data-en="Doors open" data-es="Apertura">Doors open</h3>
+        <p class="text-xs text-[var(--paper-3)] leading-relaxed" data-en="Carlos signs the Mahan St lease. Two bays. One lift." data-es="Carlos firma renta en Mahan St. Dos bahías. Un elevador.">Carlos signs the Mahan St lease. Two bays. One lift.</p>
+      </div>
+      <div>
+        <div class="dyno text-5xl dyno-cyan">2020</div>
+        <div class="schem-line my-4"></div>
+        <h3 class="display text-lg mb-2" data-en="Paint booth" data-es="Cabina pintura">Paint booth</h3>
+        <p class="text-xs text-[var(--paper-3)] leading-relaxed" data-en="Marco joins. Bodywork added. Downdraft booth installed." data-es="Marco se une. Carrocería añadida. Cabina downdraft instalada.">Marco joins. Bodywork added. Downdraft booth installed.</p>
+      </div>
+      <div>
+        <div class="dyno text-5xl">2023</div>
+        <div class="schem-line my-4"></div>
+        <h3 class="display text-lg mb-2" data-en="Cure oven" data-es="Horno cure">Cure oven</h3>
+        <p class="text-xs text-[var(--paper-3)] leading-relaxed" data-en="Javier joins. Powder coat oven, tint room, detail bay added." data-es="Javier se une. Horno, sala de tint, detail bay añadidos.">Javier joins. Powder coat oven, tint room, detail bay added.</p>
+      </div>
+      <div>
+        <div class="dyno text-5xl dyno-cyan">2026</div>
+        <div class="schem-line my-4"></div>
+        <h3 class="display text-lg mb-2" data-en="Build N° 86" data-es="Build N° 86">Build N° 86</h3>
+        <p class="text-xs text-[var(--paper-3)] leading-relaxed" data-en="4,800 sq ft. 2 lifts. 4 bays. 5.0 ★ across 86 reviews." data-es="4,800 sq ft. 2 elevadores. 4 bahías. 5.0 ★ en 86 reseñas.">4,800 sq ft. 2 lifts. 4 bays. 5.0 ★ across 86 reviews.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 md:py-28 relative z-10 text-center">
+  <div class="max-w-3xl mx-auto px-6 reveal">
+    <div class="eyebrow mb-3" data-en="The doors are open." data-es="Las puertas están abiertas.">The doors are open.</div>
+    <h2 class="heavy text-5xl md:text-7xl leading-[.9]" data-en-html="Come see <span style='color:var(--orange)'>the shop.</span>" data-es-html="Pásate a ver <span style='color:var(--orange)'>el shop.</span>">
+      Come see <span style="color:var(--orange)">the shop.</span>
+    </h2>
+    <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="contact.html" class="btn btn-orange">Plan a visit</a>
+      <a href="tel:+15163957424" class="btn btn-cyan">+1 (516) 395-7424</a>
+    </div>
+  </div>
+</section>
+
+<footer class="py-12 border-t border-[var(--line-blue)] bg-[var(--bg-deep)] relative z-10">
+  <div class="max-w-[1500px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <svg viewBox="0 0 40 40" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--orange)"><circle cx="20" cy="20" r="17"/><path d="M3 20h34M20 3v34"/></svg>
+      <span class="display text-xl">A-Spec</span>
+      <span class="tech text-[.62rem] tracking-[.22em] uppercase" style="color:var(--paper-3)">© <span data-year></span></span>
+    </div>
+    <div class="flex items-center gap-6 text-sm tech text-[var(--paper-2)]">
+      <a href="index.html" class="hover:text-[var(--orange)]">Home</a>
+      <a href="services.html" class="hover:text-[var(--orange)]">Services</a>
+      <a href="builds.html" class="hover:text-[var(--orange)]">Builds</a>
+      <a href="contact.html" class="hover:text-[var(--orange)]">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="tel:+15163957424" class="btn-cyan">Call</a>
+  <a href="#" data-open-quote class="btn-orange">Spec sheet</a>
+</div>
+
+<div id="quoteModal" class="modal-bg">
+  <div class="modal-card">
+    <button class="modal-close" data-close-quote>×</button>
+    <div class="eyebrow">Build sheet request</div>
+    <h3 class="heavy text-3xl mt-3 mb-2 leading-[.9]">Spec your build.</h3>
+    <p class="text-sm text-[var(--paper-3)] tech mb-7">&gt; we draft. you approve. we build.</p>
+    <form data-fake class="space-y-5">
+      <div><span class="field-label">Name</span><input class="input" required/></div>
+      <div class="grid grid-cols-2 gap-5">
+        <div><span class="field-label">Phone</span><input class="input" type="tel" required placeholder="(516) ..."/></div>
+        <div><span class="field-label">Vehicle</span><input class="input" placeholder="YR · MK · MDL"/></div>
+      </div>
+      <div><span class="field-label">Build description</span><textarea class="input" rows="4"></textarea></div>
+      <button class="btn btn-orange w-full">Send · get spec sheet</button>
+      <div data-form-result class="hidden tech text-sm pt-2" style="color:var(--green)"></div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
