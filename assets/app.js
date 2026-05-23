@@ -1,29 +1,4 @@
-// A-Spec Auto HQ — interactions
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    const l = document.querySelector('.loader');
-    if (l) l.classList.add('hidden');
-  }, 1100);
-});
-
-// Loader readout (terminal-style)
-const readout = document.querySelector('[data-readout]');
-if (readout) {
-  const lines = [
-    '> init systems',
-    '> calibrating dyno',
-    '> loading specs',
-    '> ready'
-  ];
-  let i = 0;
-  const tick = () => {
-    if (i < lines.length) {
-      readout.textContent = lines[i++];
-      setTimeout(tick, 240);
-    }
-  };
-  tick();
-}
+// A-Spec Auto HQ — interactions (no loader)
 
 const scrollBar = document.querySelector('.scroll-progress');
 if (scrollBar) {
@@ -31,7 +6,7 @@ if (scrollBar) {
     const h = document.documentElement;
     const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
     scrollBar.style.width = pct + '%';
-  });
+  }, { passive: true });
 }
 
 const io = new IntersectionObserver((entries) => {
@@ -39,7 +14,7 @@ const io = new IntersectionObserver((entries) => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
   });
 }, { threshold: 0.14, rootMargin: '0px 0px -60px 0px' });
-document.querySelectorAll('.reveal,.reveal-stagger').forEach(el => io.observe(el));
+document.querySelectorAll('.reveal,.reveal-stagger,.clip-reveal,.split-line').forEach(el => io.observe(el));
 
 const menuBtn = document.getElementById('menuBtn');
 const menuPanel = document.getElementById('menuPanel');
@@ -74,7 +49,7 @@ document.querySelectorAll('.lang-toggle [data-lang]').forEach(btn => {
   btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang')));
 });
 
-// Quote / Build estimate modal
+// Quote modal
 const quoteOpen = document.querySelectorAll('[data-open-quote]');
 const quoteModal = document.getElementById('quoteModal');
 const quoteClose = document.querySelectorAll('[data-close-quote]');
@@ -89,8 +64,8 @@ document.querySelectorAll('form[data-fake]').forEach(form => {
     if (out) {
       const lang = document.documentElement.lang;
       out.textContent = lang === 'es'
-        ? '> request received · spec sheet sent to your email'
-        : '> request received · spec sheet sent to your email';
+        ? '> recibido · spec sheet enviado a tu email'
+        : '> received · spec sheet sent to your email';
       out.classList.remove('hidden');
     }
     form.reset();
@@ -106,16 +81,64 @@ const counterIO = new IntersectionObserver((entries) => {
     if (!e.isIntersecting) return;
     counterIO.unobserve(e.target);
     const el = e.target;
-    const target = parseInt(el.getAttribute('data-count'), 10);
-    const dur = 1400;
+    const target = parseFloat(el.getAttribute('data-count'));
+    const decimals = (el.getAttribute('data-decimals') || '0') | 0;
+    const dur = 1600;
     const t0 = performance.now();
     const step = (t) => {
       const k = Math.min((t - t0) / dur, 1);
       const eased = 1 - Math.pow(1 - k, 3);
-      el.textContent = Math.round(target * eased).toString();
+      const val = target * eased;
+      el.textContent = decimals ? val.toFixed(decimals) : Math.round(val).toString();
       if (k < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
   });
 }, { threshold: 0.5 });
 counters.forEach(c => counterIO.observe(c));
+
+// Speedometer needle — sweep to target on view
+const speedos = document.querySelectorAll('[data-speedo]');
+const speedoIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    speedoIO.unobserve(e.target);
+    const wrap = e.target;
+    const needle = wrap.querySelector('.speedo-needle');
+    if (!needle) return;
+    const targetDeg = parseFloat(wrap.getAttribute('data-speedo'));
+    // Idle position
+    needle.style.transform = 'rotate(-120deg)';
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        needle.style.transform = `rotate(${targetDeg}deg)`;
+      }, 150);
+    });
+  });
+}, { threshold: 0.4 });
+speedos.forEach(s => speedoIO.observe(s));
+
+// Hero parallax on hero image
+const hero = document.querySelector('[data-parallax]');
+if (hero) {
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y < window.innerHeight) {
+      hero.style.transform = `translate3d(0, ${y * 0.35}px, 0) scale(${1 + y * 0.0004})`;
+    }
+  }, { passive: true });
+}
+
+// Magnetic-button (small attraction to cursor)
+document.querySelectorAll('[data-magnet]').forEach(el => {
+  const strength = 18;
+  el.addEventListener('mousemove', (e) => {
+    const r = el.getBoundingClientRect();
+    const x = e.clientX - (r.left + r.width / 2);
+    const y = e.clientY - (r.top + r.height / 2);
+    el.style.transform = `translate(${x / strength}px, ${y / strength}px)`;
+  });
+  el.addEventListener('mouseleave', () => {
+    el.style.transform = '';
+  });
+});
